@@ -1,0 +1,58 @@
+//
+// Prefix header for all source files of the 'epub' target in the 'epub' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import <CoreData/CoreData.h>
+#import "SetConfig.h"
+#import "WxxHttpUtil.h"
+
+#endif
+
+
+#ifndef __OPTIMIZE__
+#define NSLog(...) NSLog(__VA_ARGS__)
+#else
+#define NSLog(...) {}
+#endif
+
+//#define APP_ID           657763987
+
+
+#define booktype BTxiaoshuo
+//******************获取的书本分类*****************
+// 1	传记
+// 2	摄影
+#define bookXiaoshuo @"3"// 3	小说
+#define bookAppstore @"5" // 5	appstore
+#define bookClass bookXiaoshuo //appstore(点击下载直接去appstore)
+
+//*****************umengSDK***********************
+#define UMENG_APPKEY @"534531a856240b584b041213"
+
+#define YSHOWAD 1 //是
+#define NSHOWAD 0 //否
+#define YNSHOWADVIEW  NSHOWAD //是否开启 赛于 广告,  广告开关
+#define YNSHOWGOOLEAD  NSHOWAD //是否开启 google 广告,  广告开关
+
+//*****************google广告**********************
+#define admobId  @"a1534539807e055"
+
+//*****************赛于广告*************************
+#define saiyuappid  @"1002"
+#define saiyuappkey  @"089e46d9e2566b09fdc3b3a7115fe145"
+
+
+
+#define DOWNLOAD_URL     @"https://itunes.apple.com/us/app/you-yue/id657763987?ls=1&mt=8"
+#define HOST             @"http://serve.bracecloud.com/"
+#define URI_INDEX        @"ureader/index.html"
+#define URI_VERSION      @"ureader/version.html"

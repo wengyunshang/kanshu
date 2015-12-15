@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>75FAD890-3E00-4E40-ADC6-5DDA8400D207</string>
+	<key>IDESourceControlProjectName</key>
+	<string>epub</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>4E89B662-32BA-4BFC-88EA-CE911A9E9C44</key>
+		<string>https://svn.duapp.com/appidse3l9g17bc</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>epubApp/src/epub.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>4E89B662-32BA-4BFC-88EA-CE911A9E9C44</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectRepositoryRootDictionary</key>
+	<dict>
+		<key>4E89B662-32BA-4BFC-88EA-CE911A9E9C44</key>
+		<string>https://hotmail.com@svn.duapp.com/appidse3l9g17bc</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://hotmail.com@svn.duapp.com/appidse3l9g17bc/epubApp/src/epub.xcodeproj</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>4E89B662-32BA-4BFC-88EA-CE911A9E9C44</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>4E89B662-32BA-4BFC-88EA-CE911A9E9C44</string>
+			<key>IDESourceControlWCCName</key>
+			<string>EpubBaeSvn</string>
+		</dict>
+	</array>
+</dict>
+</plist>

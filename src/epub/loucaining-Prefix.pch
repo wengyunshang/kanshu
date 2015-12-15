@@ -1,0 +1,55 @@
+//
+// Prefix header for all source files of the 'epub' target in the 'epub' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import <CoreData/CoreData.h>
+#import "SetConfig.h"
+#import "WxxHttpUtil.h"
+
+#endif
+
+
+#ifndef __OPTIMIZE__
+#define NSLog(...) NSLog(__VA_ARGS__)
+#else
+#define NSLog(...) {}
+#endif
+
+//#define APP_ID           657763987
+#define DBNAME @"book.sqlite"
+//古文
+#define booktype BTloucaining
+
+//---------------更多好书 加载的分类----------------
+#define bookClass bookLoucaining //静读时光
+
+//*****************umengSDK***********************
+#define UMENG_APPKEY @"54daf088fd98c57e2e000546"
+
+#define YSHOWAD 1 //是
+#define NSHOWAD 0 //否
+#define YNFREE  NSHOWAD //是否全部免费
+#define YNSHOWADVIEW  NSHOWAD //是否开启 赛于 广告,  广告开关
+#define YNSHOWGOOLEAD  YSHOWAD //是否开启 google 广告,  广告开关
+//*****************google广告**********************
+#define admobId  @"ca-app-pub-5914587552835750/7238174822"
+#define admobPageId @"ca-app-pub-5914587552835750/8181793623" //插页
+//*****************赛于广告*************************
+#define saiyuappid  @"1017"
+#define saiyuappkey  @"23f20baf2c9cbcc57f607ae90a1fd62d"
+
+#define __TencentDemoAppid_  @"1101995908"
+
+#define DOWNLOAD_URL     @"https://itunes.apple.com/us/app/you-yue/id657763987?ls=1&mt=8"
+#define HOST             @"http://serve.bracecloud.com/"
+#define URI_INDEX        @"ureader/index.html"
+#define URI_VERSION      @"ureader/version.html"

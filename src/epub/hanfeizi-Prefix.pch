@@ -1,0 +1,54 @@
+//
+// Prefix header for all source files of the 'epub' target in the 'epub' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import <CoreData/CoreData.h>
+#import "SetConfig.h"
+#import "WxxHttpUtil.h"
+
+#endif
+
+
+#ifndef __OPTIMIZE__
+#define NSLog(...) NSLog(__VA_ARGS__)
+#else
+#define NSLog(...) {}
+#endif
+
+//#define APP_ID           657763987
+
+//魔女天骄美人志
+#define booktype BThanfeizi
+//---------------更多好书 加载的分类----------------
+#define bookClass bookGuwen //appstore(点击下载直接去appstore)
+
+//-------------------umengSDK--------------------
+#define UMENG_APPKEY @"534a3ac656240b1724127533"
+
+#define YSHOWAD 1 //是
+#define NSHOWAD 0 //否
+#define YNSHOWADVIEW  NSHOWAD //是否开启 赛于 广告,  广告开关
+#define YNSHOWGOOLEAD  YSHOWAD //是否开启 google 广告,  广告开关
+
+//*****************google广告**********************
+#define admobId  @"ca-app-pub-5914587552835750/6888817621"
+
+//-------------------赛于广告---------------------
+#define saiyuappid  @"1005"
+#define saiyuappkey  @"c677c3d16c35242f7f6c0ac4bbfb381a"
+
+#define __TencentDemoAppid_  @"222222"
+ 
+#define DOWNLOAD_URL     @"https://itunes.apple.com/us/app/you-yue/id657763987?ls=1&mt=8"
+#define HOST             @"http://serve.bracecloud.com/"
+#define URI_INDEX        @"ureader/index.html"
+#define URI_VERSION      @"ureader/version.html"

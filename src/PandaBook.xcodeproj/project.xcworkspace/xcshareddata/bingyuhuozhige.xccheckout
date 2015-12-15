@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>909A56CB-FE81-40FC-ADBB-E56A7304331C</string>
+	<key>IDESourceControlProjectName</key>
+	<string>bingyuhuozhige</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>43FFBE1D-F152-4B5D-9367-6B7463B85A8E</key>
+		<string>https://svn.duapp.com/appidse3l9g17bc</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>epubApp/src/bingyuhuozhige.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>43FFBE1D-F152-4B5D-9367-6B7463B85A8E</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectRepositoryRootDictionary</key>
+	<dict>
+		<key>43FFBE1D-F152-4B5D-9367-6B7463B85A8E</key>
+		<string>https://hotmail.com@svn.duapp.com/appidse3l9g17bc</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://hotmail.com@svn.duapp.com/appidse3l9g17bc/epubApp/src/bingyuhuozhige.xcodeproj</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>43FFBE1D-F152-4B5D-9367-6B7463B85A8E</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>43FFBE1D-F152-4B5D-9367-6B7463B85A8E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>EpubBaeSvn0426</string>
+		</dict>
+	</array>
+</dict>
+</plist>

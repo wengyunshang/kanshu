@@ -1,0 +1,52 @@
+//
+// Prefix header for all source files of the 'epub' target in the 'epub' project
+//
+
+#import <Availability.h>
+
+
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import <CoreData/CoreData.h>
+#import "SetConfig.h"
+#import "WxxHttpUtil.h"
+#import "WxxPopView.h"
+#import "WxxLoadView.h"
+#endif
+
+
+#ifndef __OPTIMIZE__
+#define NSLog(...) NSLog(__VA_ARGS__)
+#else
+#define NSLog(...) {}
+#endif
+
+//#define APP_ID           657763987  s1Tw8MgM8Ld27YQltmgbbrSy
+#define DBNAME @"guoguo.sqlite"
+//魔女天骄美人志
+#define booktype  BTGuoguo
+//---------------更多好书 加载的分类----------------
+#define bookClass bookGuoguo //穿越
+
+//-------------------umengSDK--------------------
+#define UMENG_APPKEY @"5542027e67e58e05c1003dd5"
+
+#define YSHOWAD 1 //是
+#define NSHOWAD 0 //否
+#define YNSHOWADVIEW  NSHOWAD //是否开启 赛于 广告,  广告开关
+#define YNSHOWGOOLEAD  YSHOWAD //是否开启 google 广告,  广告开关
+
+//*****************google广告**********************
+#define admobId  @"ca-app-pub-5914587552835750/1952906826"
+#define admobPageId @"ca-app-pub-5914587552835750/4906373227" //插页
+//-------------------赛于广告---------------------
+#define saiyuappid  @"1028"
+#define saiyuappkey  @"5bb324a9b4b8d14cfd05aa3a6af06775"
+#define __TencentDemoAppid_  @"1103280748"
+ 
+#define DOWNLOAD_URL     @"https://itunes.apple.com/us/app/you-yue/id657763987?ls=1&mt=8"
+#define HOST             @"http://serve.bracecloud.com/"
+#define URI_INDEX        @"ureader/index.html"
+#define URI_VERSION      @"ureader/version.html"

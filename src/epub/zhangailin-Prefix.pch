@@ -1,0 +1,55 @@
+//
+// Prefix header for all source files of the 'epub' target in the 'epub' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import <CoreData/CoreData.h>
+#import "SetConfig.h"
+#import "WxxHttpUtil.h"
+
+#endif
+
+
+#ifndef __OPTIMIZE__
+#define NSLog(...) NSLog(__VA_ARGS__)
+#else
+#define NSLog(...) {}
+#endif
+
+//#define APP_ID           657763987
+#define DBNAME @"zhangailinbook.sqlite"
+//古文
+#define booktype BTzhangailin
+
+//---------------更多好书 加载的分类----------------
+#define bookClass bookZhangailin //静读时光
+
+//*****************umengSDK***********************
+#define UMENG_APPKEY @"548b0c42fd98c575940008ce"
+
+#define YSHOWAD 1 //是
+#define NSHOWAD 0 //否
+#define YNFREE  NSHOWAD //是否全部免费
+#define YNSHOWADVIEW  NSHOWAD //是否开启 赛于 广告,  广告开关
+#define YNSHOWGOOLEAD  YSHOWAD //是否开启 google 广告,  广告开关
+//*****************google广告**********************
+#define admobId  @"ca-app-pub-5914587552835750/8221738026"
+
+//*****************赛于广告*************************
+#define saiyuappid  @"1014"
+#define saiyuappkey  @"0e90c2597d1579989d14021a7fac3fae"
+
+#define __TencentDemoAppid_  @"1101995908"
+
+#define DOWNLOAD_URL     @"https://itunes.apple.com/us/app/you-yue/id657763987?ls=1&mt=8"
+#define HOST             @"http://serve.bracecloud.com/"
+#define URI_INDEX        @"ureader/index.html"
+#define URI_VERSION      @"ureader/version.html"

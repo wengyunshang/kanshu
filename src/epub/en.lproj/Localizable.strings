@@ -1,0 +1,84 @@
+/* 
+  Localizable.strings
+  epub
+
+  Created by zhiyu zheng on 12-6-7.
+  Copyright (c) 2012年 Baidu. All rights reserved.
+*/
+
+"logo"="zh-logo";
+
+"books"="书架";
+"chapters"="类别";
+"restore"="恢复已购";
+"storebooks"="书屋";
+"moreapps"="好应用";
+"tab1"="set";
+"tab2"="tab2";
+"tab3"="tab3";
+"tab1_selected"="set_selected";
+"tab2_selected"="tab2_selected";
+"tab3_selected"="tab3_selected";
+
+"loading data"="loading data... <br/>it may take some time for the first loading.";
+"loading page"="loading page";
+"recently read"="Recently read:";
+"no records"="No Records";
+
+"upload_index"="/upload_en.html";
+
+
+"delete"="delete";
+"upload"="Upload";
+
+
+"server_network_err"="No WIFI Connected!";
+"server_server_err"="Server Error!";
+//"server_upload_info"="Visit the following address from PC";
+"server_upload_info"="通过电脑浏览器访问以下地址上传文件";
+"store_bg"="shop_en";
+"upload_btn"="upload_en";
+
+"init_file"="第一卷权力的游戏";
+"init_file2"="第二卷列王的纷争";
+"init_file3"="第三卷冰雨的风暴";
+"init_file4"="第四卷群鸦的盛宴";
+"init_file5"="第五卷魔龙的狂舞";
+
+"init_file6"="魔女天骄美人志";
+"init_file7"="诗经";
+"init_file8"="韩非子";
+"init_file9"="心经";
+
+"clear records"="Clear Records";
+
+"cancelButtonLabel"="No";
+"remindButtonLabel"="Later";
+"rateButtonLabel"="Go to rate ^_^";
+"rateText"="If you like it, rate it!";
+
+"parse_error"="Parse Error!";
+"ok"="Ok";
+"message"="Message";
+"new_version"="New Version Available!";
+"go"="Go";
+"cancel"="Cancel";
+"feedback" = "投诉";
+"Refreshing" = "即将刷出10本新书";
+"PulltoRefresh" = "在往下一点拉，亲";
+
+"loadStoreInfo" = "正在加载";
+"loadNilBook" = "没有更多好书，有更新会通知您。";
+
+"readover" = "恭喜，阅读完毕";
+
+"scoring" = "给我打分";
+"about" = "关于";
+"moreapp" = "好应用";
+"saveflow" = "save web traffic model";
+"getPush" = "Receive push notifications";
+"lockedscreen" = "开启不锁屏";
+
+"deliad" = "Remove ADs";
+"qqlogin"="qq登录";
+"sinalogin"="新浪微博登录";
