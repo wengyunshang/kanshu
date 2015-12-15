@@ -147,7 +147,10 @@ typedef enum{
 
 #define statuStarBarWidth (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)? 1024: 320
 
-
+#define bodyFont @"bodyFont"
+#define bodyColor @"bodyColor"
+#define bodyFontOrg @"bodyFontOrg"
+#define selectTypeKey @"selectType"
 #define bookWidth 80
 #define bookHeight bookWidth*8/6
 #define bookOgrx (UIBounds.size.width-bookWidth*3)/4

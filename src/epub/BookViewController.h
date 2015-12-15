@@ -14,7 +14,7 @@
 //#import "SetView.h"
 #import "HistoryData.h"
 #import "EvLineProgressView.h"
-@interface BookViewController : UIViewController <GADInterstitialDelegate,UIGestureRecognizerDelegate,UIWebViewDelegate, ChapterDelegate, UISearchBarDelegate,MBProgressHUDDelegate>
+@interface BookViewController : UIViewController <ToolBarViewDelegate,GADInterstitialDelegate,UIGestureRecognizerDelegate,UIWebViewDelegate, ChapterDelegate, UISearchBarDelegate,MBProgressHUDDelegate>
 {
 
 GADInterstitial *interstitial_;

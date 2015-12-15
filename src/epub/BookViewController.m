@@ -23,10 +23,7 @@
 
 
 #define textSizeRule @"TextSizeRule"
-#define bodyFont @"bodyFont"
-#define bodyColor @"bodyColor"
-#define bodyFontOrg @"bodyFontOrg"
-#define selectTypeKey @"selectType"
+
 @interface BookViewController()
 //@property (nonatomic,strong)UIView *statusBarView;
 @property (nonatomic,strong)WxxLabel *titleLb;
@@ -839,7 +836,13 @@
 }
 
 
-
+#pragma mark - 代理
+-(void)setSeelctType:(setSelectType)type{
+      [self setViewBackGroundColor:type];
+}
+-(void)hideToolBarView{
+    [self hideAllTool];
+}
 
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
@@ -851,19 +854,14 @@
     
     //工具栏
     self.toolbar = [[[ToolBarView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)] autorelease];
+    self.toolbar.delegate = self;
     [self.view addSubview:toolbar];
     
     [self.toolbar receiveObject:^(id object) {
-        setSelectType type = object;
+        setSelectType type = (setSelectType)object;
         switch (type) {
             case setToolChapter:
                 [self.chaptersListView showChapter];
-                break;
-            case setToolLight:
-                [self initLightView];
-                break;
-            case setToolFont:
-                [self initBookSetView];
                 break;
             case setToolBack:
                 [self showChapterIndex:nil];

@@ -8,8 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ToolBarView : UIView
+@protocol ToolBarViewDelegate <NSObject>
 
+-(void)setSeelctType:(setSelectType)type;
+-(void)hideToolBarView;
+@end
+
+
+@interface ToolBarView : UIView<UIGestureRecognizerDelegate>
+@property (nonatomic,assign)id<ToolBarViewDelegate> delegate;
 -(void)hideSelf;
 -(void)showSelf;
+
 @end

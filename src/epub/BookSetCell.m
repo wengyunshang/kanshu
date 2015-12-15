@@ -40,6 +40,7 @@
             self.titleLabel = [[[WxxLabel alloc]initWithFrame:CGRectMake(13, 0, 60, cellHeight) font:[UIFont systemFontOfSize:14]] autorelease];
             self.titleLabel.textColor = [UIColor whiteColor];
             self.titleLabel.text = @"ZITI";
+            self.titleLabel.alpha = 0.8;
             [self.contentView addSubview:self.titleLabel];
         }
     }
@@ -68,7 +69,7 @@
     self.titleLabel.text = @"字号";
     
     float btnHeight = 30;
-    float btnWidth = 55;
+    float btnWidth = 70;
     WxxButton *smallBtn = [[WxxButton alloc] initWithTouchLightFrame:CGRectMake(CGRectGetMaxX(self.titleLabel.frame)+5,(cellHeight-btnHeight)/2, btnWidth, btnHeight)];
     smallBtn.layer.cornerRadius = smallBtn.frame.size.height/2;
     smallBtn.layer.borderColor = [UIColor whiteColor].CGColor;
@@ -81,13 +82,13 @@
     [smallBtn release];
     smallBtn.alpha = 0.5;
     
-    UILabel *fontLb = [[[UILabel alloc]initWithFrame:CGRectMake(CGRectGetMaxX(smallBtn.frame)+15, 0, 30, cellHeight)] autorelease];
-    fontLb.text = @"20";
-    fontLb.textColor = [UIColor whiteColor];
-    [self.contentView addSubview:fontLb];
+//    UILabel *fontLb = [[[UILabel alloc]initWithFrame:CGRectMake(CGRectGetMaxX(smallBtn.frame)+15, 0, 30, cellHeight)] autorelease];
+//    fontLb.text = @"20";
+//    fontLb.textColor = [UIColor whiteColor];
+//    [self.contentView addSubview:fontLb];
     
     
-    WxxButton *bigBtn = [[WxxButton alloc] initWithTouchLightFrame:CGRectMake(CGRectGetMaxX(fontLb.frame)+15,(cellHeight-btnHeight)/2, btnWidth, btnHeight)];
+    WxxButton *bigBtn = [[WxxButton alloc] initWithTouchLightFrame:CGRectMake(CGRectGetMaxX(smallBtn.frame)+15,(cellHeight-btnHeight)/2, btnWidth, btnHeight)];
     bigBtn.layer.cornerRadius = smallBtn.frame.size.height/2;
     bigBtn.layer.borderColor = [UIColor whiteColor].CGColor;
     bigBtn.backgroundColor = [UIColor clearColor];
@@ -102,21 +103,29 @@
     
     [smallBtn receiveObject:^(id object) {
         [UIView animateWithDuration:0.2f delay:0.f options:UIViewAnimationOptionCurveEaseInOut animations:^{
-            self.alpha = 1.f;
-            self.transform = CGAffineTransformMakeScale(1.05f, 1.05f);
+            bigBtn.alpha = 0.5;
+            smallBtn.alpha = 0.4;
+            
         } completion:^(BOOL finished) {
-            [UIView animateWithDuration:0.08f delay:0.f options:UIViewAnimationOptionCurveEaseInOut animations:^{
-                self.transform = CGAffineTransformIdentity;
-            } completion:nil];
+            [UIView animateWithDuration:0.2f delay:0.f options:UIViewAnimationOptionCurveEaseInOut animations:^{
+                smallBtn.alpha = 1;
+            } completion:^(BOOL finished) {
+            }];
         }];
-        bigBtn.alpha = 0.5;
-        smallBtn.alpha = 1;
-        [self sendObject:[NSNumber numberWithInt: setSelectDelFont]];
+        [self sendObject:setSelectDelFont];
     }];
     [bigBtn receiveObject:^(id object) {
-        bigBtn.alpha = 1;
-        smallBtn.alpha = 0.5;
-        [self sendObject:[NSNumber numberWithInt: setSelectAddFont]];
+        [UIView animateWithDuration:0.2f delay:0.f options:UIViewAnimationOptionCurveEaseInOut animations:^{
+            smallBtn.alpha = 0.5;
+            bigBtn.alpha = 0.4;
+            
+        } completion:^(BOOL finished) {
+            [UIView animateWithDuration:0.2f delay:0.f options:UIViewAnimationOptionCurveEaseInOut animations:^{
+                bigBtn.alpha = 1;
+            } completion:^(BOOL finished) {
+            }];
+        }];
+        [self sendObject:setSelectAddFont];
     }];
 //    [smallBtn addTarget:self action:@selector(smallFont) forControlEvents:UIControlEventTouchUpInside];
 //    [bigBtn addTarget:self action:@selector(bigFont) forControlEvents:UIControlEventTouchUpInside];
@@ -173,20 +182,53 @@
     paiban3.layer.cornerRadius = btnWidth/2;
     [paiban3 setImage:[ResourceHelper loadImageByTheme:@"v3_yuedu_paiban3"] forState:UIControlStateNormal];
     [self.contentView addSubview:paiban3];
-    
+    paiban1.alpha = 0.5;
+    paiban2.alpha = 0.5;
+    paiban3.alpha = 0.5;
     [paiban1 addTarget:self action:@selector(paiban1) forControlEvents:UIControlEventTouchUpInside];
     [paiban2 addTarget:self action:@selector(paiban2) forControlEvents:UIControlEventTouchUpInside];
     [paiban3 addTarget:self action:@selector(paiban3) forControlEvents:UIControlEventTouchUpInside];
+    
+    NSString *bodyFontor = [[NSUserDefaults standardUserDefaults]objectForKey:bodyFontOrg];
+    if ([bodyFontor isEqualToString:@"1.6"]) {
+        paiban1.alpha = 1.0;
+    }
+    if ([bodyFontor isEqualToString:@"1.9"]) {
+        paiban2.alpha = 1.0;
+    }
+    if ([bodyFontor isEqualToString:@"2.2"]) {
+        paiban3.alpha = 1.0;
+    }
+ 
+    [paiban1 receiveObject:^(id object) {
+        [self sendObject:setSelectLineOrg1];
+        paiban1.alpha = 1;
+        paiban2.alpha = 0.5;
+        paiban3.alpha = 0.5;
+    }];
+    [paiban2 receiveObject:^(id object) {
+        [self sendObject:setSelectLineOrg2];
+        paiban1.alpha = 0.5;
+        paiban2.alpha = 1;
+        paiban3.alpha = 0.5;
+    }];
+    [paiban3 receiveObject:^(id object) {
+        [self sendObject:setSelectLineOrg3];
+        paiban1.alpha = 0.5;
+        paiban2.alpha = 0.5;
+        paiban3.alpha = 1;
+    }];
+    
 }
 
 -(void)paiban1{
-    [self sendObject:[NSNumber numberWithInt: setSelectLineOrg1]];
+    [self sendObject:setSelectLineOrg1];
 }
 -(void)paiban2{
-    [self sendObject:[NSNumber numberWithInt: setSelectLineOrg2]];
+    [self sendObject:setSelectLineOrg2];
 }
 -(void)paiban3{
-    [self sendObject:[NSNumber numberWithInt: setSelectLineOrg3]];
+    [self sendObject:setSelectLineOrg3];
 }
 
 //颜色
@@ -197,7 +239,7 @@
     [self.contentView addSubview:evrp];
     [evrp receiveObject:^(id object) {
 //        NSLog(@"黑色");
-        [self sendObject:[NSNumber numberWithInt: setSelectVirescence]];
+        [self sendObject:setSelectVirescence];
     }];
     
     //setSelectNight
@@ -207,7 +249,7 @@
     [self.contentView addSubview:evrp1];
     [evrp1 receiveObject:^(id object) {
 //        NSLog(@"点击色彩");
-        [self sendObject:[NSNumber numberWithInt: setSelectNight]];
+        [self sendObject:setSelectNight];
     }];
     
     
@@ -216,7 +258,7 @@
     [self.contentView addSubview:evrp2];
     [evrp2 receiveObject:^(id object) {
 //        NSLog(@"点击色彩");
-        [self sendObject:[NSNumber numberWithInt: setSelectSepia]];
+        [self sendObject:setSelectSepia];
     }];
 //
 //    EvRoundProgressView *evrp3 = [[EvRoundProgressView alloc]initWithFrame:CGRectMake((CGRectGetWidth(self.contentView.frame)-btnLength)/2-100,                                                                                     (cellHeight-btnLength)/2,btnLength, btnLength) progressColor:[UIColor orangeColor] backColor:[UIColor orangeColor]];
@@ -230,7 +272,7 @@
     EvRoundProgressView *evrp4 = [[EvRoundProgressView alloc]initWithFrame:CGRectMake(CGRectGetMaxX(evrp2.frame)+5,                                                                                     (cellHeight-btnLength)/2,btnLength, btnLength) progressColor:gragcolor backColor:[UIColor colorWithPatternImage:[ResourceHelper loadImageByTheme:@"reading_background"]]];
     [self.contentView addSubview:evrp4];
     [evrp4 receiveObject:^(id object) {
-        [self sendObject:[NSNumber numberWithInt: setSelectgrayWhite]];
+        [self sendObject:setSelectgrayWhite];
     }];
     
     
@@ -238,7 +280,7 @@
     [self.contentView addSubview:evrp5];
     [evrp5 receiveObject:^(id object) {
         //        NSLog(@"点击色彩");
-        [self sendObject:[NSNumber numberWithInt: setSelectWhite]];
+        [self sendObject:setSelectWhite];
     }];
     
     

@@ -45,61 +45,114 @@
     float orgx = 30;
     float orgy = slideHeight;
     UIColor *gragcolor = [UIColor grayColor];
-    
+    float alp = 0.4;
     EvRoundProgressView *evrp = [[EvRoundProgressView alloc]initWithFrame:CGRectMake(orgx,orgy,btnLength, btnLength)
                                                             progressColor:gragcolor
                                                                 backColor:[UIColor colorWithPatternImage:[ResourceHelper loadImageByTheme:@"reading_background_green"]]];
     [self addSubview:evrp];
-    [evrp receiveObject:^(id object) {
-        //        NSLog(@"黑色");
-        [self sendObject:[NSNumber numberWithInt: setSelectVirescence]];
-    }];
     
     //setSelectNight
     EvRoundProgressView *evrp1 = [[EvRoundProgressView alloc]initWithFrame:CGRectMake(CGRectGetMaxX(evrp.frame)+5,orgy,btnLength, btnLength)
                                                              progressColor:gragcolor
                                                                  backColor:[UIColor colorWithPatternImage:[ResourceHelper loadImageByTheme:@"reading_background_night"]]];
     [self addSubview:evrp1];
-    [evrp1 receiveObject:^(id object) {
-        //        NSLog(@"点击色彩");
-        [self sendObject:[NSNumber numberWithInt: setSelectNight]];
-    }];
-    
     
     EvRoundProgressView *evrp2 = [[EvRoundProgressView alloc]initWithFrame:CGRectMake(CGRectGetMaxX(evrp1.frame)+5,orgy,btnLength, btnLength)
                                                              progressColor:gragcolor
                                                                  backColor:[UIColor colorWithPatternImage:[ResourceHelper loadImageByTheme:@"reading_background_sepia"]]];
     [self addSubview:evrp2];
-    [evrp2 receiveObject:^(id object) {
-        [self sendObject:[NSNumber numberWithInt: setSelectSepia]];
-    }];
-    
     //    淡白
     EvRoundProgressView *evrp4 = [[EvRoundProgressView alloc]initWithFrame:CGRectMake(CGRectGetMaxX(evrp2.frame)+5,orgy,btnLength, btnLength)
                                                              progressColor:gragcolor
                                                                  backColor:[UIColor colorWithPatternImage:[ResourceHelper loadImageByTheme:@"reading_background"]]];
     [self addSubview:evrp4];
-    [evrp4 receiveObject:^(id object) {
-        [self sendObject:[NSNumber numberWithInt: setSelectgrayWhite]];
-    }];
-    
     
     EvRoundProgressView *evrp5 = [[EvRoundProgressView alloc]initWithFrame:CGRectMake(CGRectGetMaxX(evrp4.frame)+5,orgy,btnLength, btnLength)
                                                              progressColor:gragcolor
                                                                  backColor:[UIColor whiteColor]];
     [self addSubview:evrp5];
-    [evrp5 receiveObject:^(id object) {
+    
+    [evrp receiveObject:^(id object) {
+        evrp.alpha = 1;
+        
+        evrp1.alpha = alp;
+        evrp2.alpha = alp;
+        evrp4.alpha = alp;
+        evrp5.alpha = alp;
+        //        NSLog(@"黑色");
+        [self sendObject:setSelectVirescence];
+    }];
+    [evrp1 receiveObject:^(id object) {
+        evrp.alpha = alp;
+        evrp1.alpha = 1;
+        evrp2.alpha = alp;
+        evrp4.alpha = alp;
+        evrp5.alpha = alp;
         //        NSLog(@"点击色彩");
-        [self sendObject:[NSNumber numberWithInt: setSelectWhite]];
+        [self sendObject:setSelectNight];
+    }];
+    [evrp2 receiveObject:^(id object) {
+        evrp.alpha = alp;
+        evrp1.alpha = alp;
+        evrp2.alpha = 1;
+        evrp4.alpha = alp;
+        evrp5.alpha = alp;
+        [self sendObject:setSelectSepia];
+    }];
+    [evrp4 receiveObject:^(id object) {
+        evrp.alpha = alp;
+        evrp1.alpha = alp;
+        evrp2.alpha = alp;
+        evrp4.alpha = 1;
+        evrp5.alpha = alp;
+        [self sendObject:setSelectgrayWhite];
+    }];
+    [evrp5 receiveObject:^(id object) {
+        evrp.alpha = alp;
+        evrp1.alpha = alp;
+        evrp2.alpha = alp;
+        evrp4.alpha = alp;
+        evrp5.alpha = 1;
+        //        NSLog(@"点击色彩");
+        [self sendObject:setSelectWhite];
     }];
     
-    
+    evrp.alpha = alp;
+    evrp1.alpha = alp;
+    evrp2.alpha = alp;
+    evrp4.alpha = alp;
+    evrp5.alpha = alp;
     [evrp release];
     [evrp1 release];
     [evrp2 release];
     //
     [evrp4 release];
     [evrp5 release];
+    
+//    evrp.shapeLayer.strokeColor = [UIColor redColor].CGColor;
+    
+    
+    NSString * type = [[NSUserDefaults standardUserDefaults] objectForKey:selectTypeKey];
+    
+    switch ([type integerValue]) {
+        case setSelectVirescence:
+            evrp.alpha = 1;
+            break;
+        case setSelectNight:
+            evrp1.alpha = 1;
+            break;
+        case setSelectSepia:
+            evrp2.alpha = 1;
+            break;
+        case setSelectgrayWhite:
+            evrp4.alpha = 1;
+            break;
+        case setSelectWhite:
+            evrp5.alpha = 1;
+            break;
+        default:
+            break;
+    }
 }
 
 -(void)sliderValueChanged:(UISlider* )slider {

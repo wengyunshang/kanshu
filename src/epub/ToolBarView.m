@@ -46,10 +46,29 @@
 //        [settingsButton setImage:[ResourceHelper loadImageByTheme:@"v3_reading_dict_setting"] forState:UIControlStateHighlighted];
 //        [settingsButton addTarget:self action:@selector(popSetView) forControlEvents:UIControlEventTouchUpInside];
 //        [self addSubview:settingsButton];
-        
+        UITapGestureRecognizer *singleFingerOne = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleSingleFingerEvent:)];
+        singleFingerOne.numberOfTouchesRequired = 1; //手指数
+        singleFingerOne.numberOfTapsRequired = 1; //tap次数
+        singleFingerOne.delegate = self;
+        [self addGestureRecognizer:singleFingerOne];
+        [singleFingerOne release];
         
     }
     return self;
+}
+
+-(void)handleSingleFingerEvent:(UITapGestureRecognizer *)gestureRecognizer{
+    
+//    CGPoint point = [gestureRecognizer locationInView:self];
+//    [self hideSelf];
+    [self.bookLightView hideSelf];
+    [self.bookSetView hideSelf];
+    [self noLightBtn];
+    
+    if (self.delegate) {
+        [self.delegate hideToolBarView];
+    }
+    
 }
 
 -(void)initToolView{
@@ -122,8 +141,11 @@
         //        [KWPopoverView showPopoverAtPoint:CGPointMake(200, 400) inView:self.view withContentView:btt];
         [self.bookSetView receiveObject:^(id object) {
             
-            setSelectType type = (setSelectType)object;
-            
+//            setSelectType type = (setSelectType)object;
+//            [self sendObject:object];
+            if (self.delegate) {
+                [self.delegate setSeelctType:(setSelectType)object];
+            }
 //            [self setViewBackGroundColor:type];
         }];
     }
@@ -135,9 +157,21 @@
         self.bookLightView = [[BookLightView alloc]initWithFrame:CGRectMake(0, self.frame.size.height, self.frame.size.width, toolbarHeight+toolbarHeight*2)];
         [_bookLightView release];
         [self insertSubview:self.bookLightView belowSubview:self.toolView];
+        [self.bookLightView receiveObject:^(id object) {
+            if (self.delegate) {
+                [self.delegate setSeelctType:(setSelectType)object];
+            }
+        }];
     }
     [self.bookLightView showSelf];
+    
+    
 //    [self hideToolbar];
+}
+
+-(void)noLightBtn{
+    self.lightbtn.alpha = 0.5;
+    self.fontbtn.alpha = 0.5;
 }
 
 -(void)back{
@@ -171,14 +205,14 @@
 
 
 -(void)hideSelf{
-    self.hidden = YES;
-    CGContextRef context = UIGraphicsGetCurrentContext();
-    [UIView beginAnimations:nil context:context];
-    [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
-    [UIView setAnimationDelegate:self];
-    [UIView setAnimationDuration:0.5];
-    self.toolView.frame = CGRectMake(0, self.frame.size.height, self.frame.size.width, toolbarHeight);
-    [UIView commitAnimations];
+    
+   
+    [UIView animateWithDuration:0.5f delay:0.f options:UIViewAnimationOptionCurveEaseInOut animations:^{
+        
+        self.toolView.frame = CGRectMake(0, self.frame.size.height, self.frame.size.width, toolbarHeight);
+    } completion:^(BOOL finished) {
+        self.hidden = YES;
+    }];
 }
 -(void)showSelf{
     self.hidden = NO;
