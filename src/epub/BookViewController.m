@@ -508,7 +508,7 @@
 
 - (void) gotoPrevPage {
     
-    if(self.toolbar.frame.origin.y == self.view.frame.size.height){
+    if(!self.ynShowTool){
         if (!paginating) {
             if(currentPageInSpineIndex-1>=0){
                 [self jietu];
