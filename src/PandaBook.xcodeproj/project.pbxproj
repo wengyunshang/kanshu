@@ -2729,6 +2729,14 @@
 		A8584F5C1C1828A0006754CD /* GDataXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = A8584EBC1C1828A0006754CD /* GDataXMLNode.m */; };
 		A8584F5D1C1828A0006754CD /* GDataXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = A8584EBC1C1828A0006754CD /* GDataXMLNode.m */; };
 		A8584F5E1C1828A0006754CD /* GDataXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = A8584EBC1C1828A0006754CD /* GDataXMLNode.m */; };
+		A8A7CD531C211339003F6FB9 /* BookDeleteView.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A7CD521C211339003F6FB9 /* BookDeleteView.m */; };
+		A8A7CD541C211339003F6FB9 /* BookDeleteView.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A7CD521C211339003F6FB9 /* BookDeleteView.m */; };
+		A8A7CD551C211339003F6FB9 /* BookDeleteView.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A7CD521C211339003F6FB9 /* BookDeleteView.m */; };
+		A8A7CD561C211339003F6FB9 /* BookDeleteView.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A7CD521C211339003F6FB9 /* BookDeleteView.m */; };
+		A8A7CD571C211339003F6FB9 /* BookDeleteView.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A7CD521C211339003F6FB9 /* BookDeleteView.m */; };
+		A8A7CD581C211339003F6FB9 /* BookDeleteView.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A7CD521C211339003F6FB9 /* BookDeleteView.m */; };
+		A8A7CD591C211339003F6FB9 /* BookDeleteView.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A7CD521C211339003F6FB9 /* BookDeleteView.m */; };
+		A8A7CD5A1C211339003F6FB9 /* BookDeleteView.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A7CD521C211339003F6FB9 /* BookDeleteView.m */; };
 		A8B20CAD1BFF146B007625D1 /* BookLightView.m in Sources */ = {isa = PBXBuildFile; fileRef = A8B20CAC1BFF146B007625D1 /* BookLightView.m */; };
 		A8B20CAE1BFF146B007625D1 /* BookLightView.m in Sources */ = {isa = PBXBuildFile; fileRef = A8B20CAC1BFF146B007625D1 /* BookLightView.m */; };
 		A8B20CAF1BFF146B007625D1 /* BookLightView.m in Sources */ = {isa = PBXBuildFile; fileRef = A8B20CAC1BFF146B007625D1 /* BookLightView.m */; };
@@ -3531,6 +3539,8 @@
 		A8377B521C1A750C004871AB /* sw.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sw.jpg; sourceTree = "<group>"; };
 		A8584EBB1C1828A0006754CD /* GDataXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataXMLNode.h; sourceTree = "<group>"; };
 		A8584EBC1C1828A0006754CD /* GDataXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataXMLNode.m; sourceTree = "<group>"; };
+		A8A7CD511C211339003F6FB9 /* BookDeleteView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookDeleteView.h; sourceTree = "<group>"; };
+		A8A7CD521C211339003F6FB9 /* BookDeleteView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookDeleteView.m; sourceTree = "<group>"; };
 		A8B20CAB1BFF146B007625D1 /* BookLightView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookLightView.h; sourceTree = "<group>"; };
 		A8B20CAC1BFF146B007625D1 /* BookLightView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookLightView.m; sourceTree = "<group>"; };
 		A8D62AC11BF1E4C100972F6E /* guoguo-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "guoguo-Info.plist"; sourceTree = "<group>"; };
@@ -4614,6 +4624,8 @@
 				09835E6518E406ED00EE3B15 /* BookTableViewCell.m */,
 				09C8EE0C1AB7262800BB1FF4 /* BookButton.h */,
 				09C8EE0D1AB7262800BB1FF4 /* BookButton.m */,
+				A8A7CD511C211339003F6FB9 /* BookDeleteView.h */,
+				A8A7CD521C211339003F6FB9 /* BookDeleteView.m */,
 			);
 			name = booklistViewController;
 			sourceTree = "<group>";
@@ -6597,6 +6609,7 @@
 				09005F411BA9AE72006CE2EF /* FMResultSet.m in Sources */,
 				09005F421BA9AE72006CE2EF /* Base64.m in Sources */,
 				09005F431BA9AE72006CE2EF /* HTTPServer.m in Sources */,
+				A8A7CD5A1C211339003F6FB9 /* BookDeleteView.m in Sources */,
 				09005F441BA9AE72006CE2EF /* WxxConstants.m in Sources */,
 				09005F451BA9AE72006CE2EF /* SVHTTPClient.m in Sources */,
 				09005F461BA9AE72006CE2EF /* DDRange.m in Sources */,
@@ -6829,6 +6842,7 @@
 				09117ED51AD5769300932491 /* FMResultSet.m in Sources */,
 				09117ED61AD5769300932491 /* Base64.m in Sources */,
 				09117ED81AD5769300932491 /* HTTPServer.m in Sources */,
+				A8A7CD541C211339003F6FB9 /* BookDeleteView.m in Sources */,
 				09117ED91AD5769300932491 /* WxxConstants.m in Sources */,
 				09117EDA1AD5769300932491 /* SVHTTPClient.m in Sources */,
 				09117EDB1AD5769300932491 /* DDRange.m in Sources */,
@@ -7061,6 +7075,7 @@
 				0948CB0E1AB48C43003F7EAB /* FMResultSet.m in Sources */,
 				0948CB0F1AB48C43003F7EAB /* Base64.m in Sources */,
 				09F5727A1AC5B3C300A0815A /* HTTPServer.m in Sources */,
+				A8A7CD531C211339003F6FB9 /* BookDeleteView.m in Sources */,
 				0948CB111AB48C43003F7EAB /* WxxConstants.m in Sources */,
 				0948CB121AB48C43003F7EAB /* SVHTTPClient.m in Sources */,
 				09F572761AC5B3C300A0815A /* DDRange.m in Sources */,
@@ -7293,6 +7308,7 @@
 				0964DBD31ADBD27E00A956AD /* FMResultSet.m in Sources */,
 				0964DBD41ADBD27E00A956AD /* Base64.m in Sources */,
 				0964DBD51ADBD27E00A956AD /* HTTPServer.m in Sources */,
+				A8A7CD551C211339003F6FB9 /* BookDeleteView.m in Sources */,
 				0964DBD61ADBD27E00A956AD /* WxxConstants.m in Sources */,
 				0964DBD71ADBD27E00A956AD /* SVHTTPClient.m in Sources */,
 				0964DBD81ADBD27E00A956AD /* DDRange.m in Sources */,
@@ -7525,6 +7541,7 @@
 				0964DDE21ADFCC7700A956AD /* FMResultSet.m in Sources */,
 				0964DDE31ADFCC7700A956AD /* Base64.m in Sources */,
 				0964DDE41ADFCC7700A956AD /* HTTPServer.m in Sources */,
+				A8A7CD561C211339003F6FB9 /* BookDeleteView.m in Sources */,
 				0964DDE51ADFCC7700A956AD /* WxxConstants.m in Sources */,
 				0964DDE61ADFCC7700A956AD /* SVHTTPClient.m in Sources */,
 				0964DDE71ADFCC7700A956AD /* DDRange.m in Sources */,
@@ -7757,6 +7774,7 @@
 				0973132F1B520A8700C9479E /* FMResultSet.m in Sources */,
 				097313301B520A8700C9479E /* Base64.m in Sources */,
 				097313311B520A8700C9479E /* HTTPServer.m in Sources */,
+				A8A7CD591C211339003F6FB9 /* BookDeleteView.m in Sources */,
 				097313321B520A8700C9479E /* WxxConstants.m in Sources */,
 				097313331B520A8700C9479E /* SVHTTPClient.m in Sources */,
 				097313341B520A8700C9479E /* DDRange.m in Sources */,
@@ -7989,6 +8007,7 @@
 				097411EB1AF21151002BAFCA /* FMResultSet.m in Sources */,
 				097411EC1AF21151002BAFCA /* Base64.m in Sources */,
 				097411ED1AF21151002BAFCA /* HTTPServer.m in Sources */,
+				A8A7CD571C211339003F6FB9 /* BookDeleteView.m in Sources */,
 				097411EE1AF21151002BAFCA /* WxxConstants.m in Sources */,
 				097411EF1AF21151002BAFCA /* SVHTTPClient.m in Sources */,
 				097411F01AF21151002BAFCA /* DDRange.m in Sources */,
@@ -8221,6 +8240,7 @@
 				09E9BC4D1AFDA41F00CEB2DD /* FMResultSet.m in Sources */,
 				09E9BC4E1AFDA41F00CEB2DD /* Base64.m in Sources */,
 				09E9BC4F1AFDA41F00CEB2DD /* HTTPServer.m in Sources */,
+				A8A7CD581C211339003F6FB9 /* BookDeleteView.m in Sources */,
 				09E9BC501AFDA41F00CEB2DD /* WxxConstants.m in Sources */,
 				09E9BC511AFDA41F00CEB2DD /* SVHTTPClient.m in Sources */,
 				09E9BC521AFDA41F00CEB2DD /* DDRange.m in Sources */,

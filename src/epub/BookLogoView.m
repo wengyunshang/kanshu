@@ -63,7 +63,7 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(BookLogoView);
 }
 
 -(void)performSelectorHideSelf{
-//    [self performSelector:@selector(hideSelf) withObject:nil afterDelay:2.0];
+    [self performSelector:@selector(hideSelf) withObject:nil afterDelay:2.0];
 }
 -(void)hideSelf{
     [UIView animateWithDuration:1

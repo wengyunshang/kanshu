@@ -63,6 +63,14 @@
 
 #define kWxxErrorDomain @"网络错误"
 
+typedef enum{
+    blBianji,//编辑
+    blQuanxuan,//全选
+    blQuxiao,//取消
+    blShangchuan,//上传
+    
+}BooksListSelectType;
+
 //**********应用名称, 用来区分不同应用加载不同资源和数据库生成数据**********//
 typedef enum{
     BTbingyuhuozhige,//冰与火之歌

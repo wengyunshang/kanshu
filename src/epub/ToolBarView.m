@@ -61,14 +61,17 @@
     
 //    CGPoint point = [gestureRecognizer locationInView:self];
 //    [self hideSelf];
-    [self.bookLightView hideSelf];
-    [self.bookSetView hideSelf];
-    [self noLightBtn];
+    [self hideAll];
     
     if (self.delegate) {
         [self.delegate hideToolBarView];
     }
-    
+}
+
+-(void)hideAll{
+    [self.bookLightView hideSelf];
+    [self.bookSetView hideSelf];
+    [self noLightBtn];
 }
 
 -(void)initToolView{
@@ -175,6 +178,7 @@
 }
 
 -(void)back{
+    [self hideAll];
     [self sendObject:setToolBack];
 }
 -(void)fontBtn{

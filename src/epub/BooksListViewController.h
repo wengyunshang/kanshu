@@ -10,7 +10,7 @@
 //@property (nonatomic,retain) HttpServerViewController *httpServerViewController;
 @property(nonatomic,retain) NSMutableArray *booksArr;
 @property(nonatomic,retain) NSIndexPath *selectedIndexPath;
-
+@property(nonatomic,assign) BooksListSelectType blType;
 -(void)loadBooks;
 
 @end

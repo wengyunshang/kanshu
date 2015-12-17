@@ -19,6 +19,12 @@
 #define USER @"user"
 #define HISTORY @"history"
 #define FEEDBACK @"feedback"
+
+
+@interface PenSoundDao()
+@property (nonatomic,retain)NSMutableArray *delBookIdArr;//要删除的bookid列表
+@end
+
 @implementation PenSoundDao
 static PenSoundDao *_sharedPenSoundDao = nil; 
 /**
@@ -43,6 +49,53 @@ static PenSoundDao *_sharedPenSoundDao = nil;
     return self;
 }
 
+
+-(void)addDelBookIdToArr:(NSString*)bookId{
+    if (!self.delBookIdArr) {
+        self.delBookIdArr = [[[NSMutableArray alloc]init] autorelease];
+    }
+
+    [self.delBookIdArr addObject:bookId];
+    NSLog(@"%ld",[self.delBookIdArr count]);
+}
+
+-(void)removeDelBookIdFromArr:(NSString*)bookId{
+    if (self.delBookIdArr) {
+        [self.delBookIdArr removeObject:bookId];
+        if ([self.delBookIdArr count]<=0) {
+            [[NSNotificationCenter defaultCenter] postNotificationName:@"hideDeleteView" object:nil];
+        }
+    }
+    
+    NSLog(@"%ld",[self.delBookIdArr count]);
+}
+
+//删除选中的书籍
+-(void)deleteSelectedBookArr{
+    
+    for (int i=0; i<[self.delBookIdArr count]; i++) {
+        
+        [super getDOCDatabase:DBNAME];
+        
+        NSString *bookId = [self.delBookIdArr objectAtIndex:i];
+        NSDate *datenow = [NSDate date];//现在时间,你可以输出来看下是什么格式
+        NSString *timeSp = [NSString stringWithFormat:@"%ld", (long)[datenow timeIntervalSince1970]];
+        
+        NSString *sql = [NSString stringWithFormat:@"UPDATE %@ SET book_down = '%@',book_downloadtime = '%@' WHERE book_id = '%@'",
+                         BOOK,
+                         @"0",//设置为未下载
+                         timeSp, //本字段不加密，排序用
+                         bookId];
+        
+        [db executeUpdate:sql];
+        if ([db hadError]) {
+            //NSLog(@"更新错误 请到这里(updateScore:)断点测试");
+        }
+        [super closeDatabase];
+
+    }
+    
+}
 
 -(void)setMaxNum:(NSString*)classId{
     self.limitMaxNum = [self selectBookCount:classId];

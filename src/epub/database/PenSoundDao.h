@@ -59,6 +59,9 @@
 -(NSString*)selectUserIds:(NSString*)bookId;
 -(UserData*)selectUser:(NSString*)user_openIdarg;
 -(NSMutableArray*)selectBigClassList:(NSString*)fatherId;
+-(void)addDelBookIdToArr:(NSString*)bookId;
+-(void)removeDelBookIdFromArr:(NSString*)bookId;
+-(void)deleteSelectedBookArr;
 //-(NSMutableArray *)selectBottleContent4Id:(NSString*)bottleId;
 //-(NSString*)selectMaxBottleTime;
 //-(void)saveStarData:(StarData*)starData;

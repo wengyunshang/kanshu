@@ -23,7 +23,7 @@
 //        self.layer.cornerRadius = 6;
 //        self.layer.masksToBounds = YES;
         self.tableview = [[[UITableView alloc]initWithFrame:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height)] autorelease];
-        self.tableview.backgroundColor = [UIColor colorWithRed:0.0/255.0 green:0.0/255.0 blue:0.0/255.0 alpha:0.9];
+        self.tableview.backgroundColor = [UIColor colorWithRed:0.0/255.0 green:0.0/255.0 blue:0.0/255.0 alpha:0.98];
         self.tableview.dataSource = self;
         self.tableview.delegate = self;
         self.tableview.separatorStyle = UITableViewCellSeparatorStyleNone;

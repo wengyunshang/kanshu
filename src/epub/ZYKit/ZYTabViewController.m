@@ -80,6 +80,9 @@
 {
     [super viewDidLoad];
     [self setWantsFullScreenLayout:YES];
+    
+   
+
 //    [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationSlide];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(hideTabs:) name:@"hideTabs" object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(showTabs:) name:@"showTabs" object:nil];
@@ -375,30 +378,42 @@
 }
 
 -(void)hideTabs:(NSNotification *)notification{
-    if(!tabView.hidden){
-        CATransition *transition = [CATransition animation]; 
-        transition.duration = 1.0f;
-        transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
-        transition.type = @"rippleEffect";
-        transition.subtype = kCATransitionFromRight;
-        transition.delegate = self; 
-        [self.tabView.layer addAnimation:transition forKey:nil]; 
-        tabView.hidden = YES;
-    }
+//    if(!tabView.hidden){
+//        CATransition *transition = [CATransition animation]; 
+//        transition.duration = 1.0f;
+//        transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+//        transition.type = @"rippleEffect";
+//        transition.subtype = kCATransitionFromRight;
+//        transition.delegate = self; 
+//        [self.tabView.layer addAnimation:transition forKey:nil]; 
+//        tabView.hidden = YES;
+//    }
+    [UIView animateWithDuration:0.3 animations:^{
+        self.tabView.frame = CGRectMake(0, self.view.frame.size.height, self.view.frame.size.width, TABVIEW_HEIGHT);
+        self.contentView.frame = CGRectMake(0, 0, UIBounds.size.width, UIBounds.size.height);
+        [[viewControllers objectAtIndex:0] view].frame = self.contentView.frame;
+    }];
+    
+    
 }
        
 -(void)showTabs:(NSNotification *)notification{
-    if(tabView.hidden){
-        CATransition *transition = [CATransition animation]; 
-        transition.duration = 1.0f;
-        transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
-        transition.type = @"rippleEffect";
-        //@"cube" @"moveIn" @"reveal" @"fade"(default) @"pageCurl" @"pageUnCurl" @"suckEffect" @"rippleEffect" @"oglFlip" 
-        transition.subtype = kCATransitionFromRight;
-        transition.delegate = self; 
-        [self.tabView.layer addAnimation:transition forKey:nil]; 
-        tabView.hidden = NO;
-    }
+//    if(tabView.hidden){
+//        CATransition *transition = [CATransition animation]; 
+//        transition.duration = 1.0f;
+//        transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+//        transition.type = @"rippleEffect";
+//        //@"cube" @"moveIn" @"reveal" @"fade"(default) @"pageCurl" @"pageUnCurl" @"suckEffect" @"rippleEffect" @"oglFlip" 
+//        transition.subtype = kCATransitionFromRight;
+//        transition.delegate = self; 
+//        [self.tabView.layer addAnimation:transition forKey:nil]; 
+//        tabView.hidden = NO;
+//    }
+    [UIView animateWithDuration:0.3 animations:^{
+        self.tabView.frame = CGRectMake(0, self.view.frame.size.height-TABVIEW_HEIGHT, self.view.frame.size.width, TABVIEW_HEIGHT);
+        self.contentView.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height-TABVIEW_HEIGHT);
+        [[viewControllers objectAtIndex:0] view].frame = self.contentView.frame;
+    }];
 }
 
 - (void)viewWillAppear:(BOOL)animated

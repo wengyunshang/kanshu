@@ -13,6 +13,12 @@
 #import "ClassData.h"
 #import "SDImageView+SDWebCache.h"
 #import "BookData.h"
+
+@interface BookButton()
+@property (nonatomic,strong)UIImageView *delIconImgV;
+@property (nonatomic,assign)BOOL ynSelect;
+@end
+
 @implementation BookButton
 
 - (id)initWithFrame:(CGRect)frame{
@@ -20,15 +26,15 @@
     self = [super initWithFrame:frame];
     if (self) {
         
-        self.layer.borderColor = [[UIColor colorWithRed:205/255.f green:200/255.f blue:190/255.f alpha:1] CGColor];
-        self.layer.borderWidth = 0.5;
+//        self.layer.borderColor = [[UIColor colorWithRed:205/255.f green:200/255.f blue:190/255.f alpha:1] CGColor];
+//        self.layer.borderWidth = 0.5;
         self.layer.cornerRadius = 1;
         self.layer.shadowPath = [UIBezierPath bezierPathWithRoundedRect:self.bounds cornerRadius:0].CGPath;
         self.layer.shadowOffset = CGSizeMake(0.9, 1.0f);
         self.layer.shadowRadius = 1.5;
         self.layer.shadowColor = [UIColor blackColor].CGColor;
         self.layer.shadowOpacity = 0.3;
-
+        self.ynSelect = NO;
         
         self.bookImgV = [[[WxxImageView alloc]initWithFrame:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height)] autorelease];
         self.bookImgV.image = [ResourceHelper loadImageByTheme:cellImage];
@@ -74,17 +80,29 @@
     
     if (!_deleteBtn) {
         _deleteBtn = [[WxxButton alloc]initWithFrame:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height)];
-        _deleteBtn.backgroundColor = [UIColor colorWithRed:0/255.0 green:0/255.0 blue:0/255.0 alpha:0.5];
-        [_deleteBtn setTitle:@"删除" forState:UIControlStateNormal];
-        [_deleteBtn setTitleColor:[UIColor colorWithRed:0.0/255.0 green:121.0/255.0 blue:242.0/255.0 alpha:1.0] forState:UIControlStateNormal];
+        
+//        [_deleteBtn setTitle:@"删除" forState:UIControlStateNormal];
+//        [_deleteBtn setTitleColor:[UIColor colorWithRed:0.0/255.0 green:121.0/255.0 blue:242.0/255.0 alpha:1.0] forState:UIControlStateNormal];
 //        _deleteBtn.alpha = 0.4;
         [_deleteBtn addTarget:self action:@selector(deleteBook) forControlEvents:UIControlEventTouchUpInside];
 //        _deleteBtn.layer.cornerRadius = 3;
 //        _deleteBtn.layer.masksToBounds = YES;
         [self addSubview:_deleteBtn];
     }
-    [_deleteBtn setTitle:@"删除" forState:UIControlStateNormal];
-    [_deleteBtn setTitleColor:[UIColor colorWithRed:0.0/255.0 green:121.0/255.0 blue:242.0/255.0 alpha:1.0] forState:UIControlStateNormal];
+    if (!self.delIconImgV) {
+        UIImage *image = [ResourceHelper loadImageByTheme:@"v3_sj_quxiao"];
+        self.delIconImgV = [[[UIImageView alloc]initWithFrame:CGRectMake(CGRectGetWidth(_deleteBtn.frame)-image.size.width/3*2,
+                                                                         CGRectGetHeight(_deleteBtn.frame)-image.size.height/3*2,
+                                                                         image.size.width,
+                                                                         image.size.height)] autorelease];
+        
+        [_deleteBtn addSubview:self.delIconImgV];
+    }
+    self.ynSelect = NO;
+    self.delIconImgV.image = [ResourceHelper loadImageByTheme:@"v3_sj_quxiao"];
+    _deleteBtn.backgroundColor = [UIColor colorWithRed:0/255.0 green:0/255.0 blue:0/255.0 alpha:0.5];
+//    [_deleteBtn setTitle:@"删除" forState:UIControlStateNormal];
+//    [_deleteBtn setTitleColor:[UIColor colorWithRed:0.0/255.0 green:121.0/255.0 blue:242.0/255.0 alpha:1.0] forState:UIControlStateNormal];
     _deleteBtn.alpha = 0;
     [UIView animateWithDuration:0.5 animations:^{
         _deleteBtn.alpha = 1.0;
@@ -93,16 +111,50 @@
     }];
 }
 
+//设置书籍为选中状态
+-(void)setBookSelected{
+    self.ynSelect = NO;
+    [self deleteBook];
+}
+
 //删除指定书籍
 -(void)deleteBook{
-    if ([self.bookdata.bbook_down intValue]==1) {
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提示" message:[NSString stringWithFormat:@"是否删除《%@》?",self.bookdata.bbook_name]
-                                                       delegate:self cancelButtonTitle:@"确定" otherButtonTitles:@"取消", nil];
-        [alert show];
-        [alert release];
+    
+//    [self.bookdata.bbook_down intValue]==1
+    NSString *imgStr = @"v3_sj_xuan";
+    UIColor *btnColor =[UIColor clearColor];
+    if (!self.ynSelect) {
+        self.ynSelect = YES;
+        [[PenSoundDao sharedPenSoundDao]addDelBookIdToArr:self.bookdata.bbook_id];
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"showDeleteBottomView" object:nil];
     }else{
-        [[WxxPopView sharedInstance]showPopText:@"已删除"];
+        
+        self.ynSelect = NO;
+        imgStr = @"v3_sj_quxiao";
+        btnColor = [UIColor colorWithRed:0/255.0 green:0/255.0 blue:0/255.0 alpha:0.5];
+        [[PenSoundDao sharedPenSoundDao]removeDelBookIdFromArr:self.bookdata.bbook_id];
+//        [[WxxPopView sharedInstance]showPopText:@"已删除"];
     }
+    
+    [UIView animateWithDuration:0.2 animations:^{
+        self.delIconImgV.alpha = 0.5;
+    } completion:^(BOOL finished) {
+        self.delIconImgV.image = [ResourceHelper loadImageByTheme:imgStr];
+        self.deleteBtn.backgroundColor = btnColor;
+        [UIView animateWithDuration:0.2 animations:^{
+            self.delIconImgV.alpha = 1;
+        } completion:^(BOOL finished) {
+            
+        }];
+    }];
+    
+    
+//    [UIView animateKeyframesWithDuration:0.5 delay:nil options:nil animations:^{
+//        
+//        self.delIconImgV.alpha = 0.5;
+//    } completion:^(BOOL finished) {
+//        
+//    }];
     
 //    [[PenSoundDao sharedPenSoundDao]delBook4Id:bookData.bbook_id];//删除书本数据库信息
 }
@@ -118,6 +170,7 @@
 }
 
 -(void)hideDeleteBtn{
+    
     if (self.deleteBtn) {
         [UIView animateWithDuration:0.5 animations:^{
             _deleteBtn.alpha = 0.0;
@@ -128,23 +181,28 @@
 }
   
 -(void)reflashDataInfo{
-    BOOL locked = [[[NSUserDefaults standardUserDefaults] objectForKey:@"saveflow"] boolValue];
-    NSString *url = self.bookdata.bbook_doubanlogo;//[[ClassData sharedClassData]getLogoPrefix:self.bookdata.bbook_coverurl];
-    NSString *gao7gao8url = [[ClassData sharedClassData]getgao7gao8LogoPrefix:self.bookdata.bbook_id];
-    NSLog(@"%@",gao7gao8url);
     
+    BOOL locked = [[[NSUserDefaults standardUserDefaults] objectForKey:@"saveflow"] boolValue];
+    
+    //logo采用双URL机制，优先考虑gao7服务器， 如果gao7上还没有，读取默认设置服务器的图片
+    
+    NSString *url = [[ClassData sharedClassData]getLogoPrefix:self.bookdata.bbook_coverurl];
+    NSString *gao7gao8url = [[ClassData sharedClassData]getgao7gao8LogoPrefix:self.bookdata.bbook_id];
+    NSString *url3 = self.bookdata.bbook_doubanlogo;
+    NSLog(@"%@",gao7gao8url);
+    //    if (booktype == BTGulong || booktype == BTjingdu || booktype == BTHanhan || booktype == BTmoyan || booktype == BTzhangailin || booktype == BTqiongyao || booktype == BTWolongsheng || booktype == BTHuangyi) {//静读时光采用豆瓣logo
+    //        url = gao7gao8url;
+    //        gao7gao8url = self.bookData.bbook_doubanlogo;
+    //    }
+    //    NSLog(@"gao7::::%@",gao7gao8url);
     if (locked) {
         gao7gao8url = nil;
         url = nil;
-    } 
-//    self.bookImgV.url2 = [NSURL URLWithString:url];
-    if ([url length]>20) {
-        [self.bookImgV setImageWithURL:[NSURL URLWithString:gao7gao8url] url2:[NSURL URLWithString:url] refreshCache:NO placeholderImage:[ResourceHelper loadImageByTheme:cellImage]]; //图标
-        
-    }else{
-        [self.bookImgV setImageWithURL:[NSURL URLWithString:gao7gao8url] refreshCache:NO placeholderImage:[ResourceHelper loadImageByTheme:cellImage]];
-        
     }
+    self.bookImgV.url2 = [NSURL URLWithString:url];
+    [self.bookImgV setImageWithURL:[NSURL URLWithString:gao7gao8url] url2:[NSURL URLWithString:url3] refreshCache:NO placeholderImage:[ResourceHelper loadImageByTheme:cellImage]]; //图标
+    
+    
     self.bookTitleLb.text = self.bookdata.bbook_name;
     [self.bookTitleLb reset2Frame];
     

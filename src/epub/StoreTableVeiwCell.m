@@ -263,6 +263,7 @@
     
     self.bookIdLb.text = row;
     [self.bookIdLb resetLineFrame];
+    
     BOOL locked = [[[NSUserDefaults standardUserDefaults] objectForKey:@"saveflow"] boolValue];
 
     //logo采用双URL机制，优先考虑gao7服务器， 如果gao7上还没有，读取默认设置服务器的图片

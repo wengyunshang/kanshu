@@ -22,6 +22,6 @@
 -(void)reflashDataInfo;
 -(void)showDeleteBtn;
 -(void)hideDeleteBtn;
-
+-(void)setBookSelected;
 - (void)setupBookCoverImage:(UIImage *)image;
 @end

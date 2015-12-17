@@ -10,12 +10,18 @@
 #import "BookView.h" 
 #import "BookButton.h"
 #import <QuartzCore/QuartzCore.h>
+#define dbvheight 60
+
+#define barquanxuan @"全选"
+#define barbianji @"编辑"
+#define barshangchuan @"上传"
+#define barquxiao @"取消"
+
 @interface BooksListViewController(){
 BOOL _isNeedOpen;
 }
 @property (nonatomic,strong)CAGradientLayer *gradientLayer;
-@property (nonatomic,assign)BOOL ynDel;
-
+@property (nonatomic,strong)UIView *deleteBottomView;
 @property (nonatomic,strong)UITableView *tableView;
 @end
 
@@ -61,27 +67,26 @@ BOOL _isNeedOpen;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.ynDel = NO;
-    UIBarButtonItem *leftBtn = [[UIBarButtonItem alloc]
-                                initWithTitle:@"整理"
-                                style:UIBarButtonItemStyleDone
-                                target:self
-                                action:@selector(deleteBook)];
-    [leftBtn setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIFont fontWithName:@"STHeitiSC-Light" size:16], NSFontAttributeName,nil]
-                           forState:UIControlStateNormal];
-    self.navigationItem.rightBarButtonItem = leftBtn;
-    [leftBtn release];
-    
-    
     UIBarButtonItem *rightBtn = [[UIBarButtonItem alloc]
-                                initWithTitle:@"上传"
+                                initWithTitle:barbianji
                                 style:UIBarButtonItemStyleDone
                                 target:self
-                                action:@selector(uploaddBook)];
+                                action:@selector(rightBarItemClick)];
     [rightBtn setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIFont fontWithName:@"STHeitiSC-Light" size:16], NSFontAttributeName,nil]
                            forState:UIControlStateNormal];
-    self.navigationItem.leftBarButtonItem = rightBtn;
+    self.navigationItem.rightBarButtonItem = rightBtn;
     [rightBtn release];
+    
+    
+    UIBarButtonItem *leftBtn = [[UIBarButtonItem alloc]
+                                initWithTitle:barshangchuan
+                                style:UIBarButtonItemStyleDone
+                                target:self
+                                action:@selector(leftBarItemClick)];
+    [leftBtn setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIFont fontWithName:@"STHeitiSC-Light" size:16], NSFontAttributeName,nil]
+                           forState:UIControlStateNormal];
+    self.navigationItem.leftBarButtonItem = leftBtn;
+    [leftBtn release];
     
     //    [self initQQAd];
     self.edgesForExtendedLayout = UIRectEdgeNone;
@@ -97,6 +102,9 @@ BOOL _isNeedOpen;
     //    self.tableView.userInteractionEnabled = NO;
     [self.view addSubview:self.tableView];
     
+    
+    self.tableView.tableHeaderView = [[[UIView alloc]initWithFrame:CGRectMake(0, 0, UIBounds.size.width, 15)] autorelease];
+    
     _gradientLayer = [CAGradientLayer layer];  // 设置渐变效果
     _gradientLayer.frame = CGRectMake(0, 0, self.view.frame.size.width, 5);
     _gradientLayer.colors = [NSArray arrayWithObjects:
@@ -108,18 +116,60 @@ BOOL _isNeedOpen;
     _gradientLayer.hidden = YES;
     [self.view.layer addSublayer:_gradientLayer];
     
-//    _bookView = [[BookView alloc] initWithFrame:CGRectMake(50, 50, 86, 108)];
-//    UIImage *image = [UIImage imageNamed:@"sw.jpg"];
-//    [_bookView setupBookCoverImage:image];
-//    
-//    UIGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(openBooks)];
-//    
-//    [_bookView addGestureRecognizer:tapGesture];
-//    
-//    [self.view addSubview:_bookView];
     _isNeedOpen = YES;
 }
 
+-(void)showDeleteBottomView{
+    
+    if (!self.deleteBottomView) {
+        self.deleteBottomView = [[[UIView alloc]initWithFrame:CGRectMake(0, self.view.frame.size.height, self.view.frame.size.width, dbvheight)] autorelease];
+        self.deleteBottomView.backgroundColor = [UIColor colorWithRed:0/255.0 green:0/255.0 blue:0/255.0 alpha:0.6];
+        [self.view addSubview:self.deleteBottomView];
+        
+
+        UIButton *delBtn = [[UIButton alloc]init];
+        delBtn.backgroundColor = [UIColor colorWithRed:198/255.0 green:65/255.0 blue:45/255.0 alpha:1];
+        [delBtn setTitle:@"删除" forState:UIControlStateNormal];
+        [delBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        delBtn.layer.cornerRadius = 3;
+        delBtn.layer.masksToBounds = YES;
+        [self.deleteBottomView addSubview:delBtn];
+        [delBtn release];
+        [delBtn addTarget:self action:@selector(delSelectedBookArr) forControlEvents:UIControlEventTouchUpInside];
+        delBtn.translatesAutoresizingMaskIntoConstraints = NO;
+        
+        [self.deleteBottomView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-10-[delBtn]-10-|" options:0 metrics:@{@"height":@(40)} views:NSDictionaryOfVariableBindings(delBtn)]];
+        [self.deleteBottomView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-20-[delBtn]-20-|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(delBtn)]];
+//        [self.toolView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-0-[fontbtn(height)]-0-|" options:0 metrics:@{@"height":@(btnwidth)} views:NSDictionaryOfVariableBindings(fontbtn)]];
+//        [self.toolView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-0-[chapterListButton(height)]-0-|" options:0 metrics:@{@"height":@(btnwidth)} views:NSDictionaryOfVariableBindings(chapterListButton)]];
+//        [self.toolView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-0-[backBtn(height)]-0-|" options:0 metrics:@{@"height":@(btnwidth)} views:NSDictionaryOfVariableBindings(backBtn)]];
+    }
+    if (CGRectGetMinY(self.deleteBottomView.frame)>=self.view.frame.size.height) {
+        [UIView animateWithDuration:0.5 animations:^{
+            self.deleteBottomView.frame = CGRectMake(0, self.view.frame.size.height-dbvheight, self.view.frame.size.width, dbvheight);
+        }completion:^(BOOL finished){
+            
+        }];
+    }
+}
+-(void)hideDeleteView{
+    
+    if (CGRectGetMinY(self.deleteBottomView.frame)<self.view.frame.size.height) {
+        [UIView animateWithDuration:0.5 animations:^{
+            self.deleteBottomView.frame = CGRectMake(0, self.view.frame.size.height, self.view.frame.size.width, dbvheight);
+        }completion:^(BOOL finished){
+            [self.deleteBottomView removeFromSuperview];
+            self.deleteBottomView = nil;
+        }];
+    }
+}
+
+-(void)delSelectedBookArr{
+    [[PenSoundDao sharedPenSoundDao]deleteSelectedBookArr];
+    self.booksArr = [[PenSoundDao sharedPenSoundDao]selectMyBookList:yesDown];
+    [self leftBarItemClick]; //删除后需要退出删除界面
+    [self.tableView reloadData];
+}
 
 - (void)openBooks
 {
@@ -150,28 +200,56 @@ BOOL _isNeedOpen;
     
 }
 
--(void)uploaddBook{
-[[NSNotificationCenter defaultCenter] postNotificationName:@"startHttpServer" object:nil];
-}
 
--(void)deleteBook{
-    
-    
-    
-    if (self.ynDel) {
-        self.navigationItem.rightBarButtonItem.title = @"编辑";
-        self.navigationItem.rightBarButtonItem.tintColor = [UIColor colorWithRed:0.0/255.0 green:121.0/255.0 blue:242.0/255.0 alpha:1.0];
-        self.ynDel = NO;
+
+-(void)leftBarItemClick{
+
+    if ([self.navigationItem.leftBarButtonItem.title isEqualToString:barshangchuan]) {
+        self.blType = blShangchuan;
+            //上传
+            [[NSNotificationCenter defaultCenter] postNotificationName:@"startHttpServer" object:nil];
+        
+    }else{
+        self.blType = blQuxiao;
+        //取消删除界面
+        [self hideDeleteView];
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"showTabs" object:nil];
+        self.navigationItem.rightBarButtonItem.title = barbianji;
+        self.navigationItem.leftBarButtonItem.title = barshangchuan;
         self.booksArr = [[PenSoundDao sharedPenSoundDao]selectMyBookList:yesDown];
         [self.tableView reloadData];
-    }else{
-        self.navigationItem.rightBarButtonItem.title = @"完成";
-        self.navigationItem.rightBarButtonItem.tintColor = [UIColor redColor];
-        self.ynDel = YES;
-        
-        [self.tableView reloadData];
     }
-//
+    
+}
+
+-(void)rightBarItemClick{
+    
+    //如果按钮是"编辑"文字点击，跳到删除界面
+    NSLog(@"%@",self.navigationItem.rightBarButtonItem.title);
+    if ([self.navigationItem.rightBarButtonItem.title isEqualToString:barbianji]) {
+        self.blType = blBianji;
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"hideTabs" object:nil];
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(showDeleteBottomView) name:@"showDeleteBottomView" object:nil];
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(hideDeleteView) name:@"hideDeleteView" object:nil];
+
+        
+        self.navigationItem.rightBarButtonItem.title = barquanxuan;
+        self.navigationItem.leftBarButtonItem.title = barquxiao;
+        [self.tableView reloadData];
+    }else{
+        
+        //如果按钮是"全选"文字点击，全部选择书本
+        
+        //***************代码不可以改变顺序＊＊＊＊＊／／
+        self.blType = blQuanxuan;
+
+        [self.tableView reloadData];
+        
+        [self showDeleteBottomView];
+    }
+        
+    
+ 
     
 }
 
@@ -257,7 +335,7 @@ BOOL _isNeedOpen;
 #pragma mark - Table view data source
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    return bookHeight +30;
+    return bookHeight +20;
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -314,10 +392,16 @@ BOOL _isNeedOpen;
     }else{
         [cell setBookData3:nil];
     }
-    if (self.ynDel) {
-        [cell showDelBtn];
-    }else{
-        [cell hideDelBtn];
+    if (self.blType == blBianji || self.blType == blQuxiao) {
+        if ([self.navigationItem.rightBarButtonItem.title isEqualToString:barquanxuan]) {
+            [cell showDelBtn];
+        }else{
+            [cell hideDelBtn];
+        }
+    }else if (self.blType == blQuanxuan){
+        
+        //设置全部书籍选中
+        [cell setBookSelected];
     }
     //    [cell setCellInfo:bookData];
     //    int row = [self.booksArr count] -  indexPath.row - 1;//倒序显示

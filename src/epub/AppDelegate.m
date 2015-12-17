@@ -24,6 +24,7 @@
 #import "BookData.h"
 #import "StoreClassViewController.h"
 #import "Reachability.h"
+#import "BookDeleteView.h"
 #if __QQAPI_ENABLE__
 #import "TencentOpenAPI/QQApiInterface.h"
 #import "QQAPIDemoEntry.h"
@@ -139,7 +140,8 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-   
+    
+    
     [NSThread sleepForTimeInterval:1];
     [[UIApplication sharedApplication] setStatusBarHidden:NO withAnimation:UIStatusBarAnimationSlide];
     [application registerForRemoteNotificationTypes:
@@ -233,12 +235,16 @@
 //    [v addSubview:eve];
     [self.window makeKeyAndVisible];
     
-    
-
+     
+//    [self showDeleteView];
     return YES;
 }
 
-
+-(void)showDeleteView{
+    
+    BookDeleteView *delView = [[BookDeleteView alloc]initWithFrame:CGRectMake(0, UIBounds.size.height-50, UIBounds.size.width, 50)];
+    [self.window.rootViewController.view addSubview:delView];
+}
 
 -(void)getBigClassId{
 
@@ -487,6 +493,9 @@
     
 //    [[UIApplication sharedApplication] setStatusBarHidden:NO withAnimation:UIStatusBarAnimationSlide];
 }
+
+
+
 -(void)startHttpServer{
     [MobClick event:@"uploadbefor"];
     if (!self.httpServerViewController) {

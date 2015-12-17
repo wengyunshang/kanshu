@@ -90,6 +90,13 @@
     return self;
 }
 
+-(void)setBookSelected{
+    
+    [_bookButton setBookSelected];
+    [_bookButton2 setBookSelected];
+    [_bookButton3 setBookSelected];
+}
+
 -(void)showDelBtn{
     [_bookButton showDeleteBtn];
     [_bookButton2 showDeleteBtn];
@@ -100,6 +107,8 @@
     [_bookButton2 hideDeleteBtn];
     [_bookButton3 hideDeleteBtn];
 }
+ 
+
 -(void)setBookData1:(BookData*)bookdata{
     if (bookdata) {
                 _bookButton.hidden = NO;

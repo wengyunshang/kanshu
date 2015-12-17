@@ -23,4 +23,6 @@
 
 -(void)showDelBtn;
 -(void)hideDelBtn;
+
+-(void)setBookSelected;
 @end
