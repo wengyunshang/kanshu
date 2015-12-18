@@ -106,7 +106,7 @@
         fontNames =[[NSArray alloc]initWithArray:[UIFont fontNamesForFamilyName:[familyNames objectAtIndex:indFamily]]];
         for(indFont=0; indFont<[fontNames count]; ++indFont)
         {
-//            NSLog(@"    Font name: %@",[fontNames objectAtIndex:indFont]);
+            NSLog(@"    Font name: %@",[fontNames objectAtIndex:indFont]);
         }
         [fontNames release];
     }
@@ -140,6 +140,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    [self fonename];
     
     
     [NSThread sleepForTimeInterval:1];
@@ -148,7 +149,7 @@
      UIRemoteNotificationTypeAlert
      | UIRemoteNotificationTypeBadge
      | UIRemoteNotificationTypeSound];
-    
+  
      [AFKReviewTroller load];
     //前提条件
 //    _epubParser=[[EPUBParser alloc] init];

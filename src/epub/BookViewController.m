@@ -1005,10 +1005,14 @@
     NSString *colorStr = [[NSUserDefaults standardUserDefaults]objectForKey:bodyColor];
     NSString *fontorg = [[NSUserDefaults standardUserDefaults]objectForKey:bodyFontOrg];
     currentTextSize = [[[NSUserDefaults standardUserDefaults]objectForKey:bodyFont] intValue];
+    NSString *fammly = [[NSUserDefaults standardUserDefaults]objectForKey:bodyFammly];
+    if (!fammly) {
+        fammly = @"HelveticaNeue-Light";
+    }
     if (!colorStr) {colorStr = @"#000";}
     if (!fontorg) {fontorg = @"1.6";}
     if (currentTextSize <= 0) {currentTextSize = textFontDefault;}
-    NSString *string = [NSString stringWithFormat:@"addCSSRule('body', 'color:%@;font-weight:normal;font-size:%dpx;-webkit-text-size-adjust: none;line-height:%@em;')",colorStr,currentTextSize,fontorg];
+    NSString *string = [NSString stringWithFormat:@"addCSSRule('body', 'color:%@;font-weight:normal;font-size:%dpx;-webkit-text-size-adjust: none;line-height:%@em;font-family:\"%@\"')",colorStr,currentTextSize,fontorg,fammly];
     self.setTextSizeRule = string;
 }
 
@@ -1028,11 +1032,30 @@
     self.backView.backgroundColor = backColor;
 }
 
+-(void)setHtmlFammly:(NSString *)fammly{
+    [[NSUserDefaults standardUserDefaults]setObject:fammly forKey:bodyFammly];
+    [self setTextSizeRuleValue];
+    //设置html的字体颜色，大小
+    [self.webView stringByEvaluatingJavaScriptFromString:self.setTextSizeRule];
+}
+
 //根据类型设置背景和字体颜色
 -(void)setViewBackGroundColor:(setSelectType)type{
     UIColor *color = [UIColor whiteColor];
     switch (type) {
         case setSelectNull:
+            break;
+            
+        case setSelectXitongHeiti:
+            //            FZS3JW--GB1-0 细体              FZFSJW--GB1-0 粗体
+            [self setHtmlFammly:fammlyXitongHeiti];
+            break;
+        case setSelectSongti:
+//            FZS3JW--GB1-0 细体              FZFSJW--GB1-0 粗体
+            [self setHtmlFammly:fammlySongti];
+            break;
+        case setSelectSiyuanHeiti:
+            [self setHtmlFammly:fammlySiyuanHeiti];
             break;
         case setSelectLineOrg1:
             [[NSUserDefaults standardUserDefaults]setObject:@"1.6" forKey:bodyFontOrg];

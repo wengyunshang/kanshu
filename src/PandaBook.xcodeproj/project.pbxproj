@@ -2689,6 +2689,33 @@
 		09FAAF141ABC186A00052667 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 09FAAF131ABC186A00052667 /* libicucore.dylib */; };
 		09FAAF161ABC18F000052667 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09FAAF151ABC18F000052667 /* Accounts.framework */; };
 		09FAAF181ABC18FE00052667 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09FAAF171ABC18FE00052667 /* Social.framework */; };
+		A826E59D1C23F757005E0AEB /* fang_zheng_fang_song_jian_ti.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A826E5971C23F757005E0AEB /* fang_zheng_fang_song_jian_ti.ttf */; };
+		A826E59E1C23F757005E0AEB /* fang_zheng_song_san_jian_ti.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A826E5981C23F757005E0AEB /* fang_zheng_song_san_jian_ti.ttf */; };
+		A826E59F1C23F757005E0AEB /* icon_font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A826E5991C23F757005E0AEB /* icon_font.ttf */; };
+		A826E5A01C23F757005E0AEB /* Lora-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A826E59A1C23F757005E0AEB /* Lora-Italic.ttf */; };
+		A826E5A11C23F757005E0AEB /* Lora-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A826E59B1C23F757005E0AEB /* Lora-Regular.ttf */; };
+		A826E5A21C23F757005E0AEB /* si_yuan_hei_ti.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A826E59C1C23F757005E0AEB /* si_yuan_hei_ti.ttf */; };
+		A826E5A31C23FB03005E0AEB /* si_yuan_hei_ti.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A826E59C1C23F757005E0AEB /* si_yuan_hei_ti.ttf */; };
+		A826E5A41C23FB03005E0AEB /* si_yuan_hei_ti.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A826E59C1C23F757005E0AEB /* si_yuan_hei_ti.ttf */; };
+		A826E5A51C23FB04005E0AEB /* si_yuan_hei_ti.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A826E59C1C23F757005E0AEB /* si_yuan_hei_ti.ttf */; };
+		A826E5A61C23FB04005E0AEB /* si_yuan_hei_ti.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A826E59C1C23F757005E0AEB /* si_yuan_hei_ti.ttf */; };
+		A826E5A71C23FB05005E0AEB /* si_yuan_hei_ti.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A826E59C1C23F757005E0AEB /* si_yuan_hei_ti.ttf */; };
+		A826E5A81C23FB05005E0AEB /* si_yuan_hei_ti.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A826E59C1C23F757005E0AEB /* si_yuan_hei_ti.ttf */; };
+		A826E5A91C23FB06005E0AEB /* si_yuan_hei_ti.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A826E59C1C23F757005E0AEB /* si_yuan_hei_ti.ttf */; };
+		A826E5AA1C23FB0C005E0AEB /* fang_zheng_fang_song_jian_ti.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A826E5971C23F757005E0AEB /* fang_zheng_fang_song_jian_ti.ttf */; };
+		A826E5AB1C23FB0C005E0AEB /* fang_zheng_fang_song_jian_ti.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A826E5971C23F757005E0AEB /* fang_zheng_fang_song_jian_ti.ttf */; };
+		A826E5AC1C23FB0D005E0AEB /* fang_zheng_fang_song_jian_ti.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A826E5971C23F757005E0AEB /* fang_zheng_fang_song_jian_ti.ttf */; };
+		A826E5AD1C23FB0D005E0AEB /* fang_zheng_fang_song_jian_ti.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A826E5971C23F757005E0AEB /* fang_zheng_fang_song_jian_ti.ttf */; };
+		A826E5AE1C23FB0E005E0AEB /* fang_zheng_fang_song_jian_ti.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A826E5971C23F757005E0AEB /* fang_zheng_fang_song_jian_ti.ttf */; };
+		A826E5AF1C23FB0E005E0AEB /* fang_zheng_fang_song_jian_ti.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A826E5971C23F757005E0AEB /* fang_zheng_fang_song_jian_ti.ttf */; };
+		A826E5B01C23FB0E005E0AEB /* fang_zheng_fang_song_jian_ti.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A826E5971C23F757005E0AEB /* fang_zheng_fang_song_jian_ti.ttf */; };
+		A826E5B11C23FB12005E0AEB /* fang_zheng_song_san_jian_ti.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A826E5981C23F757005E0AEB /* fang_zheng_song_san_jian_ti.ttf */; };
+		A826E5B21C23FB13005E0AEB /* fang_zheng_song_san_jian_ti.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A826E5981C23F757005E0AEB /* fang_zheng_song_san_jian_ti.ttf */; };
+		A826E5B31C23FB13005E0AEB /* fang_zheng_song_san_jian_ti.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A826E5981C23F757005E0AEB /* fang_zheng_song_san_jian_ti.ttf */; };
+		A826E5B41C23FB14005E0AEB /* fang_zheng_song_san_jian_ti.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A826E5981C23F757005E0AEB /* fang_zheng_song_san_jian_ti.ttf */; };
+		A826E5B51C23FB14005E0AEB /* fang_zheng_song_san_jian_ti.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A826E5981C23F757005E0AEB /* fang_zheng_song_san_jian_ti.ttf */; };
+		A826E5B61C23FB14005E0AEB /* fang_zheng_song_san_jian_ti.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A826E5981C23F757005E0AEB /* fang_zheng_song_san_jian_ti.ttf */; };
+		A826E5B71C23FB15005E0AEB /* fang_zheng_song_san_jian_ti.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A826E5981C23F757005E0AEB /* fang_zheng_song_san_jian_ti.ttf */; };
 		A8377B381C1A7145004871AB /* BookView.m in Sources */ = {isa = PBXBuildFile; fileRef = A8377B351C1A7145004871AB /* BookView.m */; };
 		A8377B391C1A7145004871AB /* BookView.m in Sources */ = {isa = PBXBuildFile; fileRef = A8377B351C1A7145004871AB /* BookView.m */; };
 		A8377B3A1C1A7145004871AB /* BookView.m in Sources */ = {isa = PBXBuildFile; fileRef = A8377B351C1A7145004871AB /* BookView.m */; };
@@ -3530,6 +3557,12 @@
 		26D9C476157CA77600756CB2 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		26D9C478157CA79500756CB2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		26D9C47A157CA7DB00756CB2 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		A826E5971C23F757005E0AEB /* fang_zheng_fang_song_jian_ti.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = fang_zheng_fang_song_jian_ti.ttf; sourceTree = "<group>"; };
+		A826E5981C23F757005E0AEB /* fang_zheng_song_san_jian_ti.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = fang_zheng_song_san_jian_ti.ttf; sourceTree = "<group>"; };
+		A826E5991C23F757005E0AEB /* icon_font.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = icon_font.ttf; sourceTree = "<group>"; };
+		A826E59A1C23F757005E0AEB /* Lora-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lora-Italic.ttf"; sourceTree = "<group>"; };
+		A826E59B1C23F757005E0AEB /* Lora-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lora-Regular.ttf"; sourceTree = "<group>"; };
+		A826E59C1C23F757005E0AEB /* si_yuan_hei_ti.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = si_yuan_hei_ti.ttf; sourceTree = "<group>"; };
 		A8377B341C1A7145004871AB /* BookView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookView.h; sourceTree = "<group>"; };
 		A8377B351C1A7145004871AB /* BookView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookView.m; sourceTree = "<group>"; };
 		A8377B361C1A7145004871AB /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
@@ -5408,6 +5441,12 @@
 		26D9C403157CA68000756CB2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A826E5971C23F757005E0AEB /* fang_zheng_fang_song_jian_ti.ttf */,
+				A826E5981C23F757005E0AEB /* fang_zheng_song_san_jian_ti.ttf */,
+				A826E5991C23F757005E0AEB /* icon_font.ttf */,
+				A826E59A1C23F757005E0AEB /* Lora-Italic.ttf */,
+				A826E59B1C23F757005E0AEB /* Lora-Regular.ttf */,
+				A826E59C1C23F757005E0AEB /* si_yuan_hei_ti.ttf */,
 				09C19DAD1BAC4FEB0050685E /* xijuan */,
 				09F003771B53F6E400DBB558 /* guoguo */,
 				09E9BD101AFDA53600CEB2DD /* mingxiaoxi */,
@@ -5724,6 +5763,7 @@
 				09005F9A1BA9AE72006CE2EF /* blueArrow.png in Resources */,
 				09C19E4F1BADA3910050685E /* 16496.epub in Resources */,
 				09005F9B1BA9AE72006CE2EF /* UMContactViewController.xib in Resources */,
+				A826E5B71C23FB15005E0AEB /* fang_zheng_song_san_jian_ti.ttf in Resources */,
 				09005F9C1BA9AE72006CE2EF /* item_cancel_selected@2x.png in Resources */,
 				09005FC61BA9AF7B006CE2EF /* xijuan.xcassets in Resources */,
 				09005F9D1BA9AE72006CE2EF /* umFeedback.bundle in Resources */,
@@ -5740,6 +5780,7 @@
 				09005FA01BA9AE72006CE2EF /* send_selected@2x.png in Resources */,
 				09C19E4A1BADA3910050685E /* 16491.epub in Resources */,
 				09C19E301BADA3910050685E /* 16465.epub in Resources */,
+				A826E5B01C23FB0E005E0AEB /* fang_zheng_fang_song_jian_ti.ttf in Resources */,
 				09C19E371BADA3910050685E /* 16472.epub in Resources */,
 				09005FA11BA9AE72006CE2EF /* nav_btn_bg.png in Resources */,
 				09C19E3F1BADA3910050685E /* 16480.epub in Resources */,
@@ -5761,6 +5802,7 @@
 				09C19E081BADA3910050685E /* 16425.epub in Resources */,
 				09C19E3E1BADA3910050685E /* 16479.epub in Resources */,
 				09C19E571BADA3910050685E /* 16504.epub in Resources */,
+				A826E5A91C23FB06005E0AEB /* si_yuan_hei_ti.ttf in Resources */,
 				09C19E1A1BADA3910050685E /* 16443.epub in Resources */,
 				09C19E141BADA3910050685E /* 16437.epub in Resources */,
 				09C19E061BADA3910050685E /* 16423.epub in Resources */,
@@ -5828,6 +5870,7 @@
 				09117F1A1AD5769300932491 /* blueArrow@2x.png in Resources */,
 				0961092F1AD64DAE0096E54D /* 三体全集.epub in Resources */,
 				09117F1C1AD5769300932491 /* InfoPlist555.strings in Resources */,
+				A826E5AA1C23FB0C005E0AEB /* fang_zheng_fang_song_jian_ti.ttf in Resources */,
 				097411191AF1F892002BAFCA /* wxx.css in Resources */,
 				09117F241AD5769300932491 /* send@2x.png in Resources */,
 				09117F261AD5769300932491 /* Localizable.strings in Resources */,
@@ -5841,8 +5884,10 @@
 				09117F341AD5769300932491 /* UMContactViewController.xib in Resources */,
 				09117F351AD5769300932491 /* item_cancel_selected@2x.png in Resources */,
 				09117F361AD5769300932491 /* umFeedback.bundle in Resources */,
+				A826E5A31C23FB03005E0AEB /* si_yuan_hei_ti.ttf in Resources */,
 				09117F381AD5769300932491 /* notification_warring@2x.png in Resources */,
 				09117F3A1AD5769300932491 /* themes in Resources */,
+				A826E5B11C23FB12005E0AEB /* fang_zheng_song_san_jian_ti.ttf in Resources */,
 				09117F3C1AD5769300932491 /* send_selected@2x.png in Resources */,
 				09117F3D1AD5769300932491 /* nav_btn_bg.png in Resources */,
 				09117F3F1AD5769300932491 /* notification_success@2x.png in Resources */,
@@ -5898,6 +5943,7 @@
 				A8D62ACA1BF1E4C100972F6E /* guoguo-Info.plist in Resources */,
 				0948CB551AB48C43003F7EAB /* messages_tableview_background.png in Resources */,
 				0948CB581AB48C43003F7EAB /* item_cancel@2x.png in Resources */,
+				A826E5A21C23F757005E0AEB /* si_yuan_hei_ti.ttf in Resources */,
 				096109221AD61C430096E54D /* 权力的游戏.jpg in Resources */,
 				0948CB5B1AB48C43003F7EAB /* item_ok@2x.png in Resources */,
 				0948CB5C1AB48C43003F7EAB /* nav_bar_bg@2x.png in Resources */,
@@ -5913,6 +5959,7 @@
 				0948CB681AB48C43003F7EAB /* themes in Resources */,
 				0964DD001ADBD33400A956AD /* ZipArchive.podspec in Resources */,
 				0948CB6A1AB48C43003F7EAB /* send_selected@2x.png in Resources */,
+				A826E59E1C23F757005E0AEB /* fang_zheng_song_san_jian_ti.ttf in Resources */,
 				0948CB6B1AB48C43003F7EAB /* nav_btn_bg.png in Resources */,
 				096109211AD61C430096E54D /* 列王的纷争.jpg in Resources */,
 				0948CB6D1AB48C43003F7EAB /* notification_success@2x.png in Resources */,
@@ -5923,11 +5970,14 @@
 				0948CB7D1AB48C43003F7EAB /* icon_rightArrow@2x.png in Resources */,
 				096109251AD61C430096E54D /* 第二卷列王的纷争.epub in Resources */,
 				0948CB7E1AB48C43003F7EAB /* book.sqlite in Resources */,
+				A826E59F1C23F757005E0AEB /* icon_font.ttf in Resources */,
 				0948CB801AB48C43003F7EAB /* nav_btn_bg@2x.png in Resources */,
 				A8D62ACD1BF1E4C100972F6E /* mingxiaoxi-Info.plist in Resources */,
 				0948CB821AB48C43003F7EAB /* messages_right_bubble@2x.png in Resources */,
 				0948CB831AB48C43003F7EAB /* nav_btn_bg_lighted@2x.png in Resources */,
+				A826E5A01C23F757005E0AEB /* Lora-Italic.ttf in Resources */,
 				09F5728B1AC5B3C300A0815A /* About.txt in Resources */,
+				A826E59D1C23F757005E0AEB /* fang_zheng_fang_song_jian_ti.ttf in Resources */,
 				0948CB841AB48C43003F7EAB /* item_ok_selected@2x.png in Resources */,
 				0948CB881AB48C43003F7EAB /* messages_toolbar_background.png in Resources */,
 				A8D62AD11BF1E4C100972F6E /* waiguomingzhu-Info.plist in Resources */,
@@ -5937,6 +5987,7 @@
 				0948CB8C1AB48C43003F7EAB /* notification_warring.png in Resources */,
 				0948CB8E1AB48C43003F7EAB /* icon_rightArrow_selected@2x.png in Resources */,
 				0948CB901AB48C43003F7EAB /* background@2x.png in Resources */,
+				A826E5A11C23F757005E0AEB /* Lora-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5945,6 +5996,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0964DC091ADBD27E00A956AD /* Refresh-icon.png in Resources */,
+				A826E5A41C23FB03005E0AEB /* si_yuan_hei_ti.ttf in Resources */,
 				0964DC0A1ADBD27E00A956AD /* messages_toolbar_background@2x.png in Resources */,
 				0964DC0B1ADBD27E00A956AD /* notification_success.png in Resources */,
 				0964DC0C1ADBD27E00A956AD /* README.txt in Resources */,
@@ -5960,6 +6012,7 @@
 				0964DC141ADBD27E00A956AD /* messages_tableview_background.png in Resources */,
 				0964DC151ADBD27E00A956AD /* item_cancel@2x.png in Resources */,
 				0964DC161ADBD27E00A956AD /* item_ok@2x.png in Resources */,
+				A826E5AB1C23FB0C005E0AEB /* fang_zheng_fang_song_jian_ti.ttf in Resources */,
 				0964DC171ADBD27E00A956AD /* nav_bar_bg@2x.png in Resources */,
 				0964DC181ADBD27E00A956AD /* UMFeedbackViewController.xib in Resources */,
 				0964DC191ADBD27E00A956AD /* blueArrow.png in Resources */,
@@ -5980,6 +6033,7 @@
 				0964DC271ADBD27E00A956AD /* icon_rightArrow@2x.png in Resources */,
 				0964DC281ADBD27E00A956AD /* 魔龙的狂舞.jpg in Resources */,
 				0964DC291ADBD27E00A956AD /* book.sqlite in Resources */,
+				A826E5B21C23FB13005E0AEB /* fang_zheng_song_san_jian_ti.ttf in Resources */,
 				0964DC2A1ADBD27E00A956AD /* nav_btn_bg@2x.png in Resources */,
 				0964DC2B1ADBD27E00A956AD /* messages_right_bubble@2x.png in Resources */,
 				0964DC2C1ADBD27E00A956AD /* 第五卷魔龙的狂舞.epub in Resources */,
@@ -6017,12 +6071,14 @@
 				0964DE2D1ADFCC7700A956AD /* messages_tableview_background.png in Resources */,
 				0964DE2E1ADFCC7700A956AD /* item_cancel@2x.png in Resources */,
 				0964DE2F1ADFCC7700A956AD /* item_ok@2x.png in Resources */,
+				A826E5A51C23FB04005E0AEB /* si_yuan_hei_ti.ttf in Resources */,
 				0964DE321ADFCC7700A956AD /* nav_bar_bg@2x.png in Resources */,
 				0964DE341ADFCC7700A956AD /* UMFeedbackViewController.xib in Resources */,
 				0964DE351ADFCC7700A956AD /* blueArrow.png in Resources */,
 				0964DE6C1AE0091E00A956AD /* 第五卷魔龙的狂舞.epub in Resources */,
 				0964DE6F1AE0091E00A956AD /* 魔龙的狂舞.jpg in Resources */,
 				0964DE361ADFCC7700A956AD /* UMContactViewController.xib in Resources */,
+				A826E5AC1C23FB0D005E0AEB /* fang_zheng_fang_song_jian_ti.ttf in Resources */,
 				0964DE371ADFCC7700A956AD /* item_cancel_selected@2x.png in Resources */,
 				0964DE381ADFCC7700A956AD /* umFeedback.bundle in Resources */,
 				0964DE691AE0091E00A956AD /* 第一卷权力的游戏.epub in Resources */,
@@ -6043,6 +6099,7 @@
 				0964DE441ADFCC7700A956AD /* 魔龙的狂舞.jpg in Resources */,
 				0964DE451ADFCC7700A956AD /* book.sqlite in Resources */,
 				0964DE461ADFCC7700A956AD /* nav_btn_bg@2x.png in Resources */,
+				A826E5B31C23FB13005E0AEB /* fang_zheng_song_san_jian_ti.ttf in Resources */,
 				0964DE681AE0091E00A956AD /* 权力的游戏.jpg in Resources */,
 				0964DE6D1AE0091E00A956AD /* 第四卷群鸦的盛宴.epub in Resources */,
 				0964DE471ADFCC7700A956AD /* messages_right_bubble@2x.png in Resources */,
@@ -6067,6 +6124,7 @@
 				0973136E1B520A8700C9479E /* messages_toolbar_background@2x.png in Resources */,
 				0973136F1B520A8700C9479E /* 16331.epub in Resources */,
 				097313701B520A8700C9479E /* notification_success.png in Resources */,
+				A826E5B61C23FB14005E0AEB /* fang_zheng_song_san_jian_ti.ttf in Resources */,
 				097313711B520A8700C9479E /* 16357.epub in Resources */,
 				097313721B520A8700C9479E /* 16329.epub in Resources */,
 				097313731B520A8700C9479E /* 16343.epub in Resources */,
@@ -6102,6 +6160,7 @@
 				097313911B520A8700C9479E /* 16338.epub in Resources */,
 				097313921B520A8700C9479E /* 16375.epub in Resources */,
 				097313931B520A8700C9479E /* 16396.epub in Resources */,
+				A826E5AF1C23FB0E005E0AEB /* fang_zheng_fang_song_jian_ti.ttf in Resources */,
 				097313941B520A8700C9479E /* 16347.epub in Resources */,
 				097313961B520A8700C9479E /* 16337.epub in Resources */,
 				097313971B520A8700C9479E /* nav_bar_bg@2x.png in Resources */,
@@ -6170,6 +6229,7 @@
 				097313D41B520A8700C9479E /* 16385.epub in Resources */,
 				097313D51B520A8700C9479E /* 16379.epub in Resources */,
 				097313D61B520A8700C9479E /* 16360.epub in Resources */,
+				A826E5A81C23FB05005E0AEB /* si_yuan_hei_ti.ttf in Resources */,
 				097313D71B520A8700C9479E /* 16384.epub in Resources */,
 				097313D81B520A8700C9479E /* 16327.epub in Resources */,
 				097313D91B520A8700C9479E /* 16392.epub in Resources */,
@@ -6207,6 +6267,7 @@
 				0974122A1AF21151002BAFCA /* notification_success.png in Resources */,
 				097412DC1AF21CB2002BAFCA /* 16357.epub in Resources */,
 				097412C01AF21CB2002BAFCA /* 16329.epub in Resources */,
+				A826E5AD1C23FB0D005E0AEB /* fang_zheng_fang_song_jian_ti.ttf in Resources */,
 				097412CE1AF21CB2002BAFCA /* 16343.epub in Resources */,
 				097412E61AF21CB2002BAFCA /* 16367.epub in Resources */,
 				0974122C1AF21151002BAFCA /* README.txt in Resources */,
@@ -6238,6 +6299,7 @@
 				097412C91AF21CB2002BAFCA /* 16338.epub in Resources */,
 				097412EE1AF21CB2002BAFCA /* 16375.epub in Resources */,
 				097413031AF21CB2002BAFCA /* 16396.epub in Resources */,
+				A826E5B41C23FB14005E0AEB /* fang_zheng_song_san_jian_ti.ttf in Resources */,
 				097412D21AF21CB2002BAFCA /* 16347.epub in Resources */,
 				097412C81AF21CB2002BAFCA /* 16337.epub in Resources */,
 				0974123C1AF21151002BAFCA /* nav_bar_bg@2x.png in Resources */,
@@ -6284,6 +6346,7 @@
 				097412D01AF21CB2002BAFCA /* 16345.epub in Resources */,
 				097412C41AF21CB2002BAFCA /* 16333.epub in Resources */,
 				097412511AF21151002BAFCA /* icon_rightArrow@2x.png in Resources */,
+				A826E5A61C23FB04005E0AEB /* si_yuan_hei_ti.ttf in Resources */,
 				097413071AF21CB2002BAFCA /* 16400.epub in Resources */,
 				097412EA1AF21CB2002BAFCA /* 16371.epub in Resources */,
 				097412C71AF21CB2002BAFCA /* 16336.epub in Resources */,
@@ -6335,6 +6398,7 @@
 			files = (
 				09E9BD2E1AFDAEA400CEB2DD /* 16415.epub in Resources */,
 				09E9BC8B1AFDA41F00CEB2DD /* Refresh-icon.png in Resources */,
+				A826E5AE1C23FB0E005E0AEB /* fang_zheng_fang_song_jian_ti.ttf in Resources */,
 				09E9BC8C1AFDA41F00CEB2DD /* messages_toolbar_background@2x.png in Resources */,
 				09E9BC8E1AFDA41F00CEB2DD /* notification_success.png in Resources */,
 				09E9BC931AFDA41F00CEB2DD /* README.txt in Resources */,
@@ -6344,6 +6408,7 @@
 				09E9BC961AFDA41F00CEB2DD /* umeng_logo.png in Resources */,
 				09E9BC9B1AFDA41F00CEB2DD /* blueArrow@2x.png in Resources */,
 				09E9BC9E1AFDA41F00CEB2DD /* InfoPlist555.strings in Resources */,
+				A826E5B51C23FB14005E0AEB /* fang_zheng_song_san_jian_ti.ttf in Resources */,
 				09E9BC9F1AFDA41F00CEB2DD /* send@2x.png in Resources */,
 				09E9BD231AFDAEA400CEB2DD /* 16404.epub in Resources */,
 				09E9BD2F1AFDAEA400CEB2DD /* 16416.epub in Resources */,
@@ -6353,6 +6418,7 @@
 				09E9BCA31AFDA41F00CEB2DD /* readme.txt in Resources */,
 				09E9BCA41AFDA41F00CEB2DD /* messages_tableview_background.png in Resources */,
 				09E9BD241AFDAEA400CEB2DD /* 16405.epub in Resources */,
+				A826E5A71C23FB05005E0AEB /* si_yuan_hei_ti.ttf in Resources */,
 				09E9BCA61AFDA41F00CEB2DD /* item_cancel@2x.png in Resources */,
 				09E9BCA91AFDA41F00CEB2DD /* item_ok@2x.png in Resources */,
 				09E9BCB51AFDA41F00CEB2DD /* nav_bar_bg@2x.png in Resources */,

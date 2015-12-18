@@ -103,6 +103,9 @@ typedef enum{
 //*******
 typedef enum{
     setSelectNull,
+    setSelectSongti,
+    setSelectSiyuanHeiti,
+    setSelectXitongHeiti,
     setSelectAddFont, //加大文字
     setSelectDelFont, //缩小文字
     setSelectLineOrg1,//板式1
@@ -158,7 +161,16 @@ typedef enum{
 #define bodyFont @"bodyFont"
 #define bodyColor @"bodyColor"
 #define bodyFontOrg @"bodyFontOrg"
+#define bodyFammly @"bodyfammly"
 #define selectTypeKey @"selectType"
+
+
+#define fammlySiyuanHeiti @"SourceHanSansCN-Normal"
+//            FZS3JW--GB1-0 细体              FZFSJW--GB1-0 粗体
+#define fammlySongti @"FZFSJW--GB1-0"
+#define fammlyXitongHeiti @"Helvetica-Light"
+
+
 #define bookWidth 80
 #define bookHeight bookWidth*8/6
 #define bookOgrx (UIBounds.size.width-bookWidth*3)/4

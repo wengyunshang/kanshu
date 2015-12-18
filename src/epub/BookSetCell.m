@@ -52,7 +52,7 @@
     float btnHeight = 30;
     float btnWidth = 45;
     
-    WxxButton *songBtn = [[WxxButton alloc] initWithTouchLightFrame:CGRectMake(CGRectGetMaxX(self.titleLabel.frame)+5,(cellHeight-btnHeight)/2, btnWidth, btnHeight)];
+    WxxButton *songBtn = [[WxxButton alloc] initWithTouchLightFrame:CGRectMake(CGRectGetMaxX(self.titleLabel.frame),(cellHeight-btnHeight)/2, btnWidth, btnHeight)];
     songBtn.layer.cornerRadius = songBtn.frame.size.height/2;
     songBtn.layer.borderColor = [UIColor whiteColor].CGColor;
     songBtn.backgroundColor = [UIColor clearColor];
@@ -62,6 +62,82 @@
     songBtn.layer.borderWidth = 1;
     [self.contentView addSubview:songBtn];
     [songBtn release];
+    
+    WxxButton *siyuanheiBtn = [[WxxButton alloc] initWithTouchLightFrame:CGRectMake(CGRectGetMaxX(songBtn.frame)+15,(cellHeight-btnHeight)/2, 60, btnHeight)];
+    siyuanheiBtn.layer.cornerRadius = songBtn.frame.size.height/2;
+    siyuanheiBtn.layer.borderColor = [UIColor whiteColor].CGColor;
+    siyuanheiBtn.backgroundColor = [UIColor clearColor];
+    siyuanheiBtn.titleLabel.font = [UIFont systemFontOfSize:13];
+    [siyuanheiBtn setTitle:@"思源黑体" forState:UIControlStateNormal];
+    siyuanheiBtn.titleLabel.textColor = [UIColor whiteColor];
+    siyuanheiBtn.layer.borderWidth = 1;
+    [self.contentView addSubview:siyuanheiBtn];
+    [siyuanheiBtn release];
+    
+    WxxButton *defaultBtn = [[WxxButton alloc] initWithTouchLightFrame:CGRectMake(CGRectGetMaxX(siyuanheiBtn.frame)+15,(cellHeight-btnHeight)/2, 60, btnHeight)];
+    defaultBtn.layer.cornerRadius = songBtn.frame.size.height/2;
+    defaultBtn.layer.borderColor = [UIColor whiteColor].CGColor;
+    defaultBtn.backgroundColor = [UIColor clearColor];
+    defaultBtn.titleLabel.font = [UIFont systemFontOfSize:13];
+    [defaultBtn setTitle:@"系统黑体" forState:UIControlStateNormal];
+    defaultBtn.titleLabel.textColor = [UIColor whiteColor];
+    defaultBtn.layer.borderWidth = 1;
+    [self.contentView addSubview:defaultBtn];
+    [defaultBtn release];
+    
+    siyuanheiBtn.alpha = 0.5;
+    songBtn.alpha = 0.5;
+    defaultBtn.alpha = 0.5;
+
+   NSString *sss =  [[NSUserDefaults standardUserDefaults]objectForKey:bodyFammly];
+    if ([sss isEqualToString:fammlySiyuanHeiti]) {
+        siyuanheiBtn.alpha = 1;
+    }else if ([sss isEqualToString:fammlySongti]){
+        songBtn.alpha = 1;
+    }else if ([sss isEqualToString:fammlyXitongHeiti]){
+        defaultBtn.alpha = 1;
+    }
+    
+    
+    [defaultBtn receiveObject:^(id object) {
+                [UIView animateWithDuration:0.2f delay:0.f options:UIViewAnimationOptionCurveEaseInOut animations:^{
+                    songBtn.alpha = 0.5;
+                    siyuanheiBtn.alpha = 0.5;
+                    defaultBtn.alpha = 0.4;
+                } completion:^(BOOL finished) {
+                    [UIView animateWithDuration:0.2f delay:0.f options:UIViewAnimationOptionCurveEaseInOut animations:^{
+                        defaultBtn.alpha = 1;
+                    } completion:^(BOOL finished) {
+                    }];
+                }];
+        [self sendObject:setSelectXitongHeiti];
+    }];
+    [songBtn receiveObject:^(id object) {
+        [UIView animateWithDuration:0.2f delay:0.f options:UIViewAnimationOptionCurveEaseInOut animations:^{
+            songBtn.alpha = 0.4;
+            siyuanheiBtn.alpha = 0.5;
+            defaultBtn.alpha = 0.5;
+        } completion:^(BOOL finished) {
+            [UIView animateWithDuration:0.2f delay:0.f options:UIViewAnimationOptionCurveEaseInOut animations:^{
+                songBtn.alpha = 1;
+            } completion:^(BOOL finished) {
+            }];
+        }];
+        [self sendObject:setSelectSongti];
+    }];
+    [siyuanheiBtn receiveObject:^(id object) {
+        [UIView animateWithDuration:0.2f delay:0.f options:UIViewAnimationOptionCurveEaseInOut animations:^{
+            songBtn.alpha = 0.5;
+            siyuanheiBtn.alpha = 0.4;
+            defaultBtn.alpha = 0.5;
+        } completion:^(BOOL finished) {
+            [UIView animateWithDuration:0.2f delay:0.f options:UIViewAnimationOptionCurveEaseInOut animations:^{
+                siyuanheiBtn.alpha = 1;
+            } completion:^(BOOL finished) {
+            }];
+        }];
+        [self sendObject:setSelectSiyuanHeiti];
+    }];
 }
 
 //字体
