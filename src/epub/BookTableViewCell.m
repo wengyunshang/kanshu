@@ -91,10 +91,15 @@
 }
 
 -(void)setBookSelected{
-    
-    [_bookButton setBookSelected];
-    [_bookButton2 setBookSelected];
-    [_bookButton3 setBookSelected];
+    if (_bookButton) {
+        [_bookButton setBookSelected];
+    }
+    if (_bookButton2) {
+        [_bookButton2 setBookSelected];
+    }
+    if (_bookButton3) {
+        [_bookButton3 setBookSelected];
+    } 
 }
 
 -(void)showDelBtn{

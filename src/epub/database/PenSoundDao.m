@@ -51,6 +51,9 @@ static PenSoundDao *_sharedPenSoundDao = nil;
 
 
 -(void)addDelBookIdToArr:(NSString*)bookId{
+    if (!bookId) {
+        return;
+    }
     if (!self.delBookIdArr) {
         self.delBookIdArr = [[[NSMutableArray alloc]init] autorelease];
     }
