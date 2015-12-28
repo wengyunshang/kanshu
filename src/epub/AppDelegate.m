@@ -140,7 +140,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [self fonename];
+//    [self fonename];
     
     
     [NSThread sleepForTimeInterval:1];
@@ -150,7 +150,7 @@
      | UIRemoteNotificationTypeBadge
      | UIRemoteNotificationTypeSound];
   
-     [AFKReviewTroller load];
+     [AFKReviewTroller load];//评论
     //前提条件
 //    _epubParser=[[EPUBParser alloc] init];
     [MobClick checkUpdate];
@@ -313,7 +313,7 @@
                         saiyuappid,@"id",
                         nil]
             completion:^(id response, NSHTTPURLResponse *urlResponse, NSError *errors) {
-                if (errors) {
+                if (errors) { 
                     return;
                 }
                 if (response) {

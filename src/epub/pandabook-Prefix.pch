@@ -31,7 +31,7 @@
 #define booktype  BTXiaoxiong
 //---------------更多好书 加载的分类----------------
 #define bookClass bookXiaoxiong //穿越
-
+#define bigClassValue @"44"
 //-------------------umengSDK--------------------
 #define UMENG_APPKEY @"55166c26fd98c589220002e7"
 
@@ -46,8 +46,8 @@
 //-------------------赛于广告---------------------
 #define saiyuappid  @"1022"
 #define saiyuappkey  @"7c891a392f506d9bf1716665d282f8ed"
- #define __TencentDemoAppid_  @"1103280748"
- 
+#define __TencentDemoAppid_  @"1103280748"
+
 #define DOWNLOAD_URL     @"https://itunes.apple.com/us/app/you-yue/id657763987?ls=1&mt=8"
 #define HOST             @"http://serve.bracecloud.com/"
 #define URI_INDEX        @"ureader/index.html"

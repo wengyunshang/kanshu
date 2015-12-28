@@ -4,6 +4,16 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>iceandfier.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>jingdushiguang.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
 		<key>pandaBook.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -58,6 +68,11 @@
 			<true/>
 		</dict>
 		<key>09E9BB811AFDA41F00CEB2DD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A8EB2EE71C2939990061200C</key>
 		<dict>
 			<key>primary</key>
 			<true/>

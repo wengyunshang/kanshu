@@ -28,12 +28,12 @@
 //#define APP_ID           657763987  s1Tw8MgM8Ld27YQltmgbbrSy
 #define DBNAME @""
 //魔女天骄美人志
-#define booktype  BTjingdu
+#define booktype  BTXiaoxiong
 //---------------更多好书 加载的分类----------------
-#define bookClass bookJingdu //穿越
-#define bigClassValue @"10000"
+#define bookClass bookXiaoxiong //穿越
+#define bigClassValue @"44"
 //-------------------umengSDK--------------------
-#define UMENG_APPKEY @"53e8ab97fd98c566bd00bb34"
+#define UMENG_APPKEY @"55166c26fd98c589220002e7"
 
 #define YSHOWAD 1 //是
 #define NSHOWAD 0 //否
@@ -41,13 +41,13 @@
 #define YNSHOWGOOLEAD  YSHOWAD //是否开启 google 广告,  广告开关
 
 //*****************google广告**********************
-#define admobId  @"ca-app-pub-5914587552835750/4616238422"
-#define admobPageId @"ca-app-pub-5914587552835750/6562762027" //插页
+#define admobId  @"ca-app-pub-5914587552835750/2658420424"
+#define admobPageId @"ca-app-pub-5914587552835750/1181687226" //插页
 //-------------------赛于广告---------------------
-#define saiyuappid  @"1009"
-#define saiyuappkey  @"8705e5996d454edf6f252e9710dacedd"
- #define __TencentDemoAppid_  @"1103280748"
- 
+#define saiyuappid  @"1022"
+#define saiyuappkey  @"7c891a392f506d9bf1716665d282f8ed"
+#define __TencentDemoAppid_  @"1103280748"
+
 #define DOWNLOAD_URL     @"https://itunes.apple.com/us/app/you-yue/id657763987?ls=1&mt=8"
 #define HOST             @"http://serve.bracecloud.com/"
 #define URI_INDEX        @"ureader/index.html"

@@ -292,11 +292,9 @@
 		09005FA61BA9AE72006CE2EF /* web in Resources */ = {isa = PBXBuildFile; fileRef = 26D4E284175A5EDD0036163C /* web */; };
 		09005FA71BA9AE72006CE2EF /* ZipArchive.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 0964DCA81ADBD33400A956AD /* ZipArchive.podspec */; };
 		09005FA81BA9AE72006CE2EF /* icon_rightArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 099F769818EDA8560018F836 /* icon_rightArrow@2x.png */; };
-		09005FA91BA9AE72006CE2EF /* 魔龙的狂舞.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0964D5E41AD920CB00A956AD /* 魔龙的狂舞.jpg */; };
 		09005FAA1BA9AE72006CE2EF /* book.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 090E59C918CAF5550041AE4E /* book.sqlite */; };
 		09005FAB1BA9AE72006CE2EF /* nav_btn_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 099F76A718EDA8560018F836 /* nav_btn_bg@2x.png */; };
 		09005FAD1BA9AE72006CE2EF /* messages_right_bubble@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 099F769F18EDA8560018F836 /* messages_right_bubble@2x.png */; };
-		09005FAF1BA9AE72006CE2EF /* 第五卷魔龙的狂舞.epub in Resources */ = {isa = PBXBuildFile; fileRef = 0964D5E71AD9217D00A956AD /* 第五卷魔龙的狂舞.epub */; };
 		09005FB11BA9AE72006CE2EF /* nav_btn_bg_lighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 099F76A818EDA8560018F836 /* nav_btn_bg_lighted@2x.png */; };
 		09005FB21BA9AE72006CE2EF /* About.txt in Resources */ = {isa = PBXBuildFile; fileRef = 09F572631AC5B3C300A0815A /* About.txt */; };
 		09005FB41BA9AE72006CE2EF /* item_ok_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 099F769D18EDA8560018F836 /* item_ok_selected@2x.png */; };
@@ -831,13 +829,11 @@
 		0964D5DF1AD90B0700A956AD /* SearchResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0964D5DE1AD90B0700A956AD /* SearchResultViewController.m */; };
 		0964D5E01AD90B0700A956AD /* SearchResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0964D5DE1AD90B0700A956AD /* SearchResultViewController.m */; };
 		0964D5E51AD920CB00A956AD /* 魔龙的狂舞.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0964D5E41AD920CB00A956AD /* 魔龙的狂舞.jpg */; };
-		0964D5E61AD920CB00A956AD /* 魔龙的狂舞.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0964D5E41AD920CB00A956AD /* 魔龙的狂舞.jpg */; };
 		0964D5E81AD9217D00A956AD /* 第五卷魔龙的狂舞.epub in Resources */ = {isa = PBXBuildFile; fileRef = 0964D5E71AD9217D00A956AD /* 第五卷魔龙的狂舞.epub */; };
-		0964D5E91AD9217D00A956AD /* 第五卷魔龙的狂舞.epub in Resources */ = {isa = PBXBuildFile; fileRef = 0964D5E71AD9217D00A956AD /* 第五卷魔龙的狂舞.epub */; };
 		0964DB1A1ADBD27E00A956AD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 26D9C408157CA68000756CB2 /* main.m */; };
 		0964DB1B1ADBD27E00A956AD /* StoreNothingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0964705E1AC05D7F001A5E94 /* StoreNothingCell.m */; };
 		0964DB1C1ADBD27E00A956AD /* UIImageView+Curled.m in Sources */ = {isa = PBXBuildFile; fileRef = 0962B20518C35F3700E60CE7 /* UIImageView+Curled.m */; };
-		0964DB1D1ADBD27E00A956AD /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F572611AC5B3C300A0815A /* GCDAsyncSocket.m */; };
+		0964DB1D1ADBD27E00A956AD /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F572611AC5B3C300A0815A /* GCDAsyncSocket.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		0964DB1E1ADBD27E00A956AD /* BookFeedBackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0978FDF919C1E263000E2CF9 /* BookFeedBackViewController.m */; };
 		0964DB1F1ADBD27E00A956AD /* SDDataCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 0962B1BE18C35E2F00E60CE7 /* SDDataCache.m */; };
 		0964DB201ADBD27E00A956AD /* SDNetworkActivityIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0962B1C218C35E2F00E60CE7 /* SDNetworkActivityIndicator.m */; };
@@ -846,11 +842,11 @@
 		0964DB231ADBD27E00A956AD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 26D9C40C157CA68000756CB2 /* AppDelegate.m */; };
 		0964DB241ADBD27E00A956AD /* WxxAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 099390B918EEEED700200D71 /* WxxAlertView.m */; };
 		0964DB251ADBD27E00A956AD /* UserUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 0931121B191E67EF00D01DB0 /* UserUtil.m */; };
-		0964DB261ADBD27E00A956AD /* HTTPRedirectResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F572501AC5B3C300A0815A /* HTTPRedirectResponse.m */; };
-		0964DB271ADBD27E00A956AD /* MultipartFormDataParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F5723F1AC5B3C300A0815A /* MultipartFormDataParser.m */; };
+		0964DB261ADBD27E00A956AD /* HTTPRedirectResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F572501AC5B3C300A0815A /* HTTPRedirectResponse.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		0964DB271ADBD27E00A956AD /* MultipartFormDataParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F5723F1AC5B3C300A0815A /* MultipartFormDataParser.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		0964DB281ADBD27E00A956AD /* ChaptersListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26D9C417157CA68B00756CB2 /* ChaptersListViewController.m */; };
 		0964DB291ADBD27E00A956AD /* BigClassData.m in Sources */ = {isa = PBXBuildFile; fileRef = 0948CBB81AB58638003F7EAB /* BigClassData.m */; };
-		0964DB2A1ADBD27E00A956AD /* HTTPAuthenticationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F572341AC5B3C300A0815A /* HTTPAuthenticationRequest.m */; };
+		0964DB2A1ADBD27E00A956AD /* HTTPAuthenticationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F572341AC5B3C300A0815A /* HTTPAuthenticationRequest.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		0964DB2B1ADBD27E00A956AD /* UMFeedbackTableViewCellLeft.m in Sources */ = {isa = PBXBuildFile; fileRef = 099F76B018EDA8560018F836 /* UMFeedbackTableViewCellLeft.m */; };
 		0964DB2C1ADBD27E00A956AD /* Chapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 26D9C41D157CA68B00756CB2 /* Chapter.m */; };
 		0964DB2D1ADBD27E00A956AD /* UIWebView+SearchWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 26D9C433157CA6E400756CB2 /* UIWebView+SearchWebView.m */; };
@@ -860,7 +856,7 @@
 		0964DB351ADBD27E00A956AD /* EvLineProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09C99C0C190AB04A000AC711 /* EvLineProgressView.m */; };
 		0964DB371ADBD27E00A956AD /* MKStoreObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E48A2318E804F4007781B8 /* MKStoreObserver.m */; };
 		0964DB381ADBD27E00A956AD /* UserData.m in Sources */ = {isa = PBXBuildFile; fileRef = FD6FF4B0199DE9A100E3101D /* UserData.m */; };
-		0964DB391ADBD27E00A956AD /* HTTPConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F572361AC5B3C300A0815A /* HTTPConnection.m */; };
+		0964DB391ADBD27E00A956AD /* HTTPConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F572361AC5B3C300A0815A /* HTTPConnection.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		0964DB3A1ADBD27E00A956AD /* BookLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 265A8751157F47ED00EFF497 /* BookLoader.m */; };
 		0964DB3B1ADBD27E00A956AD /* BookSetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E0DD2B191F73A300B850D0 /* BookSetCell.m */; };
 		0964DB3C1ADBD27E00A956AD /* JMStaticContentTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D123911913583C00032E84 /* JMStaticContentTableViewCell.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
@@ -877,7 +873,7 @@
 		0964DB471ADBD27E00A956AD /* AnimationHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 26AB158D158063600055A2BD /* AnimationHelper.m */; };
 		0964DB481ADBD27E00A956AD /* AppData.m in Sources */ = {isa = PBXBuildFile; fileRef = 093FA373197A989C00FD1C60 /* AppData.m */; };
 		0964DB491ADBD27E00A956AD /* AuthHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 26AB158F158063600055A2BD /* AuthHelper.m */; };
-		0964DB4A1ADBD27E00A956AD /* HTTPErrorResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F5724C1AC5B3C300A0815A /* HTTPErrorResponse.m */; };
+		0964DB4A1ADBD27E00A956AD /* HTTPErrorResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F5724C1AC5B3C300A0815A /* HTTPErrorResponse.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		0964DB4C1ADBD27E00A956AD /* CacheHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 26AB1591158063600055A2BD /* CacheHelper.m */; };
 		0964DB4D1ADBD27E00A956AD /* EncryptHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 26AB1593158063600055A2BD /* EncryptHelper.m */; };
 		0964DB4E1ADBD27E00A956AD /* ReStoreTableVeiwCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0921ECFC19975475007FCF55 /* ReStoreTableVeiwCell.m */; };
@@ -886,16 +882,16 @@
 		0964DB511ADBD27E00A956AD /* HttpHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 26AB1597158063600055A2BD /* HttpHelper.m */; };
 		0964DB521ADBD27E00A956AD /* BookInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A5C94D19BC8D3200096582 /* BookInfoView.m */; };
 		0964DB531ADBD27E00A956AD /* AFKReviewTroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 09CC687818E9B173009F7B6C /* AFKReviewTroller.m */; };
-		0964DB541ADBD27E00A956AD /* HTTPDataResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F572481AC5B3C300A0815A /* HTTPDataResponse.m */; };
+		0964DB541ADBD27E00A956AD /* HTTPDataResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F572481AC5B3C300A0815A /* HTTPDataResponse.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		0964DB551ADBD27E00A956AD /* WxxBookSelect.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D598CB18F6534E00A65505 /* WxxBookSelect.m */; };
-		0964DB561ADBD27E00A956AD /* MultipartMessageHeaderField.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F572431AC5B3C300A0815A /* MultipartMessageHeaderField.m */; };
+		0964DB561ADBD27E00A956AD /* MultipartMessageHeaderField.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F572431AC5B3C300A0815A /* MultipartMessageHeaderField.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		0964DB571ADBD27E00A956AD /* ClassData.m in Sources */ = {isa = PBXBuildFile; fileRef = 09261DCB19547DC000A75A0A /* ClassData.m */; };
 		0964DB581ADBD27E00A956AD /* StoreClassCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0952B7051A234E7A00EE837B /* StoreClassCell.m */; };
 		0964DB591ADBD27E00A956AD /* BookTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 09835E6518E406ED00EE3B15 /* BookTableViewCell.m */; };
 		0964DB5A1ADBD27E00A956AD /* WxxTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09077ED818E51603004D743C /* WxxTableView.m */; };
-		0964DB5B1ADBD27E00A956AD /* HTTPDynamicFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F5724A1AC5B3C300A0815A /* HTTPDynamicFileResponse.m */; };
+		0964DB5B1ADBD27E00A956AD /* HTTPDynamicFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F5724A1AC5B3C300A0815A /* HTTPDynamicFileResponse.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		0964DB5C1ADBD27E00A956AD /* MessageHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 26AB1599158063600055A2BD /* MessageHelper.m */; };
-		0964DB5D1ADBD27E00A956AD /* DAVResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F572581AC5B3C300A0815A /* DAVResponse.m */; };
+		0964DB5D1ADBD27E00A956AD /* DAVResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F572581AC5B3C300A0815A /* DAVResponse.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		0964DB5E1ADBD27E00A956AD /* ResourceHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 26AB159B158063600055A2BD /* ResourceHelper.m */; };
 		0964DB5F1ADBD27E00A956AD /* WxxBaseData.m in Sources */ = {isa = PBXBuildFile; fileRef = 090E59B718CAF3920041AE4E /* WxxBaseData.m */; };
 		0964DB601ADBD27E00A956AD /* SysHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 26AB159D158063600055A2BD /* SysHelper.m */; };
@@ -923,30 +919,30 @@
 		0964DB761ADBD27E00A956AD /* WxxDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 0962B1CF18C35E2F00E60CE7 /* WxxDatePicker.m */; };
 		0964DB771ADBD27E00A956AD /* WebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F572521AC5B3C300A0815A /* WebSocket.m */; };
 		0964DB781ADBD27E00A956AD /* WxxView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0962B1DF18C35E2F00E60CE7 /* WxxView.m */; };
-		0964DB791ADBD27E00A956AD /* DDAbstractDatabaseLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F572651AC5B3C300A0815A /* DDAbstractDatabaseLogger.m */; };
+		0964DB791ADBD27E00A956AD /* DDAbstractDatabaseLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F572651AC5B3C300A0815A /* DDAbstractDatabaseLogger.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		0964DB7A1ADBD27E00A956AD /* UIView+Blur.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F7EB701A2743DE006D5C16 /* UIView+Blur.m */; };
-		0964DB7B1ADBD27E00A956AD /* DDASLLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F572671AC5B3C300A0815A /* DDASLLogger.m */; };
+		0964DB7B1ADBD27E00A956AD /* DDASLLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F572671AC5B3C300A0815A /* DDASLLogger.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		0964DB7C1ADBD27E00A956AD /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 26AB15B9158063600055A2BD /* JSONKit.m */; };
 		0964DB7D1ADBD27E00A956AD /* HudDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26AB15BD158063600055A2BD /* HudDemoViewController.m */; };
 		0964DB7E1ADBD27E00A956AD /* SVHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 09212A0018C3351400D7E36D /* SVHTTPRequest.m */; };
 		0964DB7F1ADBD27E00A956AD /* MKStoreManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E48A2118E804F4007781B8 /* MKStoreManager.m */; };
-		0964DB801ADBD27E00A956AD /* DELETEResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F5725A1AC5B3C300A0815A /* DELETEResponse.m */; };
+		0964DB801ADBD27E00A956AD /* DELETEResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F5725A1AC5B3C300A0815A /* DELETEResponse.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		0964DB811ADBD27E00A956AD /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 26AB15BF158063600055A2BD /* MBProgressHUD.m */; };
 		0964DB821ADBD27E00A956AD /* UIView+Shadow.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B0A8D918E45EDE0066BEDB /* UIView+Shadow.m */; };
 		0964DB831ADBD27E00A956AD /* JMStaticContentTableViewSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D123951913583C00032E84 /* JMStaticContentTableViewSection.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		0964DB841ADBD27E00A956AD /* KWPopoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E0DD22191F530700B850D0 /* KWPopoverView.m */; };
 		0964DB851ADBD27E00A956AD /* BookButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 09C8EE0D1AB7262800BB1FF4 /* BookButton.m */; };
 		0964DB861ADBD27E00A956AD /* EvRoundProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E0DD34191F91AD00B850D0 /* EvRoundProgressView.m */; };
-		0964DB871ADBD27E00A956AD /* DDLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F5726B1AC5B3C300A0815A /* DDLog.m */; };
+		0964DB871ADBD27E00A956AD /* DDLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F5726B1AC5B3C300A0815A /* DDLog.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		0964DB881ADBD27E00A956AD /* HistoryViewListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 266350BC1581DD1200C749BF /* HistoryViewListController.m */; };
 		0964DB891ADBD27E00A956AD /* StoreTableVeiwCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0962B1B418C35D9E00E60CE7 /* StoreTableVeiwCell.m */; };
-		0964DB8A1ADBD27E00A956AD /* DDFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F572691AC5B3C300A0815A /* DDFileLogger.m */; };
+		0964DB8A1ADBD27E00A956AD /* DDFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F572691AC5B3C300A0815A /* DDFileLogger.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		0964DB8B1ADBD27E00A956AD /* GetAddress.mm in Sources */ = {isa = PBXBuildFile; fileRef = 26846D53175A2EA2003BF1E5 /* GetAddress.mm */; };
 		0964DB8C1ADBD27E00A956AD /* EvPageProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0984DE5C19AB759200D61E46 /* EvPageProgressView.m */; };
 		0964DB8D1ADBD27E00A956AD /* StoreBookInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09BC770D190802110087F7D5 /* StoreBookInfoView.m */; };
 		0964DB8E1ADBD27E00A956AD /* YLLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D0D496190E9B15001294F7 /* YLLabel.m */; };
 		0964DB8F1ADBD27E00A956AD /* CycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0984DE2819A8EB5700D61E46 /* CycleScrollView.m */; };
-		0964DB901ADBD27E00A956AD /* DDTTYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F5726D1AC5B3C300A0815A /* DDTTYLogger.m */; };
+		0964DB901ADBD27E00A956AD /* DDTTYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F5726D1AC5B3C300A0815A /* DDTTYLogger.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		0964DB911ADBD27E00A956AD /* BookSetView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09311226191E723600D01DB0 /* BookSetView.m */; };
 		0964DB921ADBD27E00A956AD /* BTGlassScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A5C93519BADA9B00096582 /* BTGlassScrollView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		0964DB931ADBD27E00A956AD /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 09035105194DB9BA00F89785 /* NSString+MD5.m */; };
@@ -966,13 +962,13 @@
 		0964DBA11ADBD27E00A956AD /* CurledViewBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 0962B20118C35F3700E60CE7 /* CurledViewBase.m */; };
 		0964DBA21ADBD27E00A956AD /* UMFeedbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 099F76B418EDA8560018F836 /* UMFeedbackViewController.m */; };
 		0964DBA31ADBD27E00A956AD /* BaseDao.m in Sources */ = {isa = PBXBuildFile; fileRef = 090E59A218CAF3910041AE4E /* BaseDao.m */; };
-		0964DBA41ADBD27E00A956AD /* ContextFilterLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F572701AC5B3C300A0815A /* ContextFilterLogFormatter.m */; };
+		0964DBA41ADBD27E00A956AD /* ContextFilterLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F572701AC5B3C300A0815A /* ContextFilterLogFormatter.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		0964DBA51ADBD27E00A956AD /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D123B519136A1400032E84 /* AboutViewController.m */; };
 		0964DBA61ADBD27E00A956AD /* ZXObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 0962B1FB18C35ED000E60CE7 /* ZXObject.m */; };
 		0964DBA71ADBD27E00A956AD /* WxxAdView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09077EE418E573A3004D743C /* WxxAdView.m */; };
 		0964DBA81ADBD27E00A956AD /* EvSetingProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09122F9719114A8D001AFDD1 /* EvSetingProgressView.m */; };
 		0964DBA91ADBD27E00A956AD /* UMContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 099F76AD18EDA8560018F836 /* UMContactViewController.m */; };
-		0964DBAA1ADBD27E00A956AD /* HTTPFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F5724E1AC5B3C300A0815A /* HTTPFileResponse.m */; };
+		0964DBAA1ADBD27E00A956AD /* HTTPFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F5724E1AC5B3C300A0815A /* HTTPFileResponse.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		0964DBAB1ADBD27E00A956AD /* NSTimer+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 0984DE2A19A8EB5700D61E46 /* NSTimer+Addition.m */; };
 		0964DBAC1ADBD27E00A956AD /* EVCircularProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 090E599B18CA09650041AE4E /* EVCircularProgressView.m */; };
 		0964DBAD1ADBD27E00A956AD /* MyHTTPConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F572281AC5B3BB00A0815A /* MyHTTPConnection.m */; };
@@ -1003,38 +999,38 @@
 		0964DBC61ADBD27E00A956AD /* StoreHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0984DE4419AA1B9D00D61E46 /* StoreHeadView.m */; };
 		0964DBC71ADBD27E00A956AD /* BlackView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0962B1B818C35E2E00E60CE7 /* BlackView.m */; };
 		0964DBC81ADBD27E00A956AD /* ZYTabBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2699A2801761A8DC00D0953E /* ZYTabBarView.m */; };
-		0964DBC91ADBD27E00A956AD /* DispatchQueueLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F572721AC5B3C300A0815A /* DispatchQueueLogFormatter.m */; };
-		0964DBCA1ADBD27E00A956AD /* DAVConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F572561AC5B3C300A0815A /* DAVConnection.m */; };
+		0964DBC91ADBD27E00A956AD /* DispatchQueueLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F572721AC5B3C300A0815A /* DispatchQueueLogFormatter.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		0964DBCA1ADBD27E00A956AD /* DAVConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F572561AC5B3C300A0815A /* DAVConnection.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		0964DBCB1ADBD27E00A956AD /* KYButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 099390BD18EEF17700200D71 /* KYButton.m */; };
 		0964DBCC1ADBD27E00A956AD /* ZYTableCellBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2699A2811761A8DC00D0953E /* ZYTableCellBackgroundView.m */; };
 		0964DBCD1ADBD27E00A956AD /* StoreClassTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09CFA1D21A2228520068E8CE /* StoreClassTableView.m */; };
-		0964DBCE1ADBD27E00A956AD /* HTTPMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F572391AC5B3C300A0815A /* HTTPMessage.m */; };
+		0964DBCE1ADBD27E00A956AD /* HTTPMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F572391AC5B3C300A0815A /* HTTPMessage.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		0964DBCF1ADBD27E00A956AD /* DRPLoadingSpinner.m in Sources */ = {isa = PBXBuildFile; fileRef = 096470671AC06224001A5E94 /* DRPLoadingSpinner.m */; };
 		0964DBD01ADBD27E00A956AD /* IpadBookListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 095DC4CB19ED5FE0009E051F /* IpadBookListViewController.m */; };
 		0964DBD11ADBD27E00A956AD /* WxxTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0962B1DD18C35E2F00E60CE7 /* WxxTextView.m */; };
 		0964DBD21ADBD27E00A956AD /* SDImageView+SDWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 0962B1C018C35E2F00E60CE7 /* SDImageView+SDWebCache.m */; };
 		0964DBD31ADBD27E00A956AD /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 090E59AF18CAF3920041AE4E /* FMResultSet.m */; };
 		0964DBD41ADBD27E00A956AD /* Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F01B4D19800675002F210C /* Base64.m */; };
-		0964DBD51ADBD27E00A956AD /* HTTPServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F5723C1AC5B3C300A0815A /* HTTPServer.m */; };
+		0964DBD51ADBD27E00A956AD /* HTTPServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F5723C1AC5B3C300A0815A /* HTTPServer.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		0964DBD61ADBD27E00A956AD /* WxxConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 098A7B1C19001D2100AD768C /* WxxConstants.m */; };
 		0964DBD71ADBD27E00A956AD /* SVHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 092129FE18C3351400D7E36D /* SVHTTPClient.m */; };
-		0964DBD81ADBD27E00A956AD /* DDRange.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F572321AC5B3C300A0815A /* DDRange.m */; };
-		0964DBD91ADBD27E00A956AD /* MultipartMessageHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F572411AC5B3C300A0815A /* MultipartMessageHeader.m */; };
+		0964DBD81ADBD27E00A956AD /* DDRange.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F572321AC5B3C300A0815A /* DDRange.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		0964DBD91ADBD27E00A956AD /* MultipartMessageHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F572411AC5B3C300A0815A /* MultipartMessageHeader.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		0964DBDA1ADBD27E00A956AD /* ZYTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2699A2821761A8DC00D0953E /* ZYTabViewController.m */; };
 		0964DBDB1ADBD27E00A956AD /* ToolBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0945DD1818CEC04D003F7A9C /* ToolBarView.m */; };
 		0964DBDC1ADBD27E00A956AD /* ZYUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2699A2831761A8DC00D0953E /* ZYUIViewController.m */; };
-		0964DBDD1ADBD27E00A956AD /* DDNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F572301AC5B3C300A0815A /* DDNumber.m */; };
+		0964DBDD1ADBD27E00A956AD /* DDNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F572301AC5B3C300A0815A /* DDNumber.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		0964DBDE1ADBD27E00A956AD /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2699A2951761AB3F00D0953E /* SettingsViewController.m */; };
 		0964DBDF1ADBD27E00A956AD /* StoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2699A2981762DE7500D0953E /* StoreViewController.m */; };
 		0964DBE01ADBD27E00A956AD /* SDWebDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0962B1C618C35E2F00E60CE7 /* SDWebDataManager.m */; };
 		0964DBE11ADBD27E00A956AD /* WxxImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0962B1D518C35E2F00E60CE7 /* WxxImageView.m */; };
 		0964DBE21ADBD27E00A956AD /* FeedBackTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A5C96519BF538800096582 /* FeedBackTableViewCell.m */; };
 		0964DBE31ADBD27E00A956AD /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 090E59AD18CAF3920041AE4E /* FMDatabaseAdditions.m */; };
-		0964DBE41ADBD27E00A956AD /* HTTPAsyncFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F572461AC5B3C300A0815A /* HTTPAsyncFileResponse.m */; };
+		0964DBE41ADBD27E00A956AD /* HTTPAsyncFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F572461AC5B3C300A0815A /* HTTPAsyncFileResponse.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		0964DBE51ADBD27E00A956AD /* InAppPurchaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 26052DD017643F0D00BADD1A /* InAppPurchaseManager.m */; };
 		0964DBE61ADBD27E00A956AD /* jquery-2.0.2.min.js in Sources */ = {isa = PBXBuildFile; fileRef = 2668D99017832E6100ED8F32 /* jquery-2.0.2.min.js */; };
 		0964DBE71ADBD27E00A956AD /* BUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0962B1F918C35ED000E60CE7 /* BUIView.m */; };
-		0964DBE81ADBD27E00A956AD /* DDData.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F5722E1AC5B3C300A0815A /* DDData.m */; };
+		0964DBE81ADBD27E00A956AD /* DDData.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F5722E1AC5B3C300A0815A /* DDData.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		0964DBEA1ADBD27E00A956AD /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26AB15DD158063A40055A2BD /* QuartzCore.framework */; };
 		0964DBEB1ADBD27E00A956AD /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FDC4766B199B41A5002863D7 /* libstdc++.dylib */; };
 		0964DBEC1ADBD27E00A956AD /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09FAAF171ABC18FE00052667 /* Social.framework */; };
@@ -1094,11 +1090,9 @@
 		0964DC241ADBD27E00A956AD /* messages_left_bubble@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 099F769E18EDA8560018F836 /* messages_left_bubble@2x.png */; };
 		0964DC251ADBD27E00A956AD /* web in Resources */ = {isa = PBXBuildFile; fileRef = 26D4E284175A5EDD0036163C /* web */; };
 		0964DC271ADBD27E00A956AD /* icon_rightArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 099F769818EDA8560018F836 /* icon_rightArrow@2x.png */; };
-		0964DC281ADBD27E00A956AD /* 魔龙的狂舞.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0964D5E41AD920CB00A956AD /* 魔龙的狂舞.jpg */; };
 		0964DC291ADBD27E00A956AD /* book.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 090E59C918CAF5550041AE4E /* book.sqlite */; };
 		0964DC2A1ADBD27E00A956AD /* nav_btn_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 099F76A718EDA8560018F836 /* nav_btn_bg@2x.png */; };
 		0964DC2B1ADBD27E00A956AD /* messages_right_bubble@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 099F769F18EDA8560018F836 /* messages_right_bubble@2x.png */; };
-		0964DC2C1ADBD27E00A956AD /* 第五卷魔龙的狂舞.epub in Resources */ = {isa = PBXBuildFile; fileRef = 0964D5E71AD9217D00A956AD /* 第五卷魔龙的狂舞.epub */; };
 		0964DC2D1ADBD27E00A956AD /* nav_btn_bg_lighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 099F76A818EDA8560018F836 /* nav_btn_bg_lighted@2x.png */; };
 		0964DC2E1ADBD27E00A956AD /* About.txt in Resources */ = {isa = PBXBuildFile; fileRef = 09F572631AC5B3C300A0815A /* About.txt */; };
 		0964DC2F1ADBD27E00A956AD /* item_ok_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 099F769D18EDA8560018F836 /* item_ok_selected@2x.png */; };
@@ -1453,11 +1447,9 @@
 		0964DE411ADFCC7700A956AD /* web in Resources */ = {isa = PBXBuildFile; fileRef = 26D4E284175A5EDD0036163C /* web */; };
 		0964DE421ADFCC7700A956AD /* ZipArchive.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 0964DCA81ADBD33400A956AD /* ZipArchive.podspec */; };
 		0964DE431ADFCC7700A956AD /* icon_rightArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 099F769818EDA8560018F836 /* icon_rightArrow@2x.png */; };
-		0964DE441ADFCC7700A956AD /* 魔龙的狂舞.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0964D5E41AD920CB00A956AD /* 魔龙的狂舞.jpg */; };
 		0964DE451ADFCC7700A956AD /* book.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 090E59C918CAF5550041AE4E /* book.sqlite */; };
 		0964DE461ADFCC7700A956AD /* nav_btn_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 099F76A718EDA8560018F836 /* nav_btn_bg@2x.png */; };
 		0964DE471ADFCC7700A956AD /* messages_right_bubble@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 099F769F18EDA8560018F836 /* messages_right_bubble@2x.png */; };
-		0964DE481ADFCC7700A956AD /* 第五卷魔龙的狂舞.epub in Resources */ = {isa = PBXBuildFile; fileRef = 0964D5E71AD9217D00A956AD /* 第五卷魔龙的狂舞.epub */; };
 		0964DE491ADFCC7700A956AD /* nav_btn_bg_lighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 099F76A818EDA8560018F836 /* nav_btn_bg_lighted@2x.png */; };
 		0964DE4A1ADFCC7700A956AD /* About.txt in Resources */ = {isa = PBXBuildFile; fileRef = 09F572631AC5B3C300A0815A /* About.txt */; };
 		0964DE4B1ADFCC7700A956AD /* item_ok_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 099F769D18EDA8560018F836 /* item_ok_selected@2x.png */; };
@@ -1815,7 +1807,6 @@
 		097313C31B520A8700C9479E /* 16400.epub in Resources */ = {isa = PBXBuildFile; fileRef = 097412B91AF21CB2002BAFCA /* 16400.epub */; };
 		097313C41B520A8700C9479E /* 16371.epub in Resources */ = {isa = PBXBuildFile; fileRef = 0974129C1AF21CB2002BAFCA /* 16371.epub */; };
 		097313C51B520A8700C9479E /* 16336.epub in Resources */ = {isa = PBXBuildFile; fileRef = 097412791AF21CB2002BAFCA /* 16336.epub */; };
-		097313C61B520A8700C9479E /* 魔龙的狂舞.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0964D5E41AD920CB00A956AD /* 魔龙的狂舞.jpg */; };
 		097313C71B520A8700C9479E /* 16398.epub in Resources */ = {isa = PBXBuildFile; fileRef = 097412B71AF21CB2002BAFCA /* 16398.epub */; };
 		097313C81B520A8700C9479E /* 16397.epub in Resources */ = {isa = PBXBuildFile; fileRef = 097412B61AF21CB2002BAFCA /* 16397.epub */; };
 		097313C91B520A8700C9479E /* 16348.epub in Resources */ = {isa = PBXBuildFile; fileRef = 097412851AF21CB2002BAFCA /* 16348.epub */; };
@@ -1826,7 +1817,6 @@
 		097313CE1B520A8700C9479E /* nav_btn_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 099F76A718EDA8560018F836 /* nav_btn_bg@2x.png */; };
 		097313CF1B520A8700C9479E /* 16373.epub in Resources */ = {isa = PBXBuildFile; fileRef = 0974129E1AF21CB2002BAFCA /* 16373.epub */; };
 		097313D01B520A8700C9479E /* messages_right_bubble@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 099F769F18EDA8560018F836 /* messages_right_bubble@2x.png */; };
-		097313D11B520A8700C9479E /* 第五卷魔龙的狂舞.epub in Resources */ = {isa = PBXBuildFile; fileRef = 0964D5E71AD9217D00A956AD /* 第五卷魔龙的狂舞.epub */; };
 		097313D21B520A8700C9479E /* 16341.epub in Resources */ = {isa = PBXBuildFile; fileRef = 0974127E1AF21CB2002BAFCA /* 16341.epub */; };
 		097313D31B520A8700C9479E /* 16342.epub in Resources */ = {isa = PBXBuildFile; fileRef = 0974127F1AF21CB2002BAFCA /* 16342.epub */; };
 		097313D41B520A8700C9479E /* 16385.epub in Resources */ = {isa = PBXBuildFile; fileRef = 097412AA1AF21CB2002BAFCA /* 16385.epub */; };
@@ -2146,11 +2136,9 @@
 		0974124F1AF21151002BAFCA /* web in Resources */ = {isa = PBXBuildFile; fileRef = 26D4E284175A5EDD0036163C /* web */; };
 		097412501AF21151002BAFCA /* ZipArchive.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 0964DCA81ADBD33400A956AD /* ZipArchive.podspec */; };
 		097412511AF21151002BAFCA /* icon_rightArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 099F769818EDA8560018F836 /* icon_rightArrow@2x.png */; };
-		097412521AF21151002BAFCA /* 魔龙的狂舞.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0964D5E41AD920CB00A956AD /* 魔龙的狂舞.jpg */; };
 		097412531AF21151002BAFCA /* book.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 090E59C918CAF5550041AE4E /* book.sqlite */; };
 		097412541AF21151002BAFCA /* nav_btn_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 099F76A718EDA8560018F836 /* nav_btn_bg@2x.png */; };
 		097412571AF21151002BAFCA /* messages_right_bubble@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 099F769F18EDA8560018F836 /* messages_right_bubble@2x.png */; };
-		097412581AF21151002BAFCA /* 第五卷魔龙的狂舞.epub in Resources */ = {isa = PBXBuildFile; fileRef = 0964D5E71AD9217D00A956AD /* 第五卷魔龙的狂舞.epub */; };
 		097412591AF21151002BAFCA /* nav_btn_bg_lighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 099F76A818EDA8560018F836 /* nav_btn_bg_lighted@2x.png */; };
 		0974125A1AF21151002BAFCA /* About.txt in Resources */ = {isa = PBXBuildFile; fileRef = 09F572631AC5B3C300A0815A /* About.txt */; };
 		0974125C1AF21151002BAFCA /* item_ok_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 099F769D18EDA8560018F836 /* item_ok_selected@2x.png */; };
@@ -2616,11 +2604,9 @@
 		09E9BCDC1AFDA41F00CEB2DD /* web in Resources */ = {isa = PBXBuildFile; fileRef = 26D4E284175A5EDD0036163C /* web */; };
 		09E9BCDD1AFDA41F00CEB2DD /* ZipArchive.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 0964DCA81ADBD33400A956AD /* ZipArchive.podspec */; };
 		09E9BCE01AFDA41F00CEB2DD /* icon_rightArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 099F769818EDA8560018F836 /* icon_rightArrow@2x.png */; };
-		09E9BCE41AFDA41F00CEB2DD /* 魔龙的狂舞.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0964D5E41AD920CB00A956AD /* 魔龙的狂舞.jpg */; };
 		09E9BCE91AFDA41F00CEB2DD /* book.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 090E59C918CAF5550041AE4E /* book.sqlite */; };
 		09E9BCEC1AFDA41F00CEB2DD /* nav_btn_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 099F76A718EDA8560018F836 /* nav_btn_bg@2x.png */; };
 		09E9BCEE1AFDA41F00CEB2DD /* messages_right_bubble@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 099F769F18EDA8560018F836 /* messages_right_bubble@2x.png */; };
-		09E9BCEF1AFDA41F00CEB2DD /* 第五卷魔龙的狂舞.epub in Resources */ = {isa = PBXBuildFile; fileRef = 0964D5E71AD9217D00A956AD /* 第五卷魔龙的狂舞.epub */; };
 		09E9BCF81AFDA41F00CEB2DD /* nav_btn_bg_lighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 099F76A818EDA8560018F836 /* nav_btn_bg_lighted@2x.png */; };
 		09E9BCFA1AFDA41F00CEB2DD /* About.txt in Resources */ = {isa = PBXBuildFile; fileRef = 09F572631AC5B3C300A0815A /* About.txt */; };
 		09E9BCFB1AFDA41F00CEB2DD /* item_ok_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 099F769D18EDA8560018F836 /* item_ok_selected@2x.png */; };
@@ -2780,6 +2766,333 @@
 		A8D62AD01BF1E4C100972F6E /* staticread-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A8D62AC71BF1E4C100972F6E /* staticread-Info.plist */; };
 		A8D62AD11BF1E4C100972F6E /* waiguomingzhu-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A8D62AC81BF1E4C100972F6E /* waiguomingzhu-Info.plist */; };
 		A8D62AD21BF1E4C100972F6E /* xijuan-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A8D62AC91BF1E4C100972F6E /* xijuan-Info.plist */; };
+		A8EB2EE91C2939990061200C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 26D9C408157CA68000756CB2 /* main.m */; };
+		A8EB2EEA1C2939990061200C /* StoreNothingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0964705E1AC05D7F001A5E94 /* StoreNothingCell.m */; };
+		A8EB2EEB1C2939990061200C /* UIImageView+Curled.m in Sources */ = {isa = PBXBuildFile; fileRef = 0962B20518C35F3700E60CE7 /* UIImageView+Curled.m */; };
+		A8EB2EEC1C2939990061200C /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F572611AC5B3C300A0815A /* GCDAsyncSocket.m */; };
+		A8EB2EED1C2939990061200C /* BookFeedBackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0978FDF919C1E263000E2CF9 /* BookFeedBackViewController.m */; };
+		A8EB2EEE1C2939990061200C /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8377B371C1A7145004871AB /* RootViewController.m */; };
+		A8EB2EEF1C2939990061200C /* SDDataCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 0962B1BE18C35E2F00E60CE7 /* SDDataCache.m */; };
+		A8EB2EF01C2939990061200C /* SDNetworkActivityIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0962B1C218C35E2F00E60CE7 /* SDNetworkActivityIndicator.m */; };
+		A8EB2EF11C2939990061200C /* WxxIapStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E48A2518E804F4007781B8 /* WxxIapStore.m */; };
+		A8EB2EF21C2939990061200C /* StoreClassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0948CBB21AB56FBC003F7EAB /* StoreClassViewController.m */; };
+		A8EB2EF31C2939990061200C /* CFilteringJSONSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0964DC871ADBD33400A956AD /* CFilteringJSONSerializer.m */; };
+		A8EB2EF41C2939990061200C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 26D9C40C157CA68000756CB2 /* AppDelegate.m */; };
+		A8EB2EF51C2939990061200C /* WxxAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 099390B918EEEED700200D71 /* WxxAlertView.m */; };
+		A8EB2EF61C2939990061200C /* UserUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 0931121B191E67EF00D01DB0 /* UserUtil.m */; };
+		A8EB2EF71C2939990061200C /* HTTPRedirectResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F572501AC5B3C300A0815A /* HTTPRedirectResponse.m */; };
+		A8EB2EF81C2939990061200C /* MultipartFormDataParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F5723F1AC5B3C300A0815A /* MultipartFormDataParser.m */; };
+		A8EB2EF91C2939990061200C /* ChaptersListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26D9C417157CA68B00756CB2 /* ChaptersListViewController.m */; };
+		A8EB2EFA1C2939990061200C /* BigClassData.m in Sources */ = {isa = PBXBuildFile; fileRef = 0948CBB81AB58638003F7EAB /* BigClassData.m */; };
+		A8EB2EFB1C2939990061200C /* HTTPAuthenticationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F572341AC5B3C300A0815A /* HTTPAuthenticationRequest.m */; };
+		A8EB2EFC1C2939990061200C /* UMFeedbackTableViewCellLeft.m in Sources */ = {isa = PBXBuildFile; fileRef = 099F76B018EDA8560018F836 /* UMFeedbackTableViewCellLeft.m */; };
+		A8EB2EFD1C2939990061200C /* Chapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 26D9C41D157CA68B00756CB2 /* Chapter.m */; };
+		A8EB2EFE1C2939990061200C /* UIWebView+SearchWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 26D9C433157CA6E400756CB2 /* UIWebView+SearchWebView.m */; };
+		A8EB2EFF1C2939990061200C /* GTMNSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = 26D9C436157CA6E400756CB2 /* GTMNSString+HTML.m */; };
+		A8EB2F001C2939990061200C /* NSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = 26D9C438157CA6E400756CB2 /* NSString+HTML.m */; };
+		A8EB2F011C2939990061200C /* WxxHttpUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 09212A0518C335B900D7E36D /* WxxHttpUtil.m */; };
+		A8EB2F021C2939990061200C /* EvLineProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09C99C0C190AB04A000AC711 /* EvLineProgressView.m */; };
+		A8EB2F031C2939990061200C /* MKStoreObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E48A2318E804F4007781B8 /* MKStoreObserver.m */; };
+		A8EB2F041C2939990061200C /* UserData.m in Sources */ = {isa = PBXBuildFile; fileRef = FD6FF4B0199DE9A100E3101D /* UserData.m */; };
+		A8EB2F051C2939990061200C /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 0964DC9E1ADBD33400A956AD /* ioapi.c */; };
+		A8EB2F061C2939990061200C /* HTTPConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F572361AC5B3C300A0815A /* HTTPConnection.m */; };
+		A8EB2F071C2939990061200C /* BookLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 265A8751157F47ED00EFF497 /* BookLoader.m */; };
+		A8EB2F081C2939990061200C /* BookSetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E0DD2B191F73A300B850D0 /* BookSetCell.m */; };
+		A8EB2F091C2939990061200C /* JMStaticContentTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D123911913583C00032E84 /* JMStaticContentTableViewCell.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		A8EB2F0A1C2939990061200C /* PenSoundDao.m in Sources */ = {isa = PBXBuildFile; fileRef = 090E59B118CAF3920041AE4E /* PenSoundDao.m */; };
+		A8EB2F0B1C2939990061200C /* PUTResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F5725C1AC5B3C300A0815A /* PUTResponse.m */; };
+		A8EB2F0C1C2939990061200C /* MoreAppTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 093FA35C197A987500FD1C60 /* MoreAppTableViewCell.m */; };
+		A8EB2F0D1C2939990061200C /* BooksListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 265A8753157F47ED00EFF497 /* BooksListViewController.m */; };
+		A8EB2F0E1C2939990061200C /* CJSONSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0964DC991ADBD33400A956AD /* CJSONSerializer.m */; };
+		A8EB2F0F1C2939990061200C /* BookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 265A8755157F47ED00EFF497 /* BookViewController.m */; };
+		A8EB2F101C2939990061200C /* EPubBookLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 265A8757157F47ED00EFF497 /* EPubBookLoader.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		A8EB2F111C2939990061200C /* UMFeedbackTableViewCellRight.m in Sources */ = {isa = PBXBuildFile; fileRef = 099F76B218EDA8560018F836 /* UMFeedbackTableViewCellRight.m */; };
+		A8EB2F121C2939990061200C /* SearchWebView.js in Sources */ = {isa = PBXBuildFile; fileRef = 26AB15741580633C0055A2BD /* SearchWebView.js */; };
+		A8EB2F131C2939990061200C /* EGORefreshTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 26AB158A158063600055A2BD /* EGORefreshTableHeaderView.m */; };
+		A8EB2F141C2939990061200C /* MoreAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 093FA35D197A987500FD1C60 /* MoreAppViewController.m */; };
+		A8EB2F151C2939990061200C /* CJSONScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 0964DC971ADBD33400A956AD /* CJSONScanner.m */; };
+		A8EB2F161C2939990061200C /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 0964DCA41ADBD33400A956AD /* zip.c */; };
+		A8EB2F171C2939990061200C /* AnimationHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 26AB158D158063600055A2BD /* AnimationHelper.m */; };
+		A8EB2F181C2939990061200C /* AppData.m in Sources */ = {isa = PBXBuildFile; fileRef = 093FA373197A989C00FD1C60 /* AppData.m */; };
+		A8EB2F191C2939990061200C /* AuthHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 26AB158F158063600055A2BD /* AuthHelper.m */; };
+		A8EB2F1A1C2939990061200C /* HTTPErrorResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F5724C1AC5B3C300A0815A /* HTTPErrorResponse.m */; };
+		A8EB2F1B1C2939990061200C /* CacheHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 26AB1591158063600055A2BD /* CacheHelper.m */; };
+		A8EB2F1C1C2939990061200C /* EncryptHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 26AB1593158063600055A2BD /* EncryptHelper.m */; };
+		A8EB2F1D1C2939990061200C /* ReStoreTableVeiwCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0921ECFC19975475007FCF55 /* ReStoreTableVeiwCell.m */; };
+		A8EB2F1E1C2939990061200C /* FileHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 26AB1595158063600055A2BD /* FileHelper.m */; };
+		A8EB2F1F1C2939990061200C /* NSString+wxx.m in Sources */ = {isa = PBXBuildFile; fileRef = 0962B1BA18C35E2E00E60CE7 /* NSString+wxx.m */; };
+		A8EB2F201C2939990061200C /* HttpHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 26AB1597158063600055A2BD /* HttpHelper.m */; };
+		A8EB2F211C2939990061200C /* BookInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A5C94D19BC8D3200096582 /* BookInfoView.m */; };
+		A8EB2F221C2939990061200C /* AFKReviewTroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 09CC687818E9B173009F7B6C /* AFKReviewTroller.m */; };
+		A8EB2F231C2939990061200C /* HTTPDataResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F572481AC5B3C300A0815A /* HTTPDataResponse.m */; };
+		A8EB2F241C2939990061200C /* HistoryData.m in Sources */ = {isa = PBXBuildFile; fileRef = 097411101AF0CCFA002BAFCA /* HistoryData.m */; };
+		A8EB2F251C2939990061200C /* WxxBookSelect.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D598CB18F6534E00A65505 /* WxxBookSelect.m */; };
+		A8EB2F261C2939990061200C /* MultipartMessageHeaderField.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F572431AC5B3C300A0815A /* MultipartMessageHeaderField.m */; };
+		A8EB2F271C2939990061200C /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = 0964DCA01ADBD33400A956AD /* mztools.c */; };
+		A8EB2F281C2939990061200C /* ClassData.m in Sources */ = {isa = PBXBuildFile; fileRef = 09261DCB19547DC000A75A0A /* ClassData.m */; };
+		A8EB2F291C2939990061200C /* StoreClassCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0952B7051A234E7A00EE837B /* StoreClassCell.m */; };
+		A8EB2F2A1C2939990061200C /* BookTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 09835E6518E406ED00EE3B15 /* BookTableViewCell.m */; };
+		A8EB2F2B1C2939990061200C /* WxxTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09077ED818E51603004D743C /* WxxTableView.m */; };
+		A8EB2F2C1C2939990061200C /* HTTPDynamicFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F5724A1AC5B3C300A0815A /* HTTPDynamicFileResponse.m */; };
+		A8EB2F2D1C2939990061200C /* MessageHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 26AB1599158063600055A2BD /* MessageHelper.m */; };
+		A8EB2F2E1C2939990061200C /* DAVResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F572581AC5B3C300A0815A /* DAVResponse.m */; };
+		A8EB2F2F1C2939990061200C /* ResourceHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 26AB159B158063600055A2BD /* ResourceHelper.m */; };
+		A8EB2F301C2939990061200C /* WxxBaseData.m in Sources */ = {isa = PBXBuildFile; fileRef = 090E59B718CAF3920041AE4E /* WxxBaseData.m */; };
+		A8EB2F311C2939990061200C /* SysHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 26AB159D158063600055A2BD /* SysHelper.m */; };
+		A8EB2F321C2939990061200C /* SearchResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0964D5DE1AD90B0700A956AD /* SearchResultViewController.m */; };
+		A8EB2F331C2939990061200C /* DBUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 090E59A818CAF3910041AE4E /* DBUtils.m */; };
+		A8EB2F341C2939990061200C /* ArrowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 096A53F418CE032A00A6EED2 /* ArrowView.m */; };
+		A8EB2F351C2939990061200C /* StoreClassTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0948CBB51AB5707F003F7EAB /* StoreClassTableViewCell.m */; };
+		A8EB2F361C2939990061200C /* StaticTextFieldTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D123971913583C00032E84 /* StaticTextFieldTableViewCell.m */; };
+		A8EB2F371C2939990061200C /* GDataXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = A8584EBC1C1828A0006754CD /* GDataXMLNode.m */; };
+		A8EB2F381C2939990061200C /* FeedBackView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A5C95919BDF57000096582 /* FeedBackView.m */; };
+		A8EB2F391C2939990061200C /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 26AB15A0158063600055A2BD /* ASIAuthenticationDialog.m */; };
+		A8EB2F3A1C2939990061200C /* UIButton+Curled.m in Sources */ = {isa = PBXBuildFile; fileRef = 0962B20318C35F3700E60CE7 /* UIButton+Curled.m */; };
+		A8EB2F3B1C2939990061200C /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 26AB15A3158063600055A2BD /* ASIDataCompressor.m */; };
+		A8EB2F3C1C2939990061200C /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 26AB15A5158063600055A2BD /* ASIDataDecompressor.m */; };
+		A8EB2F3D1C2939990061200C /* WxxAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0962B1C918C35E2F00E60CE7 /* WxxAnimation.m */; };
+		A8EB2F3E1C2939990061200C /* WxxLoadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 096470611AC05FD0001A5E94 /* WxxLoadView.m */; };
+		A8EB2F3F1C2939990061200C /* ASIDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 26AB15A7158063600055A2BD /* ASIDownloadCache.m */; };
+		A8EB2F401C2939990061200C /* ASIFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 26AB15A9158063600055A2BD /* ASIFormDataRequest.m */; };
+		A8EB2F411C2939990061200C /* BookData.m in Sources */ = {isa = PBXBuildFile; fileRef = 090E59C718CAF3ED0041AE4E /* BookData.m */; };
+		A8EB2F421C2939990061200C /* ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 26AB15AB158063600055A2BD /* ASIHTTPRequest.m */; };
+		A8EB2F431C2939990061200C /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 26AB15AF158063600055A2BD /* ASIInputStream.m */; };
+		A8EB2F441C2939990061200C /* ASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 26AB15B1158063600055A2BD /* ASINetworkQueue.m */; };
+		A8EB2F451C2939990061200C /* ASIWebPageRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 26AB15B4158063600055A2BD /* ASIWebPageRequest.m */; };
+		A8EB2F461C2939990061200C /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 26AB15B6158063600055A2BD /* Reachability.m */; };
+		A8EB2F471C2939990061200C /* WxxNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0962B1D918C35E2F00E60CE7 /* WxxNavigationController.m */; };
+		A8EB2F481C2939990061200C /* WxxDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 0962B1CF18C35E2F00E60CE7 /* WxxDatePicker.m */; };
+		A8EB2F491C2939990061200C /* WebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F572521AC5B3C300A0815A /* WebSocket.m */; };
+		A8EB2F4A1C2939990061200C /* WxxView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0962B1DF18C35E2F00E60CE7 /* WxxView.m */; };
+		A8EB2F4B1C2939990061200C /* DDAbstractDatabaseLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F572651AC5B3C300A0815A /* DDAbstractDatabaseLogger.m */; };
+		A8EB2F4C1C2939990061200C /* UIView+Blur.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F7EB701A2743DE006D5C16 /* UIView+Blur.m */; };
+		A8EB2F4D1C2939990061200C /* DDASLLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F572671AC5B3C300A0815A /* DDASLLogger.m */; };
+		A8EB2F4E1C2939990061200C /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 26AB15B9158063600055A2BD /* JSONKit.m */; };
+		A8EB2F4F1C2939990061200C /* HudDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26AB15BD158063600055A2BD /* HudDemoViewController.m */; };
+		A8EB2F501C2939990061200C /* CDataScanner_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0964DC901ADBD33400A956AD /* CDataScanner_Extensions.m */; };
+		A8EB2F511C2939990061200C /* SVHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 09212A0018C3351400D7E36D /* SVHTTPRequest.m */; };
+		A8EB2F521C2939990061200C /* MKStoreManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E48A2118E804F4007781B8 /* MKStoreManager.m */; };
+		A8EB2F531C2939990061200C /* DELETEResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F5725A1AC5B3C300A0815A /* DELETEResponse.m */; };
+		A8EB2F541C2939990061200C /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 26AB15BF158063600055A2BD /* MBProgressHUD.m */; };
+		A8EB2F551C2939990061200C /* UIView+Shadow.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B0A8D918E45EDE0066BEDB /* UIView+Shadow.m */; };
+		A8EB2F561C2939990061200C /* JMStaticContentTableViewSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D123951913583C00032E84 /* JMStaticContentTableViewSection.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		A8EB2F571C2939990061200C /* KWPopoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E0DD22191F530700B850D0 /* KWPopoverView.m */; };
+		A8EB2F581C2939990061200C /* BookButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 09C8EE0D1AB7262800BB1FF4 /* BookButton.m */; };
+		A8EB2F591C2939990061200C /* EvRoundProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E0DD34191F91AD00B850D0 /* EvRoundProgressView.m */; };
+		A8EB2F5A1C2939990061200C /* DDLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F5726B1AC5B3C300A0815A /* DDLog.m */; };
+		A8EB2F5B1C2939990061200C /* HistoryViewListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 266350BC1581DD1200C749BF /* HistoryViewListController.m */; };
+		A8EB2F5C1C2939990061200C /* StoreTableVeiwCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0962B1B418C35D9E00E60CE7 /* StoreTableVeiwCell.m */; };
+		A8EB2F5D1C2939990061200C /* DDFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F572691AC5B3C300A0815A /* DDFileLogger.m */; };
+		A8EB2F5E1C2939990061200C /* GetAddress.mm in Sources */ = {isa = PBXBuildFile; fileRef = 26846D53175A2EA2003BF1E5 /* GetAddress.mm */; };
+		A8EB2F5F1C2939990061200C /* EvPageProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0984DE5C19AB759200D61E46 /* EvPageProgressView.m */; };
+		A8EB2F601C2939990061200C /* StoreBookInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09BC770D190802110087F7D5 /* StoreBookInfoView.m */; };
+		A8EB2F611C2939990061200C /* YLLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D0D496190E9B15001294F7 /* YLLabel.m */; };
+		A8EB2F621C2939990061200C /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 0964DCA21ADBD33400A956AD /* unzip.c */; };
+		A8EB2F631C2939990061200C /* CycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0984DE2819A8EB5700D61E46 /* CycleScrollView.m */; };
+		A8EB2F641C2939990061200C /* DDTTYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F5726D1AC5B3C300A0815A /* DDTTYLogger.m */; };
+		A8EB2F651C2939990061200C /* BookSetView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09311226191E723600D01DB0 /* BookSetView.m */; };
+		A8EB2F661C2939990061200C /* BTGlassScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A5C93519BADA9B00096582 /* BTGlassScrollView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		A8EB2F671C2939990061200C /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 09035105194DB9BA00F89785 /* NSString+MD5.m */; };
+		A8EB2F681C2939990061200C /* CJSONSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 0964DC8B1ADBD33400A956AD /* CJSONSerialization.m */; };
+		A8EB2F691C2939990061200C /* SetView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09122F8E191146FB001AFDD1 /* SetView.m */; };
+		A8EB2F6A1C2939990061200C /* BookLogoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0940C0FC190BE120000E39BF /* BookLogoView.m */; };
+		A8EB2F6B1C2939990061200C /* DB.m in Sources */ = {isa = PBXBuildFile; fileRef = 090E59A418CAF3910041AE4E /* DB.m */; };
+		A8EB2F6C1C2939990061200C /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 090E59AB18CAF3920041AE4E /* FMDatabase.m */; };
+		A8EB2F6D1C2939990061200C /* BUIControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 0962B1F718C35ED000E60CE7 /* BUIControl.m */; };
+		A8EB2F6E1C2939990061200C /* UIBezierPath+Symbol.m in Sources */ = {isa = PBXBuildFile; fileRef = 09AD5B2318E3160200E2942F /* UIBezierPath+Symbol.m */; };
+		A8EB2F6F1C2939990061200C /* WxxTextFieldBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0978FE1019C47FEE000E2CF9 /* WxxTextFieldBarView.m */; };
+		A8EB2F701C2939990061200C /* ReStoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0921ECFD19975475007FCF55 /* ReStoreViewController.m */; };
+		A8EB2F711C2939990061200C /* NSDictionary_JSONExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0964DC921ADBD33400A956AD /* NSDictionary_JSONExtensions.m */; };
+		A8EB2F721C2939990061200C /* CJSONDeserializer_BlocksExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0964DC891ADBD33400A956AD /* CJSONDeserializer_BlocksExtensions.m */; };
+		A8EB2F731C2939990061200C /* BookInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09C8EE561AB9CAB600BB1FF4 /* BookInfoViewController.m */; };
+		A8EB2F741C2939990061200C /* NSData+AES.m in Sources */ = {isa = PBXBuildFile; fileRef = 09035103194DB9BA00F89785 /* NSData+AES.m */; };
+		A8EB2F751C2939990061200C /* SDWebDataDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 0962B1C418C35E2F00E60CE7 /* SDWebDataDownloader.m */; };
+		A8EB2F761C2939990061200C /* WxxWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E48A1818E7DDCF007781B8 /* WxxWebView.m */; };
+		A8EB2F771C2939990061200C /* UMEGORefreshTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 099F769318EDA8560018F836 /* UMEGORefreshTableHeaderView.m */; };
+		A8EB2F781C2939990061200C /* CurledViewBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 0962B20118C35F3700E60CE7 /* CurledViewBase.m */; };
+		A8EB2F791C2939990061200C /* OpenUDID.m in Sources */ = {isa = PBXBuildFile; fileRef = 0964DC6E1ADBD33400A956AD /* OpenUDID.m */; };
+		A8EB2F7A1C2939990061200C /* UMFeedbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 099F76B418EDA8560018F836 /* UMFeedbackViewController.m */; };
+		A8EB2F7B1C2939990061200C /* BaseDao.m in Sources */ = {isa = PBXBuildFile; fileRef = 090E59A218CAF3910041AE4E /* BaseDao.m */; };
+		A8EB2F7C1C2939990061200C /* ContextFilterLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F572701AC5B3C300A0815A /* ContextFilterLogFormatter.m */; };
+		A8EB2F7D1C2939990061200C /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D123B519136A1400032E84 /* AboutViewController.m */; };
+		A8EB2F7E1C2939990061200C /* ZXObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 0962B1FB18C35ED000E60CE7 /* ZXObject.m */; };
+		A8EB2F7F1C2939990061200C /* WxxAdView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09077EE418E573A3004D743C /* WxxAdView.m */; };
+		A8EB2F801C2939990061200C /* EvSetingProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09122F9719114A8D001AFDD1 /* EvSetingProgressView.m */; };
+		A8EB2F811C2939990061200C /* UMContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 099F76AD18EDA8560018F836 /* UMContactViewController.m */; };
+		A8EB2F821C2939990061200C /* HTTPFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F5724E1AC5B3C300A0815A /* HTTPFileResponse.m */; };
+		A8EB2F831C2939990061200C /* NSTimer+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 0984DE2A19A8EB5700D61E46 /* NSTimer+Addition.m */; };
+		A8EB2F841C2939990061200C /* EVCircularProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 090E599B18CA09650041AE4E /* EVCircularProgressView.m */; };
+		A8EB2F851C2939990061200C /* BookLightView.m in Sources */ = {isa = PBXBuildFile; fileRef = A8B20CAC1BFF146B007625D1 /* BookLightView.m */; };
+		A8EB2F861C2939990061200C /* BookView.m in Sources */ = {isa = PBXBuildFile; fileRef = A8377B351C1A7145004871AB /* BookView.m */; };
+		A8EB2F871C2939990061200C /* MyHTTPConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F572281AC5B3BB00A0815A /* MyHTTPConnection.m */; };
+		A8EB2F881C2939990061200C /* SecurityUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 09035107194DB9BA00F89785 /* SecurityUtil.m */; };
+		A8EB2F891C2939990061200C /* HttpServerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26CEF43F175D98EF007F2B1C /* HttpServerViewController.m */; };
+		A8EB2F8A1C2939990061200C /* DDXMLElementAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 26A27310175E5C2A00648BDB /* DDXMLElementAdditions.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		A8EB2F8B1C2939990061200C /* NSString+DDXML.m in Sources */ = {isa = PBXBuildFile; fileRef = 26A27313175E5C2A00648BDB /* NSString+DDXML.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		A8EB2F8C1C2939990061200C /* DDXMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 26A27316175E5C2A00648BDB /* DDXMLDocument.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		A8EB2F8D1C2939990061200C /* UIBezierPath+Wxx.m in Sources */ = {isa = PBXBuildFile; fileRef = 090E599E18CA0FF30041AE4E /* UIBezierPath+Wxx.m */; };
+		A8EB2F8E1C2939990061200C /* FeedBackData.m in Sources */ = {isa = PBXBuildFile; fileRef = 0978FE0519C1F46A000E2CF9 /* FeedBackData.m */; };
+		A8EB2F8F1C2939990061200C /* WxxButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0962B1CD18C35E2F00E60CE7 /* WxxButton.m */; };
+		A8EB2F901C2939990061200C /* WxxTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 0962B1DB18C35E2F00E60CE7 /* WxxTextField.m */; };
+		A8EB2F911C2939990061200C /* HYCircleLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0997AF751997987F00937601 /* HYCircleLoadingView.m */; };
+		A8EB2F921C2939990061200C /* DDXMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 26A27318175E5C2A00648BDB /* DDXMLElement.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		A8EB2F931C2939990061200C /* WxxPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 096470631AC05FD0001A5E94 /* WxxPopView.m */; };
+		A8EB2F941C2939990061200C /* DDXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 26A2731A175E5C2A00648BDB /* DDXMLNode.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		A8EB2F951C2939990061200C /* iRate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2699A2771760663800D0953E /* iRate.m */; };
+		A8EB2F961C2939990061200C /* WxxLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0962B1D718C35E2F00E60CE7 /* WxxLabel.m */; };
+		A8EB2F971C2939990061200C /* LeafNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 0984DDEF19A8E57800D61E46 /* LeafNotification.m */; };
+		A8EB2F981C2939990061200C /* ZYBadgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2699A27C1761A8DC00D0953E /* ZYBadgeView.m */; };
+		A8EB2F991C2939990061200C /* ZYImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2699A27D1761A8DC00D0953E /* ZYImageView.m */; };
+		A8EB2F9A1C2939990061200C /* BookReadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8377B491C1A7204004871AB /* BookReadViewController.m */; };
+		A8EB2F9B1C2939990061200C /* StoreLoadTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0946BBB419FFC9D100C90892 /* StoreLoadTableViewCell.m */; };
+		A8EB2F9C1C2939990061200C /* JMStaticContentTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D123931913583C00032E84 /* JMStaticContentTableViewController.m */; };
+		A8EB2F9D1C2939990061200C /* ChapterListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D123C418CDE57D00236045 /* ChapterListView.m */; };
+		A8EB2F9E1C2939990061200C /* ZYPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2699A27E1761A8DC00D0953E /* ZYPageControl.m */; };
+		A8EB2F9F1C2939990061200C /* CDataScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 0964DC841ADBD33400A956AD /* CDataScanner.m */; };
+		A8EB2FA01C2939990061200C /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 0964706A1AC062E0001A5E94 /* GTMBase64.m */; };
+		A8EB2FA11C2939990061200C /* ZYSliderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2699A27F1761A8DC00D0953E /* ZYSliderView.m */; };
+		A8EB2FA21C2939990061200C /* StoreHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0984DE4419AA1B9D00D61E46 /* StoreHeadView.m */; };
+		A8EB2FA31C2939990061200C /* CJSONSerializedData.m in Sources */ = {isa = PBXBuildFile; fileRef = 0964DC8D1ADBD33400A956AD /* CJSONSerializedData.m */; };
+		A8EB2FA41C2939990061200C /* BlackView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0962B1B818C35E2E00E60CE7 /* BlackView.m */; };
+		A8EB2FA51C2939990061200C /* ZYTabBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2699A2801761A8DC00D0953E /* ZYTabBarView.m */; };
+		A8EB2FA61C2939990061200C /* ZipArchive.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0964DCA71ADBD33400A956AD /* ZipArchive.mm */; };
+		A8EB2FA71C2939990061200C /* mongoose.c in Sources */ = {isa = PBXBuildFile; fileRef = 0964DC6A1ADBD33400A956AD /* mongoose.c */; };
+		A8EB2FA81C2939990061200C /* DispatchQueueLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F572721AC5B3C300A0815A /* DispatchQueueLogFormatter.m */; };
+		A8EB2FA91C2939990061200C /* DAVConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F572561AC5B3C300A0815A /* DAVConnection.m */; };
+		A8EB2FAA1C2939990061200C /* KYButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 099390BD18EEF17700200D71 /* KYButton.m */; };
+		A8EB2FAB1C2939990061200C /* ZYTableCellBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2699A2811761A8DC00D0953E /* ZYTableCellBackgroundView.m */; };
+		A8EB2FAC1C2939990061200C /* StoreClassTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09CFA1D21A2228520068E8CE /* StoreClassTableView.m */; };
+		A8EB2FAD1C2939990061200C /* HTTPMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F572391AC5B3C300A0815A /* HTTPMessage.m */; };
+		A8EB2FAE1C2939990061200C /* DRPLoadingSpinner.m in Sources */ = {isa = PBXBuildFile; fileRef = 096470671AC06224001A5E94 /* DRPLoadingSpinner.m */; };
+		A8EB2FAF1C2939990061200C /* IpadBookListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 095DC4CB19ED5FE0009E051F /* IpadBookListViewController.m */; };
+		A8EB2FB01C2939990061200C /* WxxTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0962B1DD18C35E2F00E60CE7 /* WxxTextView.m */; };
+		A8EB2FB11C2939990061200C /* SDImageView+SDWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 0962B1C018C35E2F00E60CE7 /* SDImageView+SDWebCache.m */; };
+		A8EB2FB21C2939990061200C /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 090E59AF18CAF3920041AE4E /* FMResultSet.m */; };
+		A8EB2FB31C2939990061200C /* Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F01B4D19800675002F210C /* Base64.m */; };
+		A8EB2FB41C2939990061200C /* HTTPServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F5723C1AC5B3C300A0815A /* HTTPServer.m */; };
+		A8EB2FB51C2939990061200C /* BookDeleteView.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A7CD521C211339003F6FB9 /* BookDeleteView.m */; };
+		A8EB2FB61C2939990061200C /* WxxConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 098A7B1C19001D2100AD768C /* WxxConstants.m */; };
+		A8EB2FB71C2939990061200C /* SVHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 092129FE18C3351400D7E36D /* SVHTTPClient.m */; };
+		A8EB2FB81C2939990061200C /* DDRange.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F572321AC5B3C300A0815A /* DDRange.m */; };
+		A8EB2FB91C2939990061200C /* MultipartMessageHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F572411AC5B3C300A0815A /* MultipartMessageHeader.m */; };
+		A8EB2FBA1C2939990061200C /* ZYTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2699A2821761A8DC00D0953E /* ZYTabViewController.m */; };
+		A8EB2FBB1C2939990061200C /* ToolBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0945DD1818CEC04D003F7A9C /* ToolBarView.m */; };
+		A8EB2FBC1C2939990061200C /* CJSONDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0964DC951ADBD33400A956AD /* CJSONDeserializer.m */; };
+		A8EB2FBD1C2939990061200C /* ZYUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2699A2831761A8DC00D0953E /* ZYUIViewController.m */; };
+		A8EB2FBE1C2939990061200C /* DDNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F572301AC5B3C300A0815A /* DDNumber.m */; };
+		A8EB2FBF1C2939990061200C /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2699A2951761AB3F00D0953E /* SettingsViewController.m */; };
+		A8EB2FC01C2939990061200C /* StoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2699A2981762DE7500D0953E /* StoreViewController.m */; };
+		A8EB2FC11C2939990061200C /* SDWebDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0962B1C618C35E2F00E60CE7 /* SDWebDataManager.m */; };
+		A8EB2FC21C2939990061200C /* WxxImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0962B1D518C35E2F00E60CE7 /* WxxImageView.m */; };
+		A8EB2FC31C2939990061200C /* FeedBackTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A5C96519BF538800096582 /* FeedBackTableViewCell.m */; };
+		A8EB2FC41C2939990061200C /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 090E59AD18CAF3920041AE4E /* FMDatabaseAdditions.m */; };
+		A8EB2FC51C2939990061200C /* HTTPAsyncFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F572461AC5B3C300A0815A /* HTTPAsyncFileResponse.m */; };
+		A8EB2FC61C2939990061200C /* WebStoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09281C6E1AF35D2100CAD2FE /* WebStoreViewController.m */; };
+		A8EB2FC71C2939990061200C /* InAppPurchaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 26052DD017643F0D00BADD1A /* InAppPurchaseManager.m */; };
+		A8EB2FC81C2939990061200C /* jquery-2.0.2.min.js in Sources */ = {isa = PBXBuildFile; fileRef = 2668D99017832E6100ED8F32 /* jquery-2.0.2.min.js */; };
+		A8EB2FC91C2939990061200C /* BUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0962B1F918C35ED000E60CE7 /* BUIView.m */; };
+		A8EB2FCA1C2939990061200C /* DDData.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F5722E1AC5B3C300A0815A /* DDData.m */; };
+		A8EB2FCC1C2939990061200C /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0964DA321ADBCD0D00A956AD /* CoreMotion.framework */; };
+		A8EB2FCD1C2939990061200C /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0964DA301ADBCBDD00A956AD /* MediaPlayer.framework */; };
+		A8EB2FCE1C2939990061200C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26AB15DD158063A40055A2BD /* QuartzCore.framework */; };
+		A8EB2FCF1C2939990061200C /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FDC4766B199B41A5002863D7 /* libstdc++.dylib */; };
+		A8EB2FD01C2939990061200C /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09FAAF171ABC18FE00052667 /* Social.framework */; };
+		A8EB2FD11C2939990061200C /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09FAAF151ABC18F000052667 /* Accounts.framework */; };
+		A8EB2FD21C2939990061200C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26AB15DB158063970055A2BD /* SystemConfiguration.framework */; };
+		A8EB2FD31C2939990061200C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26846D4D175A2C72003BF1E5 /* Security.framework */; };
+		A8EB2FD41C2939990061200C /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 09FAAF131ABC186A00052667 /* libicucore.dylib */; };
+		A8EB2FD51C2939990061200C /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09F01B4919800631002F210C /* CoreTelephony.framework */; };
+		A8EB2FD61C2939990061200C /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09FAAF111ABC180600052667 /* ImageIO.framework */; };
+		A8EB2FD71C2939990061200C /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09E577C619F38549009032A2 /* EventKit.framework */; };
+		A8EB2FD81C2939990061200C /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09E577C819F38553009032A2 /* EventKitUI.framework */; };
+		A8EB2FD91C2939990061200C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 099FE4E719A8632E0008E8B2 /* AVFoundation.framework */; };
+		A8EB2FDA1C2939990061200C /* libUMessage_Sdk_1.1.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FDE8969C19A49FAD001C545F /* libUMessage_Sdk_1.1.0.a */; };
+		A8EB2FDB1C2939990061200C /* libUMFeedback.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 099F768B18EDA6F00018F836 /* libUMFeedback.a */; };
+		A8EB2FDC1C2939990061200C /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26446E67175F7804008E2A90 /* AdSupport.framework */; };
+		A8EB2FDD1C2939990061200C /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 090E59CB18CAFCB70041AE4E /* libsqlite3.dylib */; };
+		A8EB2FDE1C2939990061200C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26D9C478157CA79500756CB2 /* CoreGraphics.framework */; };
+		A8EB2FDF1C2939990061200C /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26446E65175F77E8008E2A90 /* MessageUI.framework */; };
+		A8EB2FE01C2939990061200C /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26446E63175F77DF008E2A90 /* AudioToolbox.framework */; };
+		A8EB2FE11C2939990061200C /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26446E61175F77D9008E2A90 /* StoreKit.framework */; };
+		A8EB2FE21C2939990061200C /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26AB15D91580638F0055A2BD /* CFNetwork.framework */; };
+		A8EB2FE31C2939990061200C /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26B0EE6F15BE7C5700C07B78 /* CoreText.framework */; };
+		A8EB2FE41C2939990061200C /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26AB15E1158063DD0055A2BD /* MobileCoreServices.framework */; };
+		A8EB2FE51C2939990061200C /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26AB15DF158063BA0055A2BD /* CoreMedia.framework */; };
+		A8EB2FE61C2939990061200C /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 26D9C47A157CA7DB00756CB2 /* libxml2.dylib */; };
+		A8EB2FE71C2939990061200C /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 26D9C476157CA77600756CB2 /* libz.dylib */; };
+		A8EB2FE81C2939990061200C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26D9C3FC157CA68000756CB2 /* UIKit.framework */; };
+		A8EB2FE91C2939990061200C /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0964DC4F1ADBD33300A956AD /* GoogleMobileAds.framework */; };
+		A8EB2FEA1C2939990061200C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26D9C3FE157CA68000756CB2 /* Foundation.framework */; };
+		A8EB2FEB1C2939990061200C /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26D9C400157CA68000756CB2 /* CoreData.framework */; };
+		A8EB2FEC1C2939990061200C /* libMobClickLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 09E48A2A18E8653E007781B8 /* libMobClickLibrary.a */; };
+		A8EB2FEE1C2939990061200C /* messages_toolbar_background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 099F76A318EDA8560018F836 /* messages_toolbar_background@2x.png */; };
+		A8EB2FEF1C2939990061200C /* notification_success.png in Resources */ = {isa = PBXBuildFile; fileRef = 0984DDF019A8E57800D61E46 /* notification_success.png */; };
+		A8EB2FF01C2939990061200C /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 09F572731AC5B3C300A0815A /* README.txt */; };
+		A8EB2FF11C2939990061200C /* 群鸦的盛宴.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0961091F1AD61C430096E54D /* 群鸦的盛宴.jpg */; };
+		A8EB2FF21C2939990061200C /* 第五卷魔龙的狂舞.epub in Resources */ = {isa = PBXBuildFile; fileRef = 0964D5E71AD9217D00A956AD /* 第五卷魔龙的狂舞.epub */; };
+		A8EB2FF31C2939990061200C /* umeng_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 099F76AB18EDA8560018F836 /* umeng_logo.png */; };
+		A8EB2FF41C2939990061200C /* 第四卷群鸦的盛宴.epub in Resources */ = {isa = PBXBuildFile; fileRef = 0961091E1AD61C430096E54D /* 第四卷群鸦的盛宴.epub */; };
+		A8EB2FF51C2939990061200C /* blueArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 099F769718EDA8560018F836 /* blueArrow@2x.png */; };
+		A8EB2FF61C2939990061200C /* 魔龙的狂舞.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0964D5E41AD920CB00A956AD /* 魔龙的狂舞.jpg */; };
+		A8EB2FF71C2939990061200C /* InfoPlist555.strings in Resources */ = {isa = PBXBuildFile; fileRef = 26D9C405157CA68000756CB2 /* InfoPlist555.strings */; };
+		A8EB2FF81C2939990061200C /* 冰雨的风暴.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 096109171AD61C420096E54D /* 冰雨的风暴.jpg */; };
+		A8EB2FF91C2939990061200C /* staticread-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A8D62AC71BF1E4C100972F6E /* staticread-Info.plist */; };
+		A8EB2FFA1C2939990061200C /* mianfeixiaoshuo-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A8D62AC31BF1E4C100972F6E /* mianfeixiaoshuo-Info.plist */; };
+		A8EB2FFB1C2939990061200C /* xijuan-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A8D62AC91BF1E4C100972F6E /* xijuan-Info.plist */; };
+		A8EB2FFC1C2939990061200C /* wxx.css in Resources */ = {isa = PBXBuildFile; fileRef = 097411171AF1F892002BAFCA /* wxx.css */; };
+		A8EB2FFD1C2939990061200C /* send@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 099F76A918EDA8560018F836 /* send@2x.png */; };
+		A8EB2FFE1C2939990061200C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2684400115807CEC0062C279 /* Localizable.strings */; };
+		A8EB2FFF1C2939990061200C /* readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0962B1BC18C35E2F00E60CE7 /* readme.txt */; };
+		A8EB30001C2939990061200C /* jingdushiguang-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A8D62AC21BF1E4C100972F6E /* jingdushiguang-Info.plist */; };
+		A8EB30011C2939990061200C /* 第一卷权力的游戏.epub in Resources */ = {isa = PBXBuildFile; fileRef = 0961091A1AD61C430096E54D /* 第一卷权力的游戏.epub */; };
+		A8EB30021C2939990061200C /* guoguo-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A8D62AC11BF1E4C100972F6E /* guoguo-Info.plist */; };
+		A8EB30031C2939990061200C /* messages_tableview_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 099F76A018EDA8560018F836 /* messages_tableview_background.png */; };
+		A8EB30041C2939990061200C /* item_cancel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 099F769A18EDA8560018F836 /* item_cancel@2x.png */; };
+		A8EB30051C2939990061200C /* si_yuan_hei_ti.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A826E59C1C23F757005E0AEB /* si_yuan_hei_ti.ttf */; };
+		A8EB30061C2939990061200C /* 权力的游戏.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 096109191AD61C430096E54D /* 权力的游戏.jpg */; };
+		A8EB30071C2939990061200C /* item_ok@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 099F769C18EDA8560018F836 /* item_ok@2x.png */; };
+		A8EB30081C2939990061200C /* nav_bar_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 099F76A418EDA8560018F836 /* nav_bar_bg@2x.png */; };
+		A8EB30091C2939990061200C /* UMFeedbackViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 099F76B518EDA8560018F836 /* UMFeedbackViewController.xib */; };
+		A8EB300A1C2939990061200C /* Refresh-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 096109331AD684380096E54D /* Refresh-icon.png */; };
+		A8EB300B1C2939990061200C /* 第三卷冰雨的风暴.epub in Resources */ = {isa = PBXBuildFile; fileRef = 0961091B1AD61C430096E54D /* 第三卷冰雨的风暴.epub */; };
+		A8EB300C1C2939990061200C /* sw.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A8377B521C1A750C004871AB /* sw.jpg */; };
+		A8EB300D1C2939990061200C /* blueArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 099F769618EDA8560018F836 /* blueArrow.png */; };
+		A8EB300E1C2939990061200C /* UMContactViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 099F76AE18EDA8560018F836 /* UMContactViewController.xib */; };
+		A8EB300F1C2939990061200C /* item_cancel_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 099F769B18EDA8560018F836 /* item_cancel_selected@2x.png */; };
+		A8EB30101C2939990061200C /* umFeedback.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 099F768C18EDA6F00018F836 /* umFeedback.bundle */; };
+		A8EB30111C2939990061200C /* notification_warring@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0984DDF319A8E57800D61E46 /* notification_warring@2x.png */; };
+		A8EB30121C2939990061200C /* themes in Resources */ = {isa = PBXBuildFile; fileRef = 26D4E280175A4FCB0036163C /* themes */; };
+		A8EB30131C2939990061200C /* ZipArchive.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 0964DCA81ADBD33400A956AD /* ZipArchive.podspec */; };
+		A8EB30141C2939990061200C /* send_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 099F76AA18EDA8560018F836 /* send_selected@2x.png */; };
+		A8EB30151C2939990061200C /* fang_zheng_song_san_jian_ti.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A826E5981C23F757005E0AEB /* fang_zheng_song_san_jian_ti.ttf */; };
+		A8EB30161C2939990061200C /* nav_btn_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 099F76A618EDA8560018F836 /* nav_btn_bg.png */; };
+		A8EB30171C2939990061200C /* 列王的纷争.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 096109181AD61C430096E54D /* 列王的纷争.jpg */; };
+		A8EB30181C2939990061200C /* notification_success@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0984DDF119A8E57800D61E46 /* notification_success@2x.png */; };
+		A8EB30191C2939990061200C /* About.txt in Resources */ = {isa = PBXBuildFile; fileRef = 09F5725F1AC5B3C300A0815A /* About.txt */; };
+		A8EB301A1C2939990061200C /* nav_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 099F76A518EDA8560018F836 /* nav_bg.png */; };
+		A8EB301B1C2939990061200C /* messages_left_bubble@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 099F769E18EDA8560018F836 /* messages_left_bubble@2x.png */; };
+		A8EB301C1C2939990061200C /* web in Resources */ = {isa = PBXBuildFile; fileRef = 26D4E284175A5EDD0036163C /* web */; };
+		A8EB301D1C2939990061200C /* icon_rightArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 099F769818EDA8560018F836 /* icon_rightArrow@2x.png */; };
+		A8EB301E1C2939990061200C /* 第二卷列王的纷争.epub in Resources */ = {isa = PBXBuildFile; fileRef = 0961091C1AD61C430096E54D /* 第二卷列王的纷争.epub */; };
+		A8EB301F1C2939990061200C /* book.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 090E59C918CAF5550041AE4E /* book.sqlite */; };
+		A8EB30201C2939990061200C /* icon_font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A826E5991C23F757005E0AEB /* icon_font.ttf */; };
+		A8EB30211C2939990061200C /* nav_btn_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 099F76A718EDA8560018F836 /* nav_btn_bg@2x.png */; };
+		A8EB30221C2939990061200C /* mingxiaoxi-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A8D62AC41BF1E4C100972F6E /* mingxiaoxi-Info.plist */; };
+		A8EB30231C2939990061200C /* messages_right_bubble@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 099F769F18EDA8560018F836 /* messages_right_bubble@2x.png */; };
+		A8EB30241C2939990061200C /* nav_btn_bg_lighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 099F76A818EDA8560018F836 /* nav_btn_bg_lighted@2x.png */; };
+		A8EB30251C2939990061200C /* Lora-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A826E59A1C23F757005E0AEB /* Lora-Italic.ttf */; };
+		A8EB30261C2939990061200C /* About.txt in Resources */ = {isa = PBXBuildFile; fileRef = 09F572631AC5B3C300A0815A /* About.txt */; };
+		A8EB30271C2939990061200C /* fang_zheng_fang_song_jian_ti.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A826E5971C23F757005E0AEB /* fang_zheng_fang_song_jian_ti.ttf */; };
+		A8EB30281C2939990061200C /* item_ok_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 099F769D18EDA8560018F836 /* item_ok_selected@2x.png */; };
+		A8EB30291C2939990061200C /* messages_toolbar_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 099F76A218EDA8560018F836 /* messages_toolbar_background.png */; };
+		A8EB302A1C2939990061200C /* waiguomingzhu-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A8D62AC81BF1E4C100972F6E /* waiguomingzhu-Info.plist */; };
+		A8EB302B1C2939990061200C /* messages_tableview_background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 099F76A118EDA8560018F836 /* messages_tableview_background@2x.png */; };
+		A8EB302D1C2939990061200C /* pandabook-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A8D62AC51BF1E4C100972F6E /* pandabook-Info.plist */; };
+		A8EB302E1C2939990061200C /* notification_warring.png in Resources */ = {isa = PBXBuildFile; fileRef = 0984DDF219A8E57800D61E46 /* notification_warring.png */; };
+		A8EB302F1C2939990061200C /* icon_rightArrow_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 099F769918EDA8560018F836 /* icon_rightArrow_selected@2x.png */; };
+		A8EB30301C2939990061200C /* background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 099F769518EDA8560018F836 /* background@2x.png */; };
+		A8EB30311C2939990061200C /* Lora-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A826E59B1C23F757005E0AEB /* Lora-Regular.ttf */; };
+		A8EB30391C293B060061200C /* iceandfier.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8EB30381C293B060061200C /* iceandfier.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -3585,6 +3898,10 @@
 		A8D62AC71BF1E4C100972F6E /* staticread-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "staticread-Info.plist"; sourceTree = "<group>"; };
 		A8D62AC81BF1E4C100972F6E /* waiguomingzhu-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "waiguomingzhu-Info.plist"; sourceTree = "<group>"; };
 		A8D62AC91BF1E4C100972F6E /* xijuan-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "xijuan-Info.plist"; sourceTree = "<group>"; };
+		A8EB30351C2939990061200C /* iceandfier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iceandfier.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8EB30361C2939990061200C /* iceandfier-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "iceandfier-Info.plist"; path = "/Users/xlong/Work/kanshu/src/iceandfier-Info.plist"; sourceTree = "<absolute>"; };
+		A8EB30371C293A9C0061200C /* iceandfier-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "iceandfier-Prefix.pch"; sourceTree = "<group>"; };
+		A8EB30381C293B060061200C /* iceandfier.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = iceandfier.xcassets; sourceTree = "<group>"; };
 		FD6FF4AF199DE9A100E3101D /* UserData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserData.h; sourceTree = "<group>"; };
 		FD6FF4B0199DE9A100E3101D /* UserData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserData.m; sourceTree = "<group>"; };
 		FDC4766B199B41A5002863D7 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
@@ -3916,6 +4233,46 @@
 				09E9BC871AFDA41F00CEB2DD /* Foundation.framework in Frameworks */,
 				09E9BC881AFDA41F00CEB2DD /* CoreData.framework in Frameworks */,
 				09E9BC891AFDA41F00CEB2DD /* libMobClickLibrary.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8EB2FCB1C2939990061200C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8EB2FCC1C2939990061200C /* CoreMotion.framework in Frameworks */,
+				A8EB2FCD1C2939990061200C /* MediaPlayer.framework in Frameworks */,
+				A8EB2FCE1C2939990061200C /* QuartzCore.framework in Frameworks */,
+				A8EB2FCF1C2939990061200C /* libstdc++.dylib in Frameworks */,
+				A8EB2FD01C2939990061200C /* Social.framework in Frameworks */,
+				A8EB2FD11C2939990061200C /* Accounts.framework in Frameworks */,
+				A8EB2FD21C2939990061200C /* SystemConfiguration.framework in Frameworks */,
+				A8EB2FD31C2939990061200C /* Security.framework in Frameworks */,
+				A8EB2FD41C2939990061200C /* libicucore.dylib in Frameworks */,
+				A8EB2FD51C2939990061200C /* CoreTelephony.framework in Frameworks */,
+				A8EB2FD61C2939990061200C /* ImageIO.framework in Frameworks */,
+				A8EB2FD71C2939990061200C /* EventKit.framework in Frameworks */,
+				A8EB2FD81C2939990061200C /* EventKitUI.framework in Frameworks */,
+				A8EB2FD91C2939990061200C /* AVFoundation.framework in Frameworks */,
+				A8EB2FDA1C2939990061200C /* libUMessage_Sdk_1.1.0.a in Frameworks */,
+				A8EB2FDB1C2939990061200C /* libUMFeedback.a in Frameworks */,
+				A8EB2FDC1C2939990061200C /* AdSupport.framework in Frameworks */,
+				A8EB2FDD1C2939990061200C /* libsqlite3.dylib in Frameworks */,
+				A8EB2FDE1C2939990061200C /* CoreGraphics.framework in Frameworks */,
+				A8EB2FDF1C2939990061200C /* MessageUI.framework in Frameworks */,
+				A8EB2FE01C2939990061200C /* AudioToolbox.framework in Frameworks */,
+				A8EB2FE11C2939990061200C /* StoreKit.framework in Frameworks */,
+				A8EB2FE21C2939990061200C /* CFNetwork.framework in Frameworks */,
+				A8EB2FE31C2939990061200C /* CoreText.framework in Frameworks */,
+				A8EB2FE41C2939990061200C /* MobileCoreServices.framework in Frameworks */,
+				A8EB2FE51C2939990061200C /* CoreMedia.framework in Frameworks */,
+				A8EB2FE61C2939990061200C /* libxml2.dylib in Frameworks */,
+				A8EB2FE71C2939990061200C /* libz.dylib in Frameworks */,
+				A8EB2FE81C2939990061200C /* UIKit.framework in Frameworks */,
+				A8EB2FE91C2939990061200C /* GoogleMobileAds.framework in Frameworks */,
+				A8EB2FEA1C2939990061200C /* Foundation.framework in Frameworks */,
+				A8EB2FEB1C2939990061200C /* CoreData.framework in Frameworks */,
+				A8EB2FEC1C2939990061200C /* libMobClickLibrary.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4784,6 +5141,7 @@
 		09B5E73518F6D82900B1DFD3 /* prefixPCH */ = {
 			isa = PBXGroup;
 			children = (
+				A8EB30371C293A9C0061200C /* iceandfier-Prefix.pch */,
 				09005FC41BA9AF0D006CE2EF /* xijuan-Prefix.pch */,
 				097313F11B52104F00C9479E /* guoguo-Prefix.pch */,
 				09E9BD0F1AFDA4A500CEB2DD /* mingxiaoxi-Prefix.pch */,
@@ -5343,6 +5701,7 @@
 		26D9C3ED157CA68000756CB2 = {
 			isa = PBXGroup;
 			children = (
+				A8EB30381C293B060061200C /* iceandfier.xcassets */,
 				A8D62AC11BF1E4C100972F6E /* guoguo-Info.plist */,
 				A8D62AC21BF1E4C100972F6E /* jingdushiguang-Info.plist */,
 				A8D62AC31BF1E4C100972F6E /* mianfeixiaoshuo-Info.plist */,
@@ -5364,6 +5723,7 @@
 				26D9C402157CA68000756CB2 /* Classes */,
 				26D9C3FB157CA68000756CB2 /* Frameworks */,
 				26D9C3F9157CA68000756CB2 /* Products */,
+				A8EB30361C2939990061200C /* iceandfier-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -5378,6 +5738,7 @@
 				09E9BD0D1AFDA41F00CEB2DD /* mingxiaoxi.app */,
 				097313EF1B520A8700C9479E /* guoguo.app */,
 				09005FC21BA9AE72006CE2EF /* mingxiaoxi copy.app */,
+				A8EB30351C2939990061200C /* iceandfier.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -5658,6 +6019,23 @@
 			productReference = 09E9BD0D1AFDA41F00CEB2DD /* mingxiaoxi.app */;
 			productType = "com.apple.product-type.application";
 		};
+		A8EB2EE71C2939990061200C /* iceandfier */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A8EB30321C2939990061200C /* Build configuration list for PBXNativeTarget "iceandfier" */;
+			buildPhases = (
+				A8EB2EE81C2939990061200C /* Sources */,
+				A8EB2FCB1C2939990061200C /* Frameworks */,
+				A8EB2FED1C2939990061200C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iceandfier;
+			productName = epub;
+			productReference = A8EB30351C2939990061200C /* iceandfier.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -5685,6 +6063,9 @@
 					0974111F1AF21151002BAFCA = {
 						DevelopmentTeam = 4J463NHQ74;
 					};
+					A8EB2EE71C2939990061200C = {
+						DevelopmentTeam = 4J463NHQ74;
+					};
 				};
 			};
 			buildConfigurationList = 26D9C3F2157CA68000756CB2 /* Build configuration list for PBXProject "PandaBook" */;
@@ -5708,6 +6089,7 @@
 				09E9BB811AFDA41F00CEB2DD /* mingxiaoxi */,
 				097312631B520A8700C9479E /* guoguo */,
 				09005E751BA9AE72006CE2EF /* xijuan */,
+				A8EB2EE71C2939990061200C /* iceandfier */,
 			);
 		};
 /* End PBXProject section */
@@ -5810,7 +6192,6 @@
 				09005FA81BA9AE72006CE2EF /* icon_rightArrow@2x.png in Resources */,
 				09C19E581BADA3910050685E /* 16505.epub in Resources */,
 				09C19E431BADA3910050685E /* 16484.epub in Resources */,
-				09005FA91BA9AE72006CE2EF /* 魔龙的狂舞.jpg in Resources */,
 				09C19E251BADA3910050685E /* 16454.epub in Resources */,
 				09005FAA1BA9AE72006CE2EF /* book.sqlite in Resources */,
 				09C19E321BADA3910050685E /* 16467.epub in Resources */,
@@ -5822,7 +6203,6 @@
 				09005FAD1BA9AE72006CE2EF /* messages_right_bubble@2x.png in Resources */,
 				09C19E541BADA3910050685E /* 16501.epub in Resources */,
 				09C19E4E1BADA3910050685E /* 16495.epub in Resources */,
-				09005FAF1BA9AE72006CE2EF /* 第五卷魔龙的狂舞.epub in Resources */,
 				09005FB11BA9AE72006CE2EF /* nav_btn_bg_lighted@2x.png in Resources */,
 				09C19E1C1BADA3910050685E /* 16445.epub in Resources */,
 				09C19E441BADA3910050685E /* 16485.epub in Resources */,
@@ -5896,12 +6276,10 @@
 				09117F471AD5769300932491 /* messages_left_bubble@2x.png in Resources */,
 				09117F4A1AD5769300932491 /* web in Resources */,
 				09117F521AD5769300932491 /* icon_rightArrow@2x.png in Resources */,
-				0964D5E61AD920CB00A956AD /* 魔龙的狂舞.jpg in Resources */,
 				0964DD011ADBD33400A956AD /* ZipArchive.podspec in Resources */,
 				09117F531AD5769300932491 /* book.sqlite in Resources */,
 				09117F541AD5769300932491 /* nav_btn_bg@2x.png in Resources */,
 				09117F561AD5769300932491 /* messages_right_bubble@2x.png in Resources */,
-				0964D5E91AD9217D00A956AD /* 第五卷魔龙的狂舞.epub in Resources */,
 				09117F571AD5769300932491 /* nav_btn_bg_lighted@2x.png in Resources */,
 				09117F581AD5769300932491 /* About.txt in Resources */,
 				09117F591AD5769300932491 /* item_ok_selected@2x.png in Resources */,
@@ -6031,12 +6409,10 @@
 				0964DC251ADBD27E00A956AD /* web in Resources */,
 				0964DD021ADBD33400A956AD /* ZipArchive.podspec in Resources */,
 				0964DC271ADBD27E00A956AD /* icon_rightArrow@2x.png in Resources */,
-				0964DC281ADBD27E00A956AD /* 魔龙的狂舞.jpg in Resources */,
 				0964DC291ADBD27E00A956AD /* book.sqlite in Resources */,
 				A826E5B21C23FB13005E0AEB /* fang_zheng_song_san_jian_ti.ttf in Resources */,
 				0964DC2A1ADBD27E00A956AD /* nav_btn_bg@2x.png in Resources */,
 				0964DC2B1ADBD27E00A956AD /* messages_right_bubble@2x.png in Resources */,
-				0964DC2C1ADBD27E00A956AD /* 第五卷魔龙的狂舞.epub in Resources */,
 				0964DC2D1ADBD27E00A956AD /* nav_btn_bg_lighted@2x.png in Resources */,
 				0964DC2E1ADBD27E00A956AD /* About.txt in Resources */,
 				0964DC2F1ADBD27E00A956AD /* item_ok_selected@2x.png in Resources */,
@@ -6096,14 +6472,12 @@
 				0964DE421ADFCC7700A956AD /* ZipArchive.podspec in Resources */,
 				A8377B561C1A750C004871AB /* sw.jpg in Resources */,
 				0964DE431ADFCC7700A956AD /* icon_rightArrow@2x.png in Resources */,
-				0964DE441ADFCC7700A956AD /* 魔龙的狂舞.jpg in Resources */,
 				0964DE451ADFCC7700A956AD /* book.sqlite in Resources */,
 				0964DE461ADFCC7700A956AD /* nav_btn_bg@2x.png in Resources */,
 				A826E5B31C23FB13005E0AEB /* fang_zheng_song_san_jian_ti.ttf in Resources */,
 				0964DE681AE0091E00A956AD /* 权力的游戏.jpg in Resources */,
 				0964DE6D1AE0091E00A956AD /* 第四卷群鸦的盛宴.epub in Resources */,
 				0964DE471ADFCC7700A956AD /* messages_right_bubble@2x.png in Resources */,
-				0964DE481ADFCC7700A956AD /* 第五卷魔龙的狂舞.epub in Resources */,
 				0964DE491ADFCC7700A956AD /* nav_btn_bg_lighted@2x.png in Resources */,
 				0964DE4A1ADFCC7700A956AD /* About.txt in Resources */,
 				0964DE6A1AE0091E00A956AD /* 第三卷冰雨的风暴.epub in Resources */,
@@ -6211,7 +6585,6 @@
 				097313C31B520A8700C9479E /* 16400.epub in Resources */,
 				097313C41B520A8700C9479E /* 16371.epub in Resources */,
 				097313C51B520A8700C9479E /* 16336.epub in Resources */,
-				097313C61B520A8700C9479E /* 魔龙的狂舞.jpg in Resources */,
 				097313C71B520A8700C9479E /* 16398.epub in Resources */,
 				097313C81B520A8700C9479E /* 16397.epub in Resources */,
 				097313C91B520A8700C9479E /* 16348.epub in Resources */,
@@ -6223,7 +6596,6 @@
 				097313CE1B520A8700C9479E /* nav_btn_bg@2x.png in Resources */,
 				097313CF1B520A8700C9479E /* 16373.epub in Resources */,
 				097313D01B520A8700C9479E /* messages_right_bubble@2x.png in Resources */,
-				097313D11B520A8700C9479E /* 第五卷魔龙的狂舞.epub in Resources */,
 				097313D21B520A8700C9479E /* 16341.epub in Resources */,
 				097313D31B520A8700C9479E /* 16342.epub in Resources */,
 				097313D41B520A8700C9479E /* 16385.epub in Resources */,
@@ -6350,7 +6722,6 @@
 				097413071AF21CB2002BAFCA /* 16400.epub in Resources */,
 				097412EA1AF21CB2002BAFCA /* 16371.epub in Resources */,
 				097412C71AF21CB2002BAFCA /* 16336.epub in Resources */,
-				097412521AF21151002BAFCA /* 魔龙的狂舞.jpg in Resources */,
 				097413051AF21CB2002BAFCA /* 16398.epub in Resources */,
 				097413041AF21CB2002BAFCA /* 16397.epub in Resources */,
 				097412D31AF21CB2002BAFCA /* 16348.epub in Resources */,
@@ -6361,7 +6732,6 @@
 				097412541AF21151002BAFCA /* nav_btn_bg@2x.png in Resources */,
 				097412EC1AF21CB2002BAFCA /* 16373.epub in Resources */,
 				097412571AF21151002BAFCA /* messages_right_bubble@2x.png in Resources */,
-				097412581AF21151002BAFCA /* 第五卷魔龙的狂舞.epub in Resources */,
 				097412CC1AF21CB2002BAFCA /* 16341.epub in Resources */,
 				097412CD1AF21CB2002BAFCA /* 16342.epub in Resources */,
 				097412F81AF21CB2002BAFCA /* 16385.epub in Resources */,
@@ -6439,13 +6809,11 @@
 				09E9BCDC1AFDA41F00CEB2DD /* web in Resources */,
 				09E9BCDD1AFDA41F00CEB2DD /* ZipArchive.podspec in Resources */,
 				09E9BCE01AFDA41F00CEB2DD /* icon_rightArrow@2x.png in Resources */,
-				09E9BCE41AFDA41F00CEB2DD /* 魔龙的狂舞.jpg in Resources */,
 				09E9BCE91AFDA41F00CEB2DD /* book.sqlite in Resources */,
 				09E9BCEC1AFDA41F00CEB2DD /* nav_btn_bg@2x.png in Resources */,
 				09E9BD291AFDAEA400CEB2DD /* 16410.epub in Resources */,
 				09E9BCEE1AFDA41F00CEB2DD /* messages_right_bubble@2x.png in Resources */,
 				09E9BD271AFDAEA400CEB2DD /* 16408.epub in Resources */,
-				09E9BCEF1AFDA41F00CEB2DD /* 第五卷魔龙的狂舞.epub in Resources */,
 				09E9BD121AFDA8F700CEB2DD /* mingxiaoxi.xcassets in Resources */,
 				09E9BCF81AFDA41F00CEB2DD /* nav_btn_bg_lighted@2x.png in Resources */,
 				09E9BCFA1AFDA41F00CEB2DD /* About.txt in Resources */,
@@ -6461,6 +6829,81 @@
 				09E9BD021AFDA41F00CEB2DD /* icon_rightArrow_selected@2x.png in Resources */,
 				09E9BD301AFDAEA400CEB2DD /* 16417.epub in Resources */,
 				09E9BD031AFDA41F00CEB2DD /* background@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8EB2FED1C2939990061200C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8EB2FEE1C2939990061200C /* messages_toolbar_background@2x.png in Resources */,
+				A8EB2FEF1C2939990061200C /* notification_success.png in Resources */,
+				A8EB2FF01C2939990061200C /* README.txt in Resources */,
+				A8EB2FF11C2939990061200C /* 群鸦的盛宴.jpg in Resources */,
+				A8EB2FF21C2939990061200C /* 第五卷魔龙的狂舞.epub in Resources */,
+				A8EB2FF31C2939990061200C /* umeng_logo.png in Resources */,
+				A8EB2FF41C2939990061200C /* 第四卷群鸦的盛宴.epub in Resources */,
+				A8EB2FF51C2939990061200C /* blueArrow@2x.png in Resources */,
+				A8EB2FF61C2939990061200C /* 魔龙的狂舞.jpg in Resources */,
+				A8EB2FF71C2939990061200C /* InfoPlist555.strings in Resources */,
+				A8EB2FF81C2939990061200C /* 冰雨的风暴.jpg in Resources */,
+				A8EB2FF91C2939990061200C /* staticread-Info.plist in Resources */,
+				A8EB2FFA1C2939990061200C /* mianfeixiaoshuo-Info.plist in Resources */,
+				A8EB2FFB1C2939990061200C /* xijuan-Info.plist in Resources */,
+				A8EB2FFC1C2939990061200C /* wxx.css in Resources */,
+				A8EB2FFD1C2939990061200C /* send@2x.png in Resources */,
+				A8EB2FFE1C2939990061200C /* Localizable.strings in Resources */,
+				A8EB2FFF1C2939990061200C /* readme.txt in Resources */,
+				A8EB30001C2939990061200C /* jingdushiguang-Info.plist in Resources */,
+				A8EB30011C2939990061200C /* 第一卷权力的游戏.epub in Resources */,
+				A8EB30021C2939990061200C /* guoguo-Info.plist in Resources */,
+				A8EB30031C2939990061200C /* messages_tableview_background.png in Resources */,
+				A8EB30041C2939990061200C /* item_cancel@2x.png in Resources */,
+				A8EB30051C2939990061200C /* si_yuan_hei_ti.ttf in Resources */,
+				A8EB30061C2939990061200C /* 权力的游戏.jpg in Resources */,
+				A8EB30071C2939990061200C /* item_ok@2x.png in Resources */,
+				A8EB30081C2939990061200C /* nav_bar_bg@2x.png in Resources */,
+				A8EB30091C2939990061200C /* UMFeedbackViewController.xib in Resources */,
+				A8EB300A1C2939990061200C /* Refresh-icon.png in Resources */,
+				A8EB300B1C2939990061200C /* 第三卷冰雨的风暴.epub in Resources */,
+				A8EB300C1C2939990061200C /* sw.jpg in Resources */,
+				A8EB300D1C2939990061200C /* blueArrow.png in Resources */,
+				A8EB300E1C2939990061200C /* UMContactViewController.xib in Resources */,
+				A8EB300F1C2939990061200C /* item_cancel_selected@2x.png in Resources */,
+				A8EB30101C2939990061200C /* umFeedback.bundle in Resources */,
+				A8EB30111C2939990061200C /* notification_warring@2x.png in Resources */,
+				A8EB30121C2939990061200C /* themes in Resources */,
+				A8EB30131C2939990061200C /* ZipArchive.podspec in Resources */,
+				A8EB30141C2939990061200C /* send_selected@2x.png in Resources */,
+				A8EB30151C2939990061200C /* fang_zheng_song_san_jian_ti.ttf in Resources */,
+				A8EB30161C2939990061200C /* nav_btn_bg.png in Resources */,
+				A8EB30391C293B060061200C /* iceandfier.xcassets in Resources */,
+				A8EB30171C2939990061200C /* 列王的纷争.jpg in Resources */,
+				A8EB30181C2939990061200C /* notification_success@2x.png in Resources */,
+				A8EB30191C2939990061200C /* About.txt in Resources */,
+				A8EB301A1C2939990061200C /* nav_bg.png in Resources */,
+				A8EB301B1C2939990061200C /* messages_left_bubble@2x.png in Resources */,
+				A8EB301C1C2939990061200C /* web in Resources */,
+				A8EB301D1C2939990061200C /* icon_rightArrow@2x.png in Resources */,
+				A8EB301E1C2939990061200C /* 第二卷列王的纷争.epub in Resources */,
+				A8EB301F1C2939990061200C /* book.sqlite in Resources */,
+				A8EB30201C2939990061200C /* icon_font.ttf in Resources */,
+				A8EB30211C2939990061200C /* nav_btn_bg@2x.png in Resources */,
+				A8EB30221C2939990061200C /* mingxiaoxi-Info.plist in Resources */,
+				A8EB30231C2939990061200C /* messages_right_bubble@2x.png in Resources */,
+				A8EB30241C2939990061200C /* nav_btn_bg_lighted@2x.png in Resources */,
+				A8EB30251C2939990061200C /* Lora-Italic.ttf in Resources */,
+				A8EB30261C2939990061200C /* About.txt in Resources */,
+				A8EB30271C2939990061200C /* fang_zheng_fang_song_jian_ti.ttf in Resources */,
+				A8EB30281C2939990061200C /* item_ok_selected@2x.png in Resources */,
+				A8EB30291C2939990061200C /* messages_toolbar_background.png in Resources */,
+				A8EB302A1C2939990061200C /* waiguomingzhu-Info.plist in Resources */,
+				A8EB302B1C2939990061200C /* messages_tableview_background@2x.png in Resources */,
+				A8EB302D1C2939990061200C /* pandabook-Info.plist in Resources */,
+				A8EB302E1C2939990061200C /* notification_warring.png in Resources */,
+				A8EB302F1C2939990061200C /* icon_rightArrow_selected@2x.png in Resources */,
+				A8EB30301C2939990061200C /* background@2x.png in Resources */,
+				A8EB30311C2939990061200C /* Lora-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -8331,6 +8774,239 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A8EB2EE81C2939990061200C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8EB2EE91C2939990061200C /* main.m in Sources */,
+				A8EB2EEA1C2939990061200C /* StoreNothingCell.m in Sources */,
+				A8EB2EEB1C2939990061200C /* UIImageView+Curled.m in Sources */,
+				A8EB2EEC1C2939990061200C /* GCDAsyncSocket.m in Sources */,
+				A8EB2EED1C2939990061200C /* BookFeedBackViewController.m in Sources */,
+				A8EB2EEE1C2939990061200C /* RootViewController.m in Sources */,
+				A8EB2EEF1C2939990061200C /* SDDataCache.m in Sources */,
+				A8EB2EF01C2939990061200C /* SDNetworkActivityIndicator.m in Sources */,
+				A8EB2EF11C2939990061200C /* WxxIapStore.m in Sources */,
+				A8EB2EF21C2939990061200C /* StoreClassViewController.m in Sources */,
+				A8EB2EF31C2939990061200C /* CFilteringJSONSerializer.m in Sources */,
+				A8EB2EF41C2939990061200C /* AppDelegate.m in Sources */,
+				A8EB2EF51C2939990061200C /* WxxAlertView.m in Sources */,
+				A8EB2EF61C2939990061200C /* UserUtil.m in Sources */,
+				A8EB2EF71C2939990061200C /* HTTPRedirectResponse.m in Sources */,
+				A8EB2EF81C2939990061200C /* MultipartFormDataParser.m in Sources */,
+				A8EB2EF91C2939990061200C /* ChaptersListViewController.m in Sources */,
+				A8EB2EFA1C2939990061200C /* BigClassData.m in Sources */,
+				A8EB2EFB1C2939990061200C /* HTTPAuthenticationRequest.m in Sources */,
+				A8EB2EFC1C2939990061200C /* UMFeedbackTableViewCellLeft.m in Sources */,
+				A8EB2EFD1C2939990061200C /* Chapter.m in Sources */,
+				A8EB2EFE1C2939990061200C /* UIWebView+SearchWebView.m in Sources */,
+				A8EB2EFF1C2939990061200C /* GTMNSString+HTML.m in Sources */,
+				A8EB2F001C2939990061200C /* NSString+HTML.m in Sources */,
+				A8EB2F011C2939990061200C /* WxxHttpUtil.m in Sources */,
+				A8EB2F021C2939990061200C /* EvLineProgressView.m in Sources */,
+				A8EB2F031C2939990061200C /* MKStoreObserver.m in Sources */,
+				A8EB2F041C2939990061200C /* UserData.m in Sources */,
+				A8EB2F051C2939990061200C /* ioapi.c in Sources */,
+				A8EB2F061C2939990061200C /* HTTPConnection.m in Sources */,
+				A8EB2F071C2939990061200C /* BookLoader.m in Sources */,
+				A8EB2F081C2939990061200C /* BookSetCell.m in Sources */,
+				A8EB2F091C2939990061200C /* JMStaticContentTableViewCell.m in Sources */,
+				A8EB2F0A1C2939990061200C /* PenSoundDao.m in Sources */,
+				A8EB2F0B1C2939990061200C /* PUTResponse.m in Sources */,
+				A8EB2F0C1C2939990061200C /* MoreAppTableViewCell.m in Sources */,
+				A8EB2F0D1C2939990061200C /* BooksListViewController.m in Sources */,
+				A8EB2F0E1C2939990061200C /* CJSONSerializer.m in Sources */,
+				A8EB2F0F1C2939990061200C /* BookViewController.m in Sources */,
+				A8EB2F101C2939990061200C /* EPubBookLoader.m in Sources */,
+				A8EB2F111C2939990061200C /* UMFeedbackTableViewCellRight.m in Sources */,
+				A8EB2F121C2939990061200C /* SearchWebView.js in Sources */,
+				A8EB2F131C2939990061200C /* EGORefreshTableHeaderView.m in Sources */,
+				A8EB2F141C2939990061200C /* MoreAppViewController.m in Sources */,
+				A8EB2F151C2939990061200C /* CJSONScanner.m in Sources */,
+				A8EB2F161C2939990061200C /* zip.c in Sources */,
+				A8EB2F171C2939990061200C /* AnimationHelper.m in Sources */,
+				A8EB2F181C2939990061200C /* AppData.m in Sources */,
+				A8EB2F191C2939990061200C /* AuthHelper.m in Sources */,
+				A8EB2F1A1C2939990061200C /* HTTPErrorResponse.m in Sources */,
+				A8EB2F1B1C2939990061200C /* CacheHelper.m in Sources */,
+				A8EB2F1C1C2939990061200C /* EncryptHelper.m in Sources */,
+				A8EB2F1D1C2939990061200C /* ReStoreTableVeiwCell.m in Sources */,
+				A8EB2F1E1C2939990061200C /* FileHelper.m in Sources */,
+				A8EB2F1F1C2939990061200C /* NSString+wxx.m in Sources */,
+				A8EB2F201C2939990061200C /* HttpHelper.m in Sources */,
+				A8EB2F211C2939990061200C /* BookInfoView.m in Sources */,
+				A8EB2F221C2939990061200C /* AFKReviewTroller.m in Sources */,
+				A8EB2F231C2939990061200C /* HTTPDataResponse.m in Sources */,
+				A8EB2F241C2939990061200C /* HistoryData.m in Sources */,
+				A8EB2F251C2939990061200C /* WxxBookSelect.m in Sources */,
+				A8EB2F261C2939990061200C /* MultipartMessageHeaderField.m in Sources */,
+				A8EB2F271C2939990061200C /* mztools.c in Sources */,
+				A8EB2F281C2939990061200C /* ClassData.m in Sources */,
+				A8EB2F291C2939990061200C /* StoreClassCell.m in Sources */,
+				A8EB2F2A1C2939990061200C /* BookTableViewCell.m in Sources */,
+				A8EB2F2B1C2939990061200C /* WxxTableView.m in Sources */,
+				A8EB2F2C1C2939990061200C /* HTTPDynamicFileResponse.m in Sources */,
+				A8EB2F2D1C2939990061200C /* MessageHelper.m in Sources */,
+				A8EB2F2E1C2939990061200C /* DAVResponse.m in Sources */,
+				A8EB2F2F1C2939990061200C /* ResourceHelper.m in Sources */,
+				A8EB2F301C2939990061200C /* WxxBaseData.m in Sources */,
+				A8EB2F311C2939990061200C /* SysHelper.m in Sources */,
+				A8EB2F321C2939990061200C /* SearchResultViewController.m in Sources */,
+				A8EB2F331C2939990061200C /* DBUtils.m in Sources */,
+				A8EB2F341C2939990061200C /* ArrowView.m in Sources */,
+				A8EB2F351C2939990061200C /* StoreClassTableViewCell.m in Sources */,
+				A8EB2F361C2939990061200C /* StaticTextFieldTableViewCell.m in Sources */,
+				A8EB2F371C2939990061200C /* GDataXMLNode.m in Sources */,
+				A8EB2F381C2939990061200C /* FeedBackView.m in Sources */,
+				A8EB2F391C2939990061200C /* ASIAuthenticationDialog.m in Sources */,
+				A8EB2F3A1C2939990061200C /* UIButton+Curled.m in Sources */,
+				A8EB2F3B1C2939990061200C /* ASIDataCompressor.m in Sources */,
+				A8EB2F3C1C2939990061200C /* ASIDataDecompressor.m in Sources */,
+				A8EB2F3D1C2939990061200C /* WxxAnimation.m in Sources */,
+				A8EB2F3E1C2939990061200C /* WxxLoadView.m in Sources */,
+				A8EB2F3F1C2939990061200C /* ASIDownloadCache.m in Sources */,
+				A8EB2F401C2939990061200C /* ASIFormDataRequest.m in Sources */,
+				A8EB2F411C2939990061200C /* BookData.m in Sources */,
+				A8EB2F421C2939990061200C /* ASIHTTPRequest.m in Sources */,
+				A8EB2F431C2939990061200C /* ASIInputStream.m in Sources */,
+				A8EB2F441C2939990061200C /* ASINetworkQueue.m in Sources */,
+				A8EB2F451C2939990061200C /* ASIWebPageRequest.m in Sources */,
+				A8EB2F461C2939990061200C /* Reachability.m in Sources */,
+				A8EB2F471C2939990061200C /* WxxNavigationController.m in Sources */,
+				A8EB2F481C2939990061200C /* WxxDatePicker.m in Sources */,
+				A8EB2F491C2939990061200C /* WebSocket.m in Sources */,
+				A8EB2F4A1C2939990061200C /* WxxView.m in Sources */,
+				A8EB2F4B1C2939990061200C /* DDAbstractDatabaseLogger.m in Sources */,
+				A8EB2F4C1C2939990061200C /* UIView+Blur.m in Sources */,
+				A8EB2F4D1C2939990061200C /* DDASLLogger.m in Sources */,
+				A8EB2F4E1C2939990061200C /* JSONKit.m in Sources */,
+				A8EB2F4F1C2939990061200C /* HudDemoViewController.m in Sources */,
+				A8EB2F501C2939990061200C /* CDataScanner_Extensions.m in Sources */,
+				A8EB2F511C2939990061200C /* SVHTTPRequest.m in Sources */,
+				A8EB2F521C2939990061200C /* MKStoreManager.m in Sources */,
+				A8EB2F531C2939990061200C /* DELETEResponse.m in Sources */,
+				A8EB2F541C2939990061200C /* MBProgressHUD.m in Sources */,
+				A8EB2F551C2939990061200C /* UIView+Shadow.m in Sources */,
+				A8EB2F561C2939990061200C /* JMStaticContentTableViewSection.m in Sources */,
+				A8EB2F571C2939990061200C /* KWPopoverView.m in Sources */,
+				A8EB2F581C2939990061200C /* BookButton.m in Sources */,
+				A8EB2F591C2939990061200C /* EvRoundProgressView.m in Sources */,
+				A8EB2F5A1C2939990061200C /* DDLog.m in Sources */,
+				A8EB2F5B1C2939990061200C /* HistoryViewListController.m in Sources */,
+				A8EB2F5C1C2939990061200C /* StoreTableVeiwCell.m in Sources */,
+				A8EB2F5D1C2939990061200C /* DDFileLogger.m in Sources */,
+				A8EB2F5E1C2939990061200C /* GetAddress.mm in Sources */,
+				A8EB2F5F1C2939990061200C /* EvPageProgressView.m in Sources */,
+				A8EB2F601C2939990061200C /* StoreBookInfoView.m in Sources */,
+				A8EB2F611C2939990061200C /* YLLabel.m in Sources */,
+				A8EB2F621C2939990061200C /* unzip.c in Sources */,
+				A8EB2F631C2939990061200C /* CycleScrollView.m in Sources */,
+				A8EB2F641C2939990061200C /* DDTTYLogger.m in Sources */,
+				A8EB2F651C2939990061200C /* BookSetView.m in Sources */,
+				A8EB2F661C2939990061200C /* BTGlassScrollView.m in Sources */,
+				A8EB2F671C2939990061200C /* NSString+MD5.m in Sources */,
+				A8EB2F681C2939990061200C /* CJSONSerialization.m in Sources */,
+				A8EB2F691C2939990061200C /* SetView.m in Sources */,
+				A8EB2F6A1C2939990061200C /* BookLogoView.m in Sources */,
+				A8EB2F6B1C2939990061200C /* DB.m in Sources */,
+				A8EB2F6C1C2939990061200C /* FMDatabase.m in Sources */,
+				A8EB2F6D1C2939990061200C /* BUIControl.m in Sources */,
+				A8EB2F6E1C2939990061200C /* UIBezierPath+Symbol.m in Sources */,
+				A8EB2F6F1C2939990061200C /* WxxTextFieldBarView.m in Sources */,
+				A8EB2F701C2939990061200C /* ReStoreViewController.m in Sources */,
+				A8EB2F711C2939990061200C /* NSDictionary_JSONExtensions.m in Sources */,
+				A8EB2F721C2939990061200C /* CJSONDeserializer_BlocksExtensions.m in Sources */,
+				A8EB2F731C2939990061200C /* BookInfoViewController.m in Sources */,
+				A8EB2F741C2939990061200C /* NSData+AES.m in Sources */,
+				A8EB2F751C2939990061200C /* SDWebDataDownloader.m in Sources */,
+				A8EB2F761C2939990061200C /* WxxWebView.m in Sources */,
+				A8EB2F771C2939990061200C /* UMEGORefreshTableHeaderView.m in Sources */,
+				A8EB2F781C2939990061200C /* CurledViewBase.m in Sources */,
+				A8EB2F791C2939990061200C /* OpenUDID.m in Sources */,
+				A8EB2F7A1C2939990061200C /* UMFeedbackViewController.m in Sources */,
+				A8EB2F7B1C2939990061200C /* BaseDao.m in Sources */,
+				A8EB2F7C1C2939990061200C /* ContextFilterLogFormatter.m in Sources */,
+				A8EB2F7D1C2939990061200C /* AboutViewController.m in Sources */,
+				A8EB2F7E1C2939990061200C /* ZXObject.m in Sources */,
+				A8EB2F7F1C2939990061200C /* WxxAdView.m in Sources */,
+				A8EB2F801C2939990061200C /* EvSetingProgressView.m in Sources */,
+				A8EB2F811C2939990061200C /* UMContactViewController.m in Sources */,
+				A8EB2F821C2939990061200C /* HTTPFileResponse.m in Sources */,
+				A8EB2F831C2939990061200C /* NSTimer+Addition.m in Sources */,
+				A8EB2F841C2939990061200C /* EVCircularProgressView.m in Sources */,
+				A8EB2F851C2939990061200C /* BookLightView.m in Sources */,
+				A8EB2F861C2939990061200C /* BookView.m in Sources */,
+				A8EB2F871C2939990061200C /* MyHTTPConnection.m in Sources */,
+				A8EB2F881C2939990061200C /* SecurityUtil.m in Sources */,
+				A8EB2F891C2939990061200C /* HttpServerViewController.m in Sources */,
+				A8EB2F8A1C2939990061200C /* DDXMLElementAdditions.m in Sources */,
+				A8EB2F8B1C2939990061200C /* NSString+DDXML.m in Sources */,
+				A8EB2F8C1C2939990061200C /* DDXMLDocument.m in Sources */,
+				A8EB2F8D1C2939990061200C /* UIBezierPath+Wxx.m in Sources */,
+				A8EB2F8E1C2939990061200C /* FeedBackData.m in Sources */,
+				A8EB2F8F1C2939990061200C /* WxxButton.m in Sources */,
+				A8EB2F901C2939990061200C /* WxxTextField.m in Sources */,
+				A8EB2F911C2939990061200C /* HYCircleLoadingView.m in Sources */,
+				A8EB2F921C2939990061200C /* DDXMLElement.m in Sources */,
+				A8EB2F931C2939990061200C /* WxxPopView.m in Sources */,
+				A8EB2F941C2939990061200C /* DDXMLNode.m in Sources */,
+				A8EB2F951C2939990061200C /* iRate.m in Sources */,
+				A8EB2F961C2939990061200C /* WxxLabel.m in Sources */,
+				A8EB2F971C2939990061200C /* LeafNotification.m in Sources */,
+				A8EB2F981C2939990061200C /* ZYBadgeView.m in Sources */,
+				A8EB2F991C2939990061200C /* ZYImageView.m in Sources */,
+				A8EB2F9A1C2939990061200C /* BookReadViewController.m in Sources */,
+				A8EB2F9B1C2939990061200C /* StoreLoadTableViewCell.m in Sources */,
+				A8EB2F9C1C2939990061200C /* JMStaticContentTableViewController.m in Sources */,
+				A8EB2F9D1C2939990061200C /* ChapterListView.m in Sources */,
+				A8EB2F9E1C2939990061200C /* ZYPageControl.m in Sources */,
+				A8EB2F9F1C2939990061200C /* CDataScanner.m in Sources */,
+				A8EB2FA01C2939990061200C /* GTMBase64.m in Sources */,
+				A8EB2FA11C2939990061200C /* ZYSliderView.m in Sources */,
+				A8EB2FA21C2939990061200C /* StoreHeadView.m in Sources */,
+				A8EB2FA31C2939990061200C /* CJSONSerializedData.m in Sources */,
+				A8EB2FA41C2939990061200C /* BlackView.m in Sources */,
+				A8EB2FA51C2939990061200C /* ZYTabBarView.m in Sources */,
+				A8EB2FA61C2939990061200C /* ZipArchive.mm in Sources */,
+				A8EB2FA71C2939990061200C /* mongoose.c in Sources */,
+				A8EB2FA81C2939990061200C /* DispatchQueueLogFormatter.m in Sources */,
+				A8EB2FA91C2939990061200C /* DAVConnection.m in Sources */,
+				A8EB2FAA1C2939990061200C /* KYButton.m in Sources */,
+				A8EB2FAB1C2939990061200C /* ZYTableCellBackgroundView.m in Sources */,
+				A8EB2FAC1C2939990061200C /* StoreClassTableView.m in Sources */,
+				A8EB2FAD1C2939990061200C /* HTTPMessage.m in Sources */,
+				A8EB2FAE1C2939990061200C /* DRPLoadingSpinner.m in Sources */,
+				A8EB2FAF1C2939990061200C /* IpadBookListViewController.m in Sources */,
+				A8EB2FB01C2939990061200C /* WxxTextView.m in Sources */,
+				A8EB2FB11C2939990061200C /* SDImageView+SDWebCache.m in Sources */,
+				A8EB2FB21C2939990061200C /* FMResultSet.m in Sources */,
+				A8EB2FB31C2939990061200C /* Base64.m in Sources */,
+				A8EB2FB41C2939990061200C /* HTTPServer.m in Sources */,
+				A8EB2FB51C2939990061200C /* BookDeleteView.m in Sources */,
+				A8EB2FB61C2939990061200C /* WxxConstants.m in Sources */,
+				A8EB2FB71C2939990061200C /* SVHTTPClient.m in Sources */,
+				A8EB2FB81C2939990061200C /* DDRange.m in Sources */,
+				A8EB2FB91C2939990061200C /* MultipartMessageHeader.m in Sources */,
+				A8EB2FBA1C2939990061200C /* ZYTabViewController.m in Sources */,
+				A8EB2FBB1C2939990061200C /* ToolBarView.m in Sources */,
+				A8EB2FBC1C2939990061200C /* CJSONDeserializer.m in Sources */,
+				A8EB2FBD1C2939990061200C /* ZYUIViewController.m in Sources */,
+				A8EB2FBE1C2939990061200C /* DDNumber.m in Sources */,
+				A8EB2FBF1C2939990061200C /* SettingsViewController.m in Sources */,
+				A8EB2FC01C2939990061200C /* StoreViewController.m in Sources */,
+				A8EB2FC11C2939990061200C /* SDWebDataManager.m in Sources */,
+				A8EB2FC21C2939990061200C /* WxxImageView.m in Sources */,
+				A8EB2FC31C2939990061200C /* FeedBackTableViewCell.m in Sources */,
+				A8EB2FC41C2939990061200C /* FMDatabaseAdditions.m in Sources */,
+				A8EB2FC51C2939990061200C /* HTTPAsyncFileResponse.m in Sources */,
+				A8EB2FC61C2939990061200C /* WebStoreViewController.m in Sources */,
+				A8EB2FC71C2939990061200C /* InAppPurchaseManager.m in Sources */,
+				A8EB2FC81C2939990061200C /* jquery-2.0.2.min.js in Sources */,
+				A8EB2FC91C2939990061200C /* BUIView.m in Sources */,
+				A8EB2FCA1C2939990061200C /* DDData.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
@@ -8595,9 +9271,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: xiangxun weng (4J463NHQ74)";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Distribution: xiangxun weng (4J463NHQ74)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: xiangxun weng (4J463NHQ74)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/epub/qq",
@@ -8662,8 +9338,8 @@
 				);
 				PRODUCT_MODULE_NAME = staticread;
 				PRODUCT_NAME = staticread;
-				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				PROVISIONING_PROFILE = "088630ce-f1c8-42b8-b56e-21dd6b176dd9";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "088630ce-f1c8-42b8-b56e-21dd6b176dd9";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -8887,9 +9563,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: xiangxun weng (4J463NHQ74)";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Distribution: xiangxun weng (4J463NHQ74)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: xiangxun weng (4J463NHQ74)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/epub/qq",
@@ -8954,8 +9630,8 @@
 				);
 				PRODUCT_MODULE_NAME = jingdushiguang;
 				PRODUCT_NAME = jingdushiguang;
-				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				PROVISIONING_PROFILE = "9783212d-f3f0-4cda-9864-a79b5987383a";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "9783212d-f3f0-4cda-9864-a79b5987383a";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -9665,6 +10341,143 @@
 			};
 			name = Release;
 		};
+		A8EB30331C2939990061200C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/epub/qq",
+					"$(PROJECT_DIR)/epub/admob",
+					"$(PROJECT_DIR)/epub/ShareSDK/Comment",
+					"$(PROJECT_DIR)/epub/ShareSDK/Connection",
+					"$(PROJECT_DIR)/epub/ShareSDK/Core",
+					"$(PROJECT_DIR)/epub/ShareSDK/Extend/GooglePlusSDK",
+					"$(PROJECT_DIR)/epub/ShareSDK/Extend/Pinterest.embeddedframework",
+					"$(PROJECT_DIR)/epub/ShareSDK/Extend/QQConnectSDK",
+					"$(PROJECT_DIR)/epub/ShareSDK/Extend/RenRenSDK",
+					"$(PROJECT_DIR)/epub/ShareSDK",
+					"$(PROJECT_DIR)/epub/ShareSDK/UI",
+					"$(PROJECT_DIR)/epub/umeng_community_ios_sdk_v1.0/UMSocial_Sdk_4.2/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/epub/sdk/ios_api/adnetwork/googleAdmob_700",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "epub/iceandfier-Prefix.pch";
+				GCC_VERSION = "";
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
+				INFOPLIST_FILE = "iceandfier-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/epub/umeng",
+					"$(PROJECT_DIR)/epub/admob",
+					"$(PROJECT_DIR)/epub",
+					"$(PROJECT_DIR)/epub/baidupush",
+					"$(PROJECT_DIR)/epub/qqad",
+					"$(PROJECT_DIR)/epub/ShareSDK/Extend/SinaWeiboSDK",
+					"$(PROJECT_DIR)/epub/ShareSDK/Extend/TencentWeiboSDK",
+					"$(PROJECT_DIR)/epub/ShareSDK/Extend/WeChatSDK",
+					"$(PROJECT_DIR)/epub/ShareSDK/Extend/YiXinSDK",
+					"$(PROJECT_DIR)/epub/umeng_community_ios_sdk_v1.0",
+					"$(PROJECT_DIR)/epub/umeng_community_ios_sdk_v1.0/UMessage_Sdk_1.1.0",
+					"$(PROJECT_DIR)/epub/umeng_community_ios_sdk_v1.0/UMSocial_Sdk_4.2/UMSocial_Sdk_4.2",
+					"$(PROJECT_DIR)/epub/umeng_community_ios_sdk_v1.0/UMSocial_Sdk_4.2/UMSocial_Sdk_Extra_Frameworks/Sina",
+					"$(PROJECT_DIR)/epub/umeng_community_ios_sdk_v1.0/UMSocial_Sdk_4.2/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
+					"$(PROJECT_DIR)/epub/umeng_community_ios_sdk_v1.0/UMSocial_Sdk_4.2/UMSocial_Sdk_Extra_Frameworks/Wechat",
+					"$(PROJECT_DIR)/epub/sdk/ios_api/BaiduMobads/baidu_include",
+					"$(PROJECT_DIR)/epub/sdk/ios_api",
+				);
+				OTHER_LDFLAGS = (
+					"-lxml2",
+					"-ObjC",
+					"-lstdc++",
+					"-fobjc-arc",
+					"-all_load",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wxx.bingyuhuozhige;
+				PRODUCT_MODULE_NAME = iceandfier;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A8EB30341C2939990061200C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: xiangxun weng (4J463NHQ74)";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Distribution: xiangxun weng (4J463NHQ74)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: xiangxun weng (4J463NHQ74)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/epub/qq",
+					"$(PROJECT_DIR)/epub/admob",
+					"$(PROJECT_DIR)/epub/ShareSDK/Comment",
+					"$(PROJECT_DIR)/epub/ShareSDK/Connection",
+					"$(PROJECT_DIR)/epub/ShareSDK/Core",
+					"$(PROJECT_DIR)/epub/ShareSDK/Extend/GooglePlusSDK",
+					"$(PROJECT_DIR)/epub/ShareSDK/Extend/Pinterest.embeddedframework",
+					"$(PROJECT_DIR)/epub/ShareSDK/Extend/QQConnectSDK",
+					"$(PROJECT_DIR)/epub/ShareSDK/Extend/RenRenSDK",
+					"$(PROJECT_DIR)/epub/ShareSDK",
+					"$(PROJECT_DIR)/epub/ShareSDK/UI",
+					"$(PROJECT_DIR)/epub/umeng_community_ios_sdk_v1.0/UMSocial_Sdk_4.2/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/epub/sdk/ios_api/adnetwork/googleAdmob_700",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "epub/iceandfier-Prefix.pch";
+				GCC_VERSION = "";
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
+				INFOPLIST_FILE = "iceandfier-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/epub/umeng",
+					"$(PROJECT_DIR)/epub/admob",
+					"$(PROJECT_DIR)/epub",
+					"$(PROJECT_DIR)/epub/baidupush",
+					"$(PROJECT_DIR)/epub/qqad",
+					"$(PROJECT_DIR)/epub/ShareSDK/Extend/SinaWeiboSDK",
+					"$(PROJECT_DIR)/epub/ShareSDK/Extend/TencentWeiboSDK",
+					"$(PROJECT_DIR)/epub/ShareSDK/Extend/WeChatSDK",
+					"$(PROJECT_DIR)/epub/ShareSDK/Extend/YiXinSDK",
+					"$(PROJECT_DIR)/epub/umeng_community_ios_sdk_v1.0",
+					"$(PROJECT_DIR)/epub/umeng_community_ios_sdk_v1.0/UMessage_Sdk_1.1.0",
+					"$(PROJECT_DIR)/epub/umeng_community_ios_sdk_v1.0/UMSocial_Sdk_4.2/UMSocial_Sdk_4.2",
+					"$(PROJECT_DIR)/epub/umeng_community_ios_sdk_v1.0/UMSocial_Sdk_4.2/UMSocial_Sdk_Extra_Frameworks/Sina",
+					"$(PROJECT_DIR)/epub/umeng_community_ios_sdk_v1.0/UMSocial_Sdk_4.2/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
+					"$(PROJECT_DIR)/epub/umeng_community_ios_sdk_v1.0/UMSocial_Sdk_4.2/UMSocial_Sdk_Extra_Frameworks/Wechat",
+					"$(PROJECT_DIR)/epub/sdk/ios_api/BaiduMobads/baidu_include",
+					"$(PROJECT_DIR)/epub/sdk/ios_api",
+				);
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = (
+					"-lxml2",
+					"-ObjC",
+					"-lstdc++",
+					"-fobjc-arc",
+					"-all_load",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wxx.bingyuhuozhige;
+				PRODUCT_MODULE_NAME = iceandfier;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "d167fe66-6507-49cf-90aa-bfd8e2f9548b";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "d167fe66-6507-49cf-90aa-bfd8e2f9548b";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -9745,6 +10558,15 @@
 			buildConfigurations = (
 				26D9C411157CA68000756CB2 /* Debug */,
 				26D9C412157CA68000756CB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A8EB30321C2939990061200C /* Build configuration list for PBXNativeTarget "iceandfier" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8EB30331C2939990061200C /* Debug */,
+				A8EB30341C2939990061200C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
