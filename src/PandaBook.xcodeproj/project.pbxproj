@@ -5701,29 +5701,12 @@
 		26D9C3ED157CA68000756CB2 = {
 			isa = PBXGroup;
 			children = (
-				A8EB30381C293B060061200C /* iceandfier.xcassets */,
-				A8D62AC11BF1E4C100972F6E /* guoguo-Info.plist */,
-				A8D62AC21BF1E4C100972F6E /* jingdushiguang-Info.plist */,
-				A8D62AC31BF1E4C100972F6E /* mianfeixiaoshuo-Info.plist */,
-				A8D62AC41BF1E4C100972F6E /* mingxiaoxi-Info.plist */,
-				A8D62AC51BF1E4C100972F6E /* pandabook-Info.plist */,
-				A8D62AC61BF1E4C100972F6E /* staticread copy-Info.plist */,
-				A8D62AC71BF1E4C100972F6E /* staticread-Info.plist */,
-				A8D62AC81BF1E4C100972F6E /* waiguomingzhu-Info.plist */,
-				A8D62AC91BF1E4C100972F6E /* xijuan-Info.plist */,
-				09005FC51BA9AF7B006CE2EF /* xijuan.xcassets */,
-				097313F21B521C1A00C9479E /* huaqiangu.xcassets */,
-				09E9BD111AFDA8F700CEB2DD /* mingxiaoxi.xcassets */,
-				097412681AF21246002BAFCA /* waiguomingzhu.xcassets */,
-				0964DE591ADFCD4800A956AD /* mianfeixiaoshuo.xcassets */,
-				0964D7191ADB70C500A956AD /* jingdushiguang.xcassets */,
-				09117F6C1AD576FB00932491 /* staticread.xcassets */,
-				0948CB961AB48CD5003F7EAB /* panda.xcassets */,
+				A81273CC1C3380D400AEAA7C /* infoplist */,
+				A81273CB1C3380BE00AEAA7C /* xcassets */,
 				26D4E284175A5EDD0036163C /* web */,
 				26D9C402157CA68000756CB2 /* Classes */,
 				26D9C3FB157CA68000756CB2 /* Frameworks */,
 				26D9C3F9157CA68000756CB2 /* Products */,
-				A8EB30361C2939990061200C /* iceandfier-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -5847,6 +5830,39 @@
 				26D9C438157CA6E400756CB2 /* NSString+HTML.m */,
 			);
 			name = Category;
+			sourceTree = "<group>";
+		};
+		A81273CB1C3380BE00AEAA7C /* xcassets */ = {
+			isa = PBXGroup;
+			children = (
+				A8EB30381C293B060061200C /* iceandfier.xcassets */,
+				09005FC51BA9AF7B006CE2EF /* xijuan.xcassets */,
+				097313F21B521C1A00C9479E /* huaqiangu.xcassets */,
+				09E9BD111AFDA8F700CEB2DD /* mingxiaoxi.xcassets */,
+				097412681AF21246002BAFCA /* waiguomingzhu.xcassets */,
+				0964DE591ADFCD4800A956AD /* mianfeixiaoshuo.xcassets */,
+				0964D7191ADB70C500A956AD /* jingdushiguang.xcassets */,
+				09117F6C1AD576FB00932491 /* staticread.xcassets */,
+				0948CB961AB48CD5003F7EAB /* panda.xcassets */,
+			);
+			name = xcassets;
+			sourceTree = "<group>";
+		};
+		A81273CC1C3380D400AEAA7C /* infoplist */ = {
+			isa = PBXGroup;
+			children = (
+				A8EB30361C2939990061200C /* iceandfier-Info.plist */,
+				A8D62AC11BF1E4C100972F6E /* guoguo-Info.plist */,
+				A8D62AC21BF1E4C100972F6E /* jingdushiguang-Info.plist */,
+				A8D62AC31BF1E4C100972F6E /* mianfeixiaoshuo-Info.plist */,
+				A8D62AC41BF1E4C100972F6E /* mingxiaoxi-Info.plist */,
+				A8D62AC51BF1E4C100972F6E /* pandabook-Info.plist */,
+				A8D62AC61BF1E4C100972F6E /* staticread copy-Info.plist */,
+				A8D62AC71BF1E4C100972F6E /* staticread-Info.plist */,
+				A8D62AC81BF1E4C100972F6E /* waiguomingzhu-Info.plist */,
+				A8D62AC91BF1E4C100972F6E /* xijuan-Info.plist */,
+			);
+			name = infoplist;
 			sourceTree = "<group>";
 		};
 		A8377B331C1A7134004871AB /* bookAnimation */ = {
