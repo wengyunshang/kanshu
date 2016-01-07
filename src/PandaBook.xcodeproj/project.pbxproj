@@ -2742,6 +2742,7 @@
 		A8584F5C1C1828A0006754CD /* GDataXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = A8584EBC1C1828A0006754CD /* GDataXMLNode.m */; };
 		A8584F5D1C1828A0006754CD /* GDataXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = A8584EBC1C1828A0006754CD /* GDataXMLNode.m */; };
 		A8584F5E1C1828A0006754CD /* GDataXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = A8584EBC1C1828A0006754CD /* GDataXMLNode.m */; };
+		A859FFC81C3DF95100B50EE3 /* libGDTMobSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A859FFC71C3DF95100B50EE3 /* libGDTMobSDK.a */; };
 		A8A7CD531C211339003F6FB9 /* BookDeleteView.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A7CD521C211339003F6FB9 /* BookDeleteView.m */; };
 		A8A7CD541C211339003F6FB9 /* BookDeleteView.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A7CD521C211339003F6FB9 /* BookDeleteView.m */; };
 		A8A7CD551C211339003F6FB9 /* BookDeleteView.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A7CD521C211339003F6FB9 /* BookDeleteView.m */; };
@@ -3885,6 +3886,11 @@
 		A8377B521C1A750C004871AB /* sw.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sw.jpg; sourceTree = "<group>"; };
 		A8584EBB1C1828A0006754CD /* GDataXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataXMLNode.h; sourceTree = "<group>"; };
 		A8584EBC1C1828A0006754CD /* GDataXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataXMLNode.m; sourceTree = "<group>"; };
+		A859FFC31C3DF95100B50EE3 /* GDTMobBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDTMobBannerView.h; sourceTree = "<group>"; };
+		A859FFC41C3DF95100B50EE3 /* GDTMobInterstitial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDTMobInterstitial.h; sourceTree = "<group>"; };
+		A859FFC51C3DF95100B50EE3 /* GDTNativeAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDTNativeAd.h; sourceTree = "<group>"; };
+		A859FFC61C3DF95100B50EE3 /* GDTSplashAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDTSplashAd.h; sourceTree = "<group>"; };
+		A859FFC71C3DF95100B50EE3 /* libGDTMobSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGDTMobSDK.a; sourceTree = "<group>"; };
 		A8A7CD511C211339003F6FB9 /* BookDeleteView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookDeleteView.h; sourceTree = "<group>"; };
 		A8A7CD521C211339003F6FB9 /* BookDeleteView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookDeleteView.m; sourceTree = "<group>"; };
 		A8B20CAB1BFF146B007625D1 /* BookLightView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookLightView.h; sourceTree = "<group>"; };
@@ -4002,6 +4008,7 @@
 				09FAAF181ABC18FE00052667 /* Social.framework in Frameworks */,
 				09FAAF161ABC18F000052667 /* Accounts.framework in Frameworks */,
 				0948CB2C1AB48C43003F7EAB /* SystemConfiguration.framework in Frameworks */,
+				A859FFC81C3DF95100B50EE3 /* libGDTMobSDK.a in Frameworks */,
 				0948CB311AB48C43003F7EAB /* Security.framework in Frameworks */,
 				09FAAF141ABC186A00052667 /* libicucore.dylib in Frameworks */,
 				0948CB271AB48C43003F7EAB /* CoreTelephony.framework in Frameworks */,
@@ -4751,6 +4758,7 @@
 		0964DC451ADBD33300A956AD /* ios_api */ = {
 			isa = PBXGroup;
 			children = (
+				A859FFC21C3DF95100B50EE3 /* gdt */,
 				0964DC461ADBD33300A956AD /* adnetwork */,
 				0964DC691ADBD33300A956AD /* Mongoose */,
 				0964DC6C1ADBD33400A956AD /* OpenUDID */,
@@ -5894,6 +5902,18 @@
 				A8584EBC1C1828A0006754CD /* GDataXMLNode.m */,
 			);
 			path = GDataXML;
+			sourceTree = "<group>";
+		};
+		A859FFC21C3DF95100B50EE3 /* gdt */ = {
+			isa = PBXGroup;
+			children = (
+				A859FFC31C3DF95100B50EE3 /* GDTMobBannerView.h */,
+				A859FFC41C3DF95100B50EE3 /* GDTMobInterstitial.h */,
+				A859FFC51C3DF95100B50EE3 /* GDTNativeAd.h */,
+				A859FFC61C3DF95100B50EE3 /* GDTSplashAd.h */,
+				A859FFC71C3DF95100B50EE3 /* libGDTMobSDK.a */,
+			);
+			path = gdt;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -9411,6 +9431,7 @@
 					"$(PROJECT_DIR)/epub/umeng_community_ios_sdk_v1.0/UMSocial_Sdk_4.2/UMSocial_Sdk_Extra_Frameworks/Wechat",
 					"$(PROJECT_DIR)/epub/sdk/ios_api/BaiduMobads/baidu_include",
 					"$(PROJECT_DIR)/epub/sdk/ios_api",
+					"$(PROJECT_DIR)/epub/sdk/ios_api/gdt",
 				);
 				OTHER_LDFLAGS = (
 					"-lxml2",
@@ -9478,6 +9499,7 @@
 					"$(PROJECT_DIR)/epub/umeng_community_ios_sdk_v1.0/UMSocial_Sdk_4.2/UMSocial_Sdk_Extra_Frameworks/Wechat",
 					"$(PROJECT_DIR)/epub/sdk/ios_api/BaiduMobads/baidu_include",
 					"$(PROJECT_DIR)/epub/sdk/ios_api",
+					"$(PROJECT_DIR)/epub/sdk/ios_api/gdt",
 				);
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				OTHER_LDFLAGS = (
